@@ -173,7 +173,12 @@
         <span class="fa-wrap">
                 <i class="fa fa-hand-pointer-o"></i>
                 <span id="/2017/09/18/hello/" class="date-meta leancloud_anaylytics" data-flag-title="Hello World">0</span>次
-        </span>      
+        </span>
+        <script>
+                var Counter = AV.Object.extend("Counter");
+                addCount(Counter,"/2017/09/18/hello/");
+                showTime(Counter,"/2017/09/18/hello/");
+        </script>      
     
     &nbsp;&nbsp;
     
@@ -338,7 +343,7 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.bootcss.com/jquery/1.3.1/jquery.js"></script>
+<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
 <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
 <script>
     var APP_ID = 'B6OdBOupoWFzPHVFenzSRxxc-gzGzoHsz';
@@ -348,28 +353,24 @@
         appKey: APP_KEY
     });
     // 显示次数
-    function showTime(Counter) {
+    function showTime(Counter,url) {
         var query = new AV.Query("Counter");
         if($(".leancloud_anaylytics").length > 0){
-            $(".leancloud_anaylytics").each(function(key,value){
-                var url = $(this).attr('id').trim();
-                (function(query,url){
-                    // where field
-                    query.equalTo("words", url);
-                    // count 
-                    query.count().then(function (number) {
-                        // There are number instances of MyClass where words equals url.
-                        $(document.getElementById(url)).text(number?  number : '--');
-                    }, function (error) {
-                        // error is an instance of AVError.
-                    });
-                })(query,url);
+            //var url = $(".leancloud_anaylytics").attr('id').trim();
+            // where field
+            query.equalTo("words", url);
+            // count 
+            query.count().then(function (number) {
+                // There are number instances of MyClass where words equals url.
+                $(document.getElementById(url)).text(number?  number : '--');
+            }, function (error) {
+                // error is an instance of AVError.
             });
         }
     }
    // 追加pv
-    function addCount(Counter) {
-        var url = $(".leancloud_anaylytics").length > 0 ? $(".leancloud_anaylytics").attr('id').trim() : 'icafebolger.com';
+    function addCount(Counter,url) {
+        //var url = $(".leancloud_anaylytics").length > 0 ? $(".leancloud_anaylytics").attr('id').trim() : 'icafebolger.com';
         var Counter = AV.Object.extend("Counter");
         var query = new Counter;
         query.save({
@@ -377,11 +378,6 @@
         }).then(function (object) {
         })
     }
-    $(function () {
-        var Counter = AV.Object.extend("Counter");
-        addCount(Counter);
-        showTime(Counter);
-    });
 </script>
 
     <div class="copyright">
