@@ -290,7 +290,7 @@
         if($(".leancloud_anaylytics").length > 0){
             $(".leancloud_anaylytics").each(function(key,value){
                 var url = $(this).attr('id').trim();
-                (function(){
+                (function(query,url){
                     // where field
                     query.equalTo("words", url);
                     // count 
@@ -300,7 +300,7 @@
                     }, function (error) {
                         // error is an instance of AVError.
                     });
-                })(url);
+                })(query,url);
             });
         }
     }
