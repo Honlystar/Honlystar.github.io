@@ -71,6 +71,42 @@
         <img src="/img/header_logo.png" alt="Snippet 博客主题" class="hide">
     </div>
 </header>
+<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+<script>
+    var APP_ID = 'B6OdBOupoWFzPHVFenzSRxxc-gzGzoHsz';
+    var APP_KEY = 'l8Yl2pLhmnrGNUfSxnCShquI';
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+    // 显示次数
+    function showTime(Counter,url) {
+        var query = new AV.Query("Counter");
+        if($(".leancloud_anaylytics").length > 0){
+            //var url = $(".leancloud_anaylytics").attr('id').trim();
+            // where field
+            query.equalTo("words", url);
+            // count 
+            query.count().then(function (number) {
+                // There are number instances of MyClass where words equals url.
+                $(document.getElementById(url)).text(number?  number : '--');
+            }, function (error) {
+                // error is an instance of AVError.
+            });
+        }
+    }
+   // 追加pv
+    function addCount(Counter,url) {
+        //var url = $(".leancloud_anaylytics").length > 0 ? $(".leancloud_anaylytics").attr('id').trim() : 'icafebolger.com';
+        var Counter = AV.Object.extend("Counter");
+        var query = new Counter;
+        query.save({
+            words: url
+        }).then(function (object) {
+        })
+    }
+</script>
     <nav class="main-navigation">
     <div class="container">
         <div class="row">
@@ -245,42 +281,7 @@
         </div>
     </div>
 </footer>
-<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
-<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
-<script>
-    var APP_ID = 'B6OdBOupoWFzPHVFenzSRxxc-gzGzoHsz';
-    var APP_KEY = 'l8Yl2pLhmnrGNUfSxnCShquI';
-    AV.init({
-        appId: APP_ID,
-        appKey: APP_KEY
-    });
-    // 显示次数
-    function showTime(Counter,url) {
-        var query = new AV.Query("Counter");
-        if($(".leancloud_anaylytics").length > 0){
-            //var url = $(".leancloud_anaylytics").attr('id').trim();
-            // where field
-            query.equalTo("words", url);
-            // count 
-            query.count().then(function (number) {
-                // There are number instances of MyClass where words equals url.
-                $(document.getElementById(url)).text(number?  number : '--');
-            }, function (error) {
-                // error is an instance of AVError.
-            });
-        }
-    }
-   // 追加pv
-    function addCount(Counter,url) {
-        //var url = $(".leancloud_anaylytics").length > 0 ? $(".leancloud_anaylytics").attr('id').trim() : 'icafebolger.com';
-        var Counter = AV.Object.extend("Counter");
-        var query = new Counter;
-        query.save({
-            words: url
-        }).then(function (object) {
-        })
-    }
-</script>
+
 
     <div class="copyright">
     <div class="container">
