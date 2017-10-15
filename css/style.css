@@ -273,6 +273,7 @@ pre {
   color: #505050;
   line-height: 4em;
   display: block;
+  font-weight: bold;
   padding: 0 21px;
 }
 .main-navigation .menu li:hover > a {
