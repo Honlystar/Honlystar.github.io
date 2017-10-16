@@ -400,7 +400,7 @@ $(document).ready(function () {
       templates: {
         item: function (data) {
           var date=new Date(data.date).toISOString().slice(0,10).replace(/-/g,"/");
-          var url=CONFIG.root+date+"/"+data.title;
+          var url=CONFIG.root+date+"/"+data.slug;
           return (
 
             '<a href="' + url + '" class="algolia-hit-item-link">' +
