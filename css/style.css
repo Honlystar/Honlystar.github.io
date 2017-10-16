@@ -269,6 +269,9 @@ pre {
   display: block;
   padding: 0 21px;
 }
+.main-navigation .menu li a.curr {
+  color: #e67e22;
+}
 .main-navigation .menu li:hover > a {
   color: #e67e22;
   text-decoration: none;
@@ -870,7 +873,7 @@ pre {
   border-top: 1px solid #303030;
 }
 .copyright a {
-  color:  #9a9897;;
+  color: #9a9897;
 }
 /* back-to-top */
 #back-to-top {
@@ -1003,7 +1006,6 @@ pre {
     float: none;
   }
 }
-
 /* 站内搜索 */
 ul.search-result-list {
   padding-left: 0px;
@@ -1063,7 +1065,7 @@ a.search-result {
   top: 0px;
   left: 0px;
   z-index: 2080;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 #local-search-input {
   margin-bottom: 10px;
@@ -1157,7 +1159,7 @@ a.search-result {
 }
 .algolia-search-input {
   display: inline-block;
-  width: calc(90% - 20px);
+  width: calc(70%);
 }
 .algolia-search-input input {
   padding: 5px 0;
@@ -1168,8 +1170,8 @@ a.search-result {
   background: transparent;
   text-indent: 10px;
 }
-.algolia-search-input input:focus{
-  border:none;
+.algolia-search-input input:focus {
+  border: none;
   border-bottom: 1px solid #847878;
 }
 .algolia-powered {
@@ -1184,7 +1186,7 @@ a.search-result {
   position: relative;
   overflow: auto;
   padding: 10px 30px;
-  height: calc(100% - 50px);
+  height: calc(50%);
 }
 .algolia-results hr {
   margin: 10px 0;
