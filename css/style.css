@@ -1163,9 +1163,14 @@ a.search-result {
   padding: 5px 0;
   width: 100%;
   outline: none;
-  border: 1px solid #847878;
+  border: none;
+  border-bottom: 1px solid #847878;
   background: transparent;
   text-indent: 10px;
+}
+.algolia-search-input input:focus{
+  border:none;
+  border-bottom: 1px solid #847878;
 }
 .algolia-powered {
   float: right;
