@@ -10,22 +10,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no,email=no">
     <link rel="dns-prefetch" href="//t11.baidu.com">
-    <!-- 百度网站收录认证 -->
-    <meta name="baidu-site-verification" content="bKjURLBoKJ" />
-    <!--SEO-->
-
-<meta name="description" content="rain,web前端,vue,开发,程序员,微信"/>
-
-
-
-<meta name="robots" content="all" />
-<meta name="google" content="all" />
-<meta name="googlebot" content="all" />
-<meta name="verify" content="all" />
     <!--Title-->
 
-
-<title>promise的初步使用 | 星空守候的博客</title>
 
 
     <link rel="alternate" href="/atom.xml" title="星空守候的博客" type="application/atom+xml">
@@ -33,6 +19,22 @@
 
     <link rel="icon" href="/favicon.ico">
 
+<title>first | 星空守候的博客</title>
+    <!--SEO-->
+
+<meta name="description" content="这是属于星空守候的专属个人空间，这里是web开发工程师的天堂，这里欢迎每一个开发者，希望你们在这里有所提高"/>
+
+
+<meta name="keyword" content="星空守候,rain,博客,web前端,移动开发工程师,vue开发,程序员,微信"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+<!-- 百度网站收录认证 -->
+<meta name="baidu-site-verification" content="bKjURLBoKJ" />
     
 
 
@@ -204,9 +206,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="promise的初步使用">
+        <h1 id="first">
             
-            promise的初步使用
+            first
             
         </h1>
         <div class="post-meta">
@@ -214,7 +216,7 @@
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        <span>ES6</span>
+        <span>Webpack</span>
     </span>
     
     
@@ -224,7 +226,7 @@
                 <i class="fa fa-tags"></i>
                 <span class="tags-meta">
                     
-                    js
+                    测试
                     
                 </span>
             </span>
@@ -233,7 +235,7 @@
                 <i class="fa fa-tags"></i>
                 <span class="tags-meta">
                     
-                    promise
+                    webpack
                     
                 </span>
             </span>
@@ -247,19 +249,19 @@
     
         <span class="fa-wrap">
                 <i class="fa fa-hand-pointer-o"></i>
-                <span id="/2017/10/17/promise的初步使用/" class="date-meta leancloud_anaylytics" data-flag-title="promise的初步使用">0</span>次
+                <span id="/2017/10/15/1/" class="date-meta leancloud_anaylytics" data-flag-title="first">0</span>次
         </span>
         <script>
                 var Counter = AV.Object.extend("Counter");
-                addCount(Counter,"/2017/10/17/promise的初步使用/");
-                showTime(Counter,"/2017/10/17/promise的初步使用/");
+                addCount(Counter,"/2017/10/15/1/");
+                showTime(Counter,"/2017/10/15/1/");
         </script>      
     
     &nbsp;&nbsp;
     
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2017/10/17</span>
+        <span class="date-meta">2017/10/15</span>
     </span>
 </div>
 
@@ -268,21 +270,7 @@
     </div>
     
     <div class="post-body">
-        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>在前端开发中，经常会遇到这样的困境：一个接口的参数会需要使用另一个接口获取，这时候聪明的做法就是使用回调函数，这样就可以解决问题，但是这种做法增加了函数的嵌套深度，如果需要的是好几个接口的返回数据,这样层层的回调,就比较头疼痛了，这就是所谓的回调地狱。Promise正是在这种情况下应运而生,它完美优雅的解决了回调地狱难题。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">step1(function (value1) &#123;</div><div class="line">  step2(value1, function(value2)&#123;</div><div class="line">    step3(value2,function(value3) &#123;</div><div class="line">      step4(value3,function(value4) &#123;</div><div class="line">        // ...</div><div class="line">      &#125;);</div><div class="line">    &#125;);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>Promise 是异步编程的一种解决方案，Promise 可以认为是一个对象，它可以获取异步操的最终完成（或失败）及其结果值的表示</p>
-</blockquote>
-<ul>
-<li>Promise对象代表一个异步操作，有三种状态：pending（进行中）、fulfilled（成功时）和rejected（失败时）</li>
-<li>Promise对象的状态改变，只有两种可能：从pending变为fulfilled和从pending变为rejected.</li>
-</ul>
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p>ES6 规定，Promise对象是一个构造函数，用来生成Promise实例,该函数的两个参数分别是两个函数resolve和reject<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var promise = new Promise(function(resolve, reject) &#123;</div><div class="line"> if (/* 异步操作成功 */)&#123;</div><div class="line"> resolve(value);</div><div class="line"> &#125; else &#123;</div><div class="line"> reject(error);</div><div class="line"> &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h3 id="then方法"><a href="#then方法" class="headerlink" title="then方法"></a>then方法</h3><p>then方法是定义在原型对象Promise.prototype上的。它的作用是为 Promise 实例添加状态改变时的回调函数,then方法返回的是一个新的Promise实例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">promise.then(function(value) &#123;</div><div class="line"> // success</div><div class="line">&#125;, function(value) &#123;</div><div class="line"> // failure</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>如果异步操作成功，则用 resolve 方法将状态从“未完成”变为“成功”，如果异步操作失败，则用 reject方法将状态从“未完成”变为“失败”</p>
-<p>这里是promised基本使用的一个demo,定义做饭，吃饭,洗碗三个方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">//做饭</div><div class="line">function cook()&#123;</div><div class="line">    console.log(&apos;开始做饭。&apos;);</div><div class="line">    var p = new Promise(function(resolve, reject)&#123;</div><div class="line">        console.log(&apos;做饭完毕！&apos;);</div><div class="line">        resolve(&apos;鸡蛋炒饭&apos;);</div><div class="line">    &#125;);</div><div class="line">    return p;</div><div class="line">&#125;</div><div class="line">//吃饭</div><div class="line">function eat(data)&#123;</div><div class="line">    console.log(&apos;开始吃饭：&apos; + data);</div><div class="line">    var p = new Promise(function(resolve, reject)&#123; </div><div class="line">        console.log(&apos;吃饭完毕!&apos;);</div><div class="line">        resolve(&apos;一块碗和一双筷子&apos;);</div><div class="line">    &#125;);</div><div class="line">    return p;</div><div class="line">&#125;</div><div class="line">//洗碗</div><div class="line">function wash(data)&#123;</div><div class="line">    console.log(&apos;开始洗碗：&apos; + data);</div><div class="line">    var p = new Promise(function(resolve, reject)&#123; </div><div class="line">            console.log(&apos;洗碗完毕!&apos;);</div><div class="line">            resolve(&apos;干净的碗筷&apos;);</div><div class="line">    &#125;);</div><div class="line">    return p;</div><div class="line">&#125;</div><div class="line">//调用三个过程</div><div class="line">cook()</div><div class="line">.then(function(data)&#123;</div><div class="line">    return eat(data);</div><div class="line">&#125;)</div><div class="line">.then(function(data)&#123;</div><div class="line">    return wash(data);</div><div class="line">&#125;)</div><div class="line">.then(function(data)&#123;</div><div class="line">    console.log(data);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>程序成功运行的结果:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">开始做饭。</div><div class="line">做饭完毕！</div><div class="line">开始吃饭：鸡蛋炒饭</div><div class="line">吃饭完毕!</div><div class="line">开始洗碗：一块碗和一双筷子</div><div class="line">洗碗完毕!</div><div class="line">干净的碗筷</div></pre></td></tr></table></figure></p>
-<h3 id="all方法"><a href="#all方法" class="headerlink" title="all方法"></a>all方法</h3><p>有时候需要多个异步任务全部执行完成后再执行后面的操作，这时候就需要用到Promise.all()，它接收一个Promise的对象的数组作为参数，当这个数组里的所有Promise对象全部变成resolve或者reject的时候，它才会去调用后面的.then()。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Promise</div><div class="line">.all([cook(), eat(),wash()])</div><div class="line">.then(function(results)&#123;</div><div class="line">    console.log(results);</div><div class="line">    console.log(&quot;做吃洗完毕：&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>成功的运行结果:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">开始做饭。</div><div class="line">做饭完毕！</div><div class="line">开始吃饭：undefined</div><div class="line">吃饭完毕!</div><div class="line">开始洗碗：undefined</div><div class="line">洗碗完毕!</div><div class="line">做吃洗完毕：</div><div class="line">[&quot;鸡蛋炒饭&quot;, &quot;一块碗和一双筷子&quot;, &quot;干净的碗筷&quot;]</div></pre></td></tr></table></figure></p>
+        <p>~这是webpack分类的一个测试页</p>
 
     </div>
 
@@ -304,8 +292,10 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
+        <a href="/2017/10/17/3/" class="pre-post btn btn-default"><i class="fa fa-angle-left fa-fw"></i>上一篇</a>
     
-        <a href="/2017/10/15/first/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
+    
+        <a href="/2017/09/18/2/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
     
 </div>
 
@@ -395,17 +385,17 @@
     <h3 class="title">标签云</h3>
     <div class="content tag-cloud">
       <!-- 
-        <a href="undefinedtags/测试/" style="font-size: 1em;">测试</a> <a href="undefinedtags/js/" style="font-size: 1em;">js</a> <a href="undefinedtags/only/" style="font-size: 1em;">only</a> <a href="undefinedtags/promise/" style="font-size: 1em;">promise</a> <a href="undefinedtags/webpack/" style="font-size: 1em;">webpack</a> -->
+        <a href="undefinedtags/测试/" style="font-size: 1em;">测试</a> <a href="undefinedtags/webpack/" style="font-size: 1em;">webpack</a> <a href="undefinedtags/js/" style="font-size: 1em;">js</a> <a href="undefinedtags/promise/" style="font-size: 1em;">promise</a> <a href="undefinedtags/only/" style="font-size: 1em;">only</a> -->
         
           <a href="/tags/测试" style="font-size: 1em;">测试</a>
       
-          <a href="/tags/js" style="font-size: 1em;">js</a>
+          <a href="/tags/webpack" style="font-size: 1em;">webpack</a>
       
-          <a href="/tags/only" style="font-size: 1em;">only</a>
+          <a href="/tags/js" style="font-size: 1em;">js</a>
       
           <a href="/tags/promise" style="font-size: 1em;">promise</a>
       
-          <a href="/tags/webpack" style="font-size: 1em;">webpack</a>
+          <a href="/tags/only" style="font-size: 1em;">only</a>
       
     </div>
   </div>
