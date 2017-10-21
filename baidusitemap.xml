@@ -4,40 +4,14 @@
 
     
   <url>
-    <loc>https://www.onlystar.site/2017/10/17/3/</loc>
-    <lastmod>2017-10-18T14:42:50.348Z</lastmod>
+    <loc>https://www.onlystar.site/20171015/210939/</loc>
+    <lastmod>2017-10-21T14:11:56.956Z</lastmod>
     <data>
         <display>
-        <title>promise的初步使用</title>
-        <pubTime>2017-10-17T12:09:39.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>promise</tag>
-         
-         
-           
-             
-              <breadCrumb title="ES6" url="https://www.onlystar.site/categories/ES6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.onlystar.site/2017/09/18/2/</loc>
-    <lastmod>2017-10-18T14:42:46.100Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-09-18T00:00:56.000Z</pubTime>
+        <title>我的第一篇博客</title>
+        <pubTime>2017-10-15T13:09:39.000Z</pubTime>
         
         <tag>测试</tag>
-         
-        <tag>js</tag>
-         
-        <tag>only</tag>
          
          
            
@@ -50,21 +24,21 @@
 
     
   <url>
-    <loc>https://www.onlystar.site/2017/10/15/1/</loc>
-    <lastmod>2017-10-18T14:42:40.709Z</lastmod>
+    <loc>https://www.onlystar.site/20171017/200607/</loc>
+    <lastmod>2017-10-21T14:09:09.561Z</lastmod>
     <data>
         <display>
-        <title>first</title>
-        <pubTime>2017-10-15T03:40:49.000Z</pubTime>
+        <title>'promise的初步使用'</title>
+        <pubTime>2017-10-17T12:06:07.000Z</pubTime>
         
-        <tag>测试</tag>
+        <tag>js</tag>
          
-        <tag>webpack</tag>
+        <tag>promise</tag>
          
          
            
              
-              <breadCrumb title="Webpack" url="https://www.onlystar.site/categories/Webpack/"/>
+              <breadCrumb title="ES6" url="https://www.onlystar.site/categories/ES6/"/>
           
         </display>
     </data>
