@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>https://www.onlystar.site/20171022/004417/</loc>
+    <lastmod>2017-10-21T16:45:17.716Z</lastmod>
+    <data>
+        <display>
+        <title>rain测试</title>
+        <pubTime>2017-10-21T16:44:17.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="web" url="https://www.onlystar.site/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/20171017/200600/</loc>
+    <lastmod>2017-10-21T15:27:24.350Z</lastmod>
+    <data>
+        <display>
+        <title>promise的初步使用</title>
+        <pubTime>2017-10-17T12:06:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>promise</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES6" url="https://www.onlystar.site/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.onlystar.site/20171015/210939/</loc>
     <lastmod>2017-10-21T14:11:56.956Z</lastmod>
     <data>
@@ -17,28 +57,6 @@
            
              
               <breadCrumb title="web" url="https://www.onlystar.site/categories/web/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.onlystar.site/20171017/200607/</loc>
-    <lastmod>2017-10-21T14:09:09.561Z</lastmod>
-    <data>
-        <display>
-        <title>'promise的初步使用'</title>
-        <pubTime>2017-10-17T12:06:07.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>promise</tag>
-         
-         
-           
-             
-              <breadCrumb title="ES6" url="https://www.onlystar.site/categories/ES6/"/>
           
         </display>
     </data>
