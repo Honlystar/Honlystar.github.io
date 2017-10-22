@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Echarts图形展示</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <!-- 引入 echarts.js -->
+    <script src="echarts.js"></script>
+	<script src="infographic.js"></script>
+	<script src="macarons.js"></script>
+	<script src="roma.js"></script>
+	<script src="shine.js"></script>
+	<script src="vintage.js"></script>
+    <style>
+        div.container .row div[id^="main"]{
+            width: 500px;
+            height:400px;
+            margin:0px auto;
+			margin-top:60px;
+			margin-bottom:20px;
+            /* margin-left:5px; */
+           /*  border-bottom:1px solid #aaa; */
+        }
+		div.heard {
+			margin-left:190px;
+			color:#777;
+		}
+    </style>
+  </head>
+  <body>
+		<div class="heard">
+			<h2> <img src="logo.png"> Echarts</h2>
+		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12  col-md-6">
+                    <div id="main1"></div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="main2"></div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="main3"></div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="main4"></div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="main5"></div>
+                </div>
+            </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart1 = echarts.init(document.getElementById('main1'),'infographic');
+
+        // 指定图表的配置项和数据
+        var option1 = {
+            title: {
+                text: 'ECharts 柱状图'
+            },
+            tooltip: { //提示悬浮层的位置，默认不设置为跟随鼠标位置
+			},
+
+            legend: { //图例组件
+                data:['销量','存量'] //图例项的名称
+            },
+			
+            xAxis: {
+				type : 'category', //坐标轴类型，类目轴
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"] //类目数据
+            },
+            yAxis: {},
+            series: [{ //系列列表，图标类型
+                name: '销量',
+                type: 'bar', 
+                data: [5, 20, 36, 10, 10, 40] //系列中的数据内容数组
+            },
+			{
+				name:'存量',
+				type:'bar',
+				data:[10, 5, 20, 18, 30, 8]
+			}
+			]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart1.setOption(option1);
+
+		var myChart2 = echarts.init(document.getElementById('main2'),'macarons');
+		//指定图标的配置项和数据
+		var option2 = {
+				title: { //标题组件
+				text: 'ECharts 折线图',
+				subtext: '实时数据'
+			},
+			tooltip: {
+				trigger: 'axis' // 提示悬浮车触发类型，坐标轴触发 item为数据项图形触发
+			},
+			legend: {
+				data:['意向','预购','成交']
+			},
+			toolbox: {  //工具栏
+				show: true,
+				feature: { //工具配置项
+					magicType: {show: true, type: ['stack', 'tiled']}, 
+					//动态类型切换，工具打开，动态类型为 堆叠模式 平铺模式 （line:折线图 bar：柱状图）
+					saveAsImage: {show: true} //保存为图片
+				}
+			},
+			xAxis: {
+				type: 'category',
+				boundaryGap: false,//关闭坐标轴两边留白
+				data: ['周一','周二','周三','周四','周五','周六','周日']
+			},
+			yAxis: {
+				type: 'value' //坐标轴类型 数值轴
+			},
+			series: [{
+				name: '成交',
+				type: 'line',
+				smooth: true, //平滑显示曲线
+				data: [10, 12, 21, 54, 260, 830, 710]
+			},
+			{
+				name: '预购',
+				type: 'line',
+				smooth: true,
+				data: [30, 182, 434, 791, 390, 30, 10]
+			},
+			{
+				name: '意向',
+				type: 'line',
+				smooth: true,
+				data: [1320, 1132, 601, 234, 120, 90, 20]
+			}]
+		};
+
+		 myChart2.setOption(option2);
+
+		 		 var myChart3 = echarts.init(document.getElementById('main3'),'roma')
+
+		 var option3 = {
+					title: {
+						text: 'Echarts 圆环',
+						subtext: '实时数据',
+						x:'center'
+					},
+					tooltip: {
+					trigger: 'item',
+					formatter: "{a} <br/>{b}: {c} ({d}%)"
+				},
+				legend: {
+					orient: 'vertical', //图例列表的布局朝向 horizontal 水平朝向
+					x: 'left',
+					data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+				},
+				series: [
+					{
+						name:'访问来源',
+						type:'pie',
+						radius: ['50%', '70%'],
+						avoidLabelOverlap: false,//关闭防止标签重叠策略
+						label: {
+							normal: {
+								show: false,
+								position: 'center' //标签的位置 饼图的中心
+							},
+							emphasis: {
+								show: true,
+								textStyle: {
+									fontSize: '30',
+									fontWeight: 'bold'
+								}
+							}
+						},
+						labelLine: {
+							normal: {
+								show: false, //不现实视觉引导线
+							}
+						},
+						data:[
+							{value:335, name:'直接访问'},
+							{value:310, name:'邮件营销'},
+							{value:234, name:'联盟广告'},
+							{value:135, name:'视频广告'},
+							{value:1548, name:'搜索引擎'}
+						]
+					}
+				]
+		 };
+		 myChart3.setOption(option3);
+
+		 var myChart4 = echarts.init(document.getElementById('main4'),'shine');
+
+		 var option4 = {
+						 title: {
+					text: '漏斗图',
+					subtext: '实时数据'
+				},
+				tooltip: {
+					trigger: 'item',
+					formatter: "{a} <br/>{b} : {c}%"
+				},
+				toolbox: {
+					feature: {
+						dataView: {readOnly: false},//是否不可编辑
+						restore: {},//还原设置工具
+						saveAsImage: {}
+					}
+				},
+				legend: {
+					data: ['展现','点击','访问','咨询','订单']
+				},
+				calculable: true,//是否启用拖拽重新计算功能 默认关闭
+				series: [
+					{
+						name:'漏斗图',
+						type:'funnel', //类型为漏斗图
+						left: '10%',
+						top: 60,
+						bottom: 60,
+						width: '80%',
+						min: 0, //制定数据最小值
+						max: 100,//制定数据最大值
+						minSize: '0%',//数据最小值映射的宽度
+						maxSize: '100%',//数据最大值映射的宽度
+						sort: 'descending',//数据的排列顺序 此处为递减 ascending为递增 none则按照data顺序
+						gap: 2,//数据图形之间的间距
+						label: {
+							normal: { //图例被选中前状态
+								show: true, 
+								position: 'inside'
+							},
+							emphasis: { //图例选中后状态
+								textStyle: {
+									fontSize: 20
+								}
+							}
+						},
+						labelLine: { //标签视觉引导线
+							normal: {
+								length: 10,
+								lineStyle: {
+									width: 1,
+									type: 'solid'
+								}
+							}
+						},
+						itemStyle: {
+							normal: {
+								borderColor: '#000',//图形的描边颜色
+								borderWidth: 1 //描边线宽
+							}
+						},
+						data: [
+							{value: 60, name: '访问'},
+							{value: 40, name: '咨询'},
+							{value: 20, name: '订单'},
+							{value: 80, name: '点击'},
+							{value: 100, name: '展现'}
+						]
+					}
+				]
+		 };
+
+		 myChart4.setOption(option4);
+
+
+		 var myChart5 = echarts.init(document.getElementById('main5'),'vintage');
+
+		 var option5 = {
+						baseOption: {
+							title : {
+								text: '南丁格尔玫瑰图',
+								subtext: '实时数据',
+								x:'center'
+							},
+							tooltip : {
+								trigger: 'item',
+								formatter: "{a} <br/>{b} : {c} ({d}%)" //悬浮提示框内容 系列名称 数据项名称 数值 百分比
+							},
+							legend: {
+								data:['rose1','rose2','rose3','rose4','rose5','rose6','rose7','rose8']
+							},
+							toolbox: {
+								show : true,
+								feature : {
+									mark : {show: true},
+									dataView : {show: true, readOnly: false}, //数据视图工具 是否不可编辑（此处编辑打开）
+									magicType : { //动态类型切换
+										show: true,
+										type: ['pie', 'funnel']
+									},
+									restore : {show: true}, //配置项还原工具
+									saveAsImage : {show: true} //保存为图片工具
+								}
+							},
+							calculable : true,//是否启用拖拽重计算特性，默认为关闭（即值为false）
+							series : [
+								{
+									name:'半径模式',
+									type:'pie',
+									roseType : 'radius',//展示为男丁格尔图。扇形圆心角展现数据百分比，半径展现数据大小
+									label: {
+										normal: {
+											show: false
+										},
+										emphasis: {
+											show: true
+										}
+									},
+									lableLine: {
+										normal: {
+											show: false
+										},
+										emphasis: {
+											show: true
+										}
+									},
+									data:[
+										{value:10, name:'rose1'},
+										{value:5, name:'rose2'},
+										{value:15, name:'rose3'},
+										{value:25, name:'rose4'},
+										{value:20, name:'rose5'},
+										{value:35, name:'rose6'},
+										{value:30, name:'rose7'},
+										{value:40, name:'rose8'}
+									]
+								},
+								{
+									name:'面积模式',
+									type:'pie',
+									roseType : 'area',//所有扇形去圆心角相同，半径展现数据大小
+									data:[
+										{value:10, name:'rose1'},
+										{value:5, name:'rose2'},
+										{value:15, name:'rose3'},
+										{value:25, name:'rose4'},
+										{value:20, name:'rose5'},
+										{value:35, name:'rose6'},
+										{value:30, name:'rose7'},
+										{value:40, name:'rose8'}
+									]
+								}
+							]
+						  },
+					media: [ //这里开始定义 media quey的逐条规则
+						{
+							option: { //这里没有写规则，表示默认状态，即所有的规则都不满足时，采纳这个option
+								legend: {
+									right: 'center',
+									bottom: 0,
+									orient: 'horizontal' //横向排布
+								},
+								series: [
+									{
+										radius: [20, '50%'],
+										center: ['25%', '50%']
+									},
+									{
+										radius: [30, '50%'],
+										center: ['75%', '50%']
+									}
+								]
+							}
+						},
+						{
+							query: {
+								minAspectRatio: 1  //当长宽比大于1时
+							},
+							option: {
+								legend: {
+									right: 'center',
+									bottom: 0,
+									orient: 'horizontal'
+								},
+								series: [
+									{
+										radius: [20, '45%'],
+										center: ['25%', '50%']
+									},
+									{
+										radius: [30, '45%'],
+										center: ['75%', '50%']
+									}
+								]
+							}
+						},
+						{
+							query: {
+								maxAspectRatio: 1 //当长宽比小于1时
+							},
+							option: {
+								legend: {
+									right: 'center',
+									bottom: 0,
+									orient: 'horizontal'
+								},
+								series: [
+									{
+										radius: [20, '45%'],
+										center: ['50%', '30%']
+									},
+									{
+										radius: [30, '45%'],
+										center: ['50%', '70%']
+									}
+								]
+							}
+						},
+						{
+							query: {
+								maxWidth: 500 //当宽度小于500时
+							},
+							option: {
+								legend: {
+									right: 10,
+									top: '15%',
+									orient: 'vertical' //纵向排布
+								},
+								series: [
+									{
+										radius: [20, '45%'],
+										center: ['50%', '30%']
+									},
+									{
+										radius: [30, '45%'],
+										center: ['50%', '75%']
+									}
+								]
+							}
+						}
+					  ]
+				};
+
+		 myChart5.setOption(option5);
+    </script>
+</body>
+</html>
