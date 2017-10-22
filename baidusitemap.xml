@@ -4,27 +4,20 @@
 
     
     
-    
-    
-    
-    
-    
   <url>
-    <loc>https://www.onlystar.site/20171017/200600/</loc>
-    <lastmod>2017-10-22T03:31:40.141Z</lastmod>
+    <loc>https://www.onlystar.site/all/20171022/113042/</loc>
+    <lastmod>2017-10-22T06:40:56.498Z</lastmod>
     <data>
         <display>
         <title>promise的初步使用</title>
-        <pubTime>2017-10-17T12:06:00.000Z</pubTime>
+        <pubTime>2017-10-22T03:30:42.000Z</pubTime>
         
-        <tag>js</tag>
-         
-        <tag>promise</tag>
+        <tag>ES6</tag>
          
          
            
              
-              <breadCrumb title="ES6" url="https://www.onlystar.site/categories/ES6/"/>
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
@@ -32,23 +25,6508 @@
 
     
   <url>
-    <loc>https://www.onlystar.site/20171015/210939/</loc>
-    <lastmod>2017-10-21T14:11:56.956Z</lastmod>
+    <loc>https://www.onlystar.site/all/20150824/102900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
     <data>
         <display>
-        <title>我的第一篇博客</title>
-        <pubTime>2017-10-15T13:09:39.000Z</pubTime>
+        <title>在线调试方案的思考与实践</title>
+        <pubTime>2015-08-24T02:29:00.000Z</pubTime>
         
-        <tag>测试</tag>
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
          
          
            
              
-              <breadCrumb title="web" url="https://www.onlystar.site/categories/web/"/>
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
           
         </display>
     </data>
     </url>
 
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20120918/085800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>javascript链式调用的实现方式</title>
+        <pubTime>2012-09-18T00:58:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20120918/093700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何设计一个支持方法链式调用的JavaScript库</title>
+        <pubTime>2012-09-18T01:37:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20120922/122700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>在Javascript中模仿接口（一）</title>
+        <pubTime>2012-09-22T04:27:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130327/121300/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript本地储存（1）：cookie在前端</title>
+        <pubTime>2013-03-27T04:13:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130327/045800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>汤姆大叔的JS系列文章，放在自己家里好找</title>
+        <pubTime>2013-03-26T20:58:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130328/112700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JSON</title>
+        <pubTime>2013-03-28T03:27:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130329/111000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>iframe跨域通信的通用解决方案</title>
+        <pubTime>2013-03-29T03:10:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130329/110400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>跨域资源共享的10种方式</title>
+        <pubTime>2013-03-29T03:04:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130330/010300/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript本地储存（3）：离线web应用</title>
+        <pubTime>2013-03-29T17:03:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130331/070500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript跨域（1）：什么是跨域，如何跨域</title>
+        <pubTime>2013-03-30T23:05:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>跨域</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130403/100200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript跨域（2）：JSONP跨域</title>
+        <pubTime>2013-04-03T02:02:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>跨域</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130409/083600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript之鼠标滚动事件</title>
+        <pubTime>2013-04-09T00:36:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130409/094100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>javascript中有趣的反柯里化</title>
+        <pubTime>2013-04-09T01:41:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>柯里化</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/JavaScript/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130410/040600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>打开窗口，关闭窗口</title>
+        <pubTime>2013-04-09T20:06:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130411/015900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>摸透select和他的儿子们options</title>
+        <pubTime>2013-04-10T17:59:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>options</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130411/051500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript操控光标，你会么？</title>
+        <pubTime>2013-04-10T21:15:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130413/014600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>利用XMLHttpRequest响应头部的Date来做倒计时</title>
+        <pubTime>2013-04-12T17:46:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>XMLHttpRequest</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130422/061800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>最受欢迎的几种图片格式及其常见用法</title>
+        <pubTime>2013-04-21T22:18:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/%E5%89%AA%E8%B4%B4%E6%9D%BF/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130422/042400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何向开源社区提问题</title>
+        <pubTime>2013-04-21T20:24:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>学会提问</tag>
+         
+         
+           
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%AA%E8%B4%B4%E6%9D%BF/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130422/111700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JS动态构建一棵目录树</title>
+        <pubTime>2013-04-22T03:17:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>tree</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130424/080800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>IE6 bug集</title>
+        <pubTime>2013-04-24T00:08:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>兼容性</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130424/084100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JS闭包的用途</title>
+        <pubTime>2013-04-24T00:41:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>JavaScript闭包</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/JavaScript/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130427/031400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript垃圾回收机制</title>
+        <pubTime>2013-04-26T19:14:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>垃圾回收</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130427/115900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>腾讯的三轮面试（web前端）</title>
+        <pubTime>2013-04-27T03:59:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>腾讯面试</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130504/023800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript综合应用小案例</title>
+        <pubTime>2013-05-03T18:38:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130505/084000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>浅谈HTTP中Get与Post的区别</title>
+        <pubTime>2013-05-05T00:40:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>http</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130505/124100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript综合应用小案例（续）</title>
+        <pubTime>2013-05-05T04:41:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130514/025200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>实现Javascript异步编程的4种方法</title>
+        <pubTime>2013-05-13T18:52:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>异步编程</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/JavaScript/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130516/010200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery对象与dom对象相互转换</title>
+        <pubTime>2013-05-15T17:02:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130524/013000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTML5学习随笔（1）</title>
+        <pubTime>2013-05-23T17:30:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130526/104000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>css中font-family的中文字体</title>
+        <pubTime>2013-05-26T02:40:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130527/123000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>echo和print效率测试对比</title>
+        <pubTime>2013-05-27T04:30:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>php</tag>
+         
+         
+           
+             
+              <breadCrumb title="后端杂烩" url="https://www.onlystar.site/categories/%E5%90%8E%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130527/124500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>PHP常用优化</title>
+        <pubTime>2013-05-27T04:45:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="后端杂烩" url="https://www.onlystar.site/categories/%E5%90%8E%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130530/125800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>利用javascript进行编码转换，GBK转UTF-8</title>
+        <pubTime>2013-05-30T04:58:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>编码转换</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130531/115500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>删除数组中的某个元素</title>
+        <pubTime>2013-05-31T03:55:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>splice</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130603/115500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>3D遥控坦克大战</title>
+        <pubTime>2013-06-03T03:55:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130604/104100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式30分钟入门教程</title>
+        <pubTime>2013-06-04T02:41:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>正则</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/JavaScript/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130606/111900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Linux学习笔记（上次更新时间2013/07/28）</title>
+        <pubTime>2013-06-06T03:19:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://www.onlystar.site/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130608/014100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu下安装Apache+PHP+Mysql</title>
+        <pubTime>2013-06-07T17:41:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="后端杂烩" url="https://www.onlystar.site/categories/%E5%90%8E%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130608/121000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>关于浏览器模式和文本模式的困惑</title>
+        <pubTime>2013-06-08T04:10:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/JavaScript/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130611/082500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>vim操作全面讲解</title>
+        <pubTime>2013-06-11T00:25:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>VIM</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130627/073700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>浅谈叶小钗面试的几个问题</title>
+        <pubTime>2013-06-26T23:37:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/JavaScript/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130704/011800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>字体大小自适应纯css解决方案</title>
+        <pubTime>2013-07-03T17:18:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130720/015900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>解读jQuery中extend函数</title>
+        <pubTime>2013-07-19T17:59:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130726/102500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>一个不陌生的JS效果-marquee,用css3来实现</title>
+        <pubTime>2013-07-26T02:25:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130809/035300/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>IE6的一个小bug</title>
+        <pubTime>2013-08-08T19:53:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>兼容性</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/JavaScript/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130809/025700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端编码规范之CSS</title>
+        <pubTime>2013-08-08T18:57:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130811/121700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>那些年，我们一起玩过的响应式布局</title>
+        <pubTime>2013-08-11T04:17:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130813/101700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>五种开源协议的比较(BSD,Apache,GPL,LGPL,MIT) – 整理</title>
+        <pubTime>2013-08-13T02:17:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="剪贴板" url="https://www.onlystar.site/categories/%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130814/115500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端编码规范之JavaScript</title>
+        <pubTime>2013-08-14T03:55:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130922/034000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript中需要注意的几个问题</title>
+        <pubTime>2013-09-21T19:40:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130923/091700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>对闭包机制的深入理解</title>
+        <pubTime>2013-09-23T01:17:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20130926/093000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>阿里面试的一点感受</title>
+        <pubTime>2013-09-26T01:30:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/JavaScript/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131007/051600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>玩转正则之highlight高亮</title>
+        <pubTime>2013-10-06T21:16:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>正则</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131031/050000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端学习的那些往事</title>
+        <pubTime>2013-10-30T21:00:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131101/034000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>SEO：让搜索引擎对你的网站更有亲和力(译)</title>
+        <pubTime>2013-10-31T19:40:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="翻译" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BF%BB%E8%AF%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131104/012600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>chrome浏览器渲染白屏问题剖析</title>
+        <pubTime>2013-11-03T17:26:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131126/103100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>ECMAScript 6 简介</title>
+        <pubTime>2013-11-26T02:31:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131126/025800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>OAuth认证原理及HTTP下的密码安全传输</title>
+        <pubTime>2013-11-25T18:58:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131128/094600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>ECMAScript 6中的let和const关键词</title>
+        <pubTime>2013-11-28T01:46:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131203/043500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript模板引擎原理，几行代码的事儿</title>
+        <pubTime>2013-12-02T20:35:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>模板引擎</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131206/101400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>PJAX的实现与应用</title>
+        <pubTime>2013-12-06T02:14:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>PJAX</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131217/100100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript之web通信</title>
+        <pubTime>2013-12-17T02:01:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131220/014200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>细说WebSocket - Node篇</title>
+        <pubTime>2013-12-19T17:42:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>websocket</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131225/112400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>细说websocket - php篇</title>
+        <pubTime>2013-12-25T03:24:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>PHP</tag>
+         
+        <tag>websocket</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20131229/081800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>浅谈模块化加载的实现原理</title>
+        <pubTime>2013-12-29T00:18:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>模块化</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140105/110100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript异步编程原理</title>
+        <pubTime>2014-01-05T03:01:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>异步</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140113/033000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>从登录框看前端</title>
+        <pubTime>2014-01-12T19:30:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140118/123200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>进阶正则表达式</title>
+        <pubTime>2014-01-18T04:32:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>正则</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140127/015000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>再探@font-face及webIcon制作</title>
+        <pubTime>2014-01-26T17:50:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>webicon</tag>
+         
+        <tag>font-face</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140212/095000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript多文件下载</title>
+        <pubTime>2014-02-12T01:50:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>多文件下载</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140217/091800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript事件机制</title>
+        <pubTime>2014-02-17T01:18:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140220/124700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>让音乐响起来</title>
+        <pubTime>2014-02-20T04:47:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>webaudio</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140222/084500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>看得到的音频流</title>
+        <pubTime>2014-02-22T00:45:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>webaudio</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140226/125600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>音量的控制</title>
+        <pubTime>2014-02-26T04:56:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>webaudio</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140227/011700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>声道的转换</title>
+        <pubTime>2014-02-26T17:17:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>webaudio</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140228/015700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>声音的滤波</title>
+        <pubTime>2014-02-27T17:57:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>webaudio</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140301/031100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>让你的页面瞬间全屏</title>
+        <pubTime>2014-02-28T19:11:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140303/015600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>你所不知道的JavaScript数组</title>
+        <pubTime>2014-03-02T17:56:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140311/110900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>git/ssh捋不清的几个问题</title>
+        <pubTime>2014-03-11T03:09:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140312/030200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>工作，但别忘了生活</title>
+        <pubTime>2014-03-11T19:02:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140314/075200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>软件（代码）开源，协议声明</title>
+        <pubTime>2014-03-13T23:52:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140316/035100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript分号，加还是不加？</title>
+        <pubTime>2014-03-15T19:51:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140317/030200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>感想以及一些文章索引</title>
+        <pubTime>2014-03-16T19:02:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140325/125400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>百万数据如何在前端快速流畅显示？</title>
+        <pubTime>2014-03-25T04:54:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>大数据</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140330/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>一个所见即所得的博客</title>
+        <pubTime>2014-03-29T16:00:00.000Z</pubTime>
+        
+        <tag>blog</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140331/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>npm穿墙</title>
+        <pubTime>2014-03-30T16:00:00.000Z</pubTime>
+        
+        <tag>npm</tag>
+         
+        <tag>proxy</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140331/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>老程序员Vs新程序员</title>
+        <pubTime>2014-03-30T16:00:00.000Z</pubTime>
+        
+        <tag>talk</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140331/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>webview中的点击高亮问题</title>
+        <pubTime>2014-03-30T16:00:00.000Z</pubTime>
+        
+        <tag>webview</tag>
+         
+        <tag>highlight</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140413/022100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>换个标签写前端模板</title>
+        <pubTime>2014-04-12T18:21:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140420/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>array 不等于 array</title>
+        <pubTime>2014-04-19T16:00:00.000Z</pubTime>
+        
+        <tag>hack</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140421/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>cloneNode/importNode Bug in Old Chrome</title>
+        <pubTime>2014-04-20T16:00:00.000Z</pubTime>
+        
+        <tag>bug</tag>
+         
+        <tag>chrome</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140422/021100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>深入浅出NodeJS——数据通信，NET模块运行机制</title>
+        <pubTime>2014-04-21T18:11:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>NodeJS</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140425/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>打印</title>
+        <pubTime>2014-04-24T16:00:00.000Z</pubTime>
+        
+        <tag>print</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140426/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>clip的安装和使用</title>
+        <pubTime>2014-04-25T16:00:00.000Z</pubTime>
+        
+        <tag>tips</tag>
+         
+        <tag>clip</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140426/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>jekyll中gsub未定义的错误</title>
+        <pubTime>2014-04-25T16:00:00.000Z</pubTime>
+        
+        <tag>error</tag>
+         
+        <tag>jekyll</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140426/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>jekyll编译时报错invalid byte sequence in GBK</title>
+        <pubTime>2014-04-25T16:00:00.000Z</pubTime>
+        
+        <tag>error</tag>
+         
+        <tag>jekyll</tag>
+         
+        <tag>ruby</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140426/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>巧妙交换值</title>
+        <pubTime>2014-04-25T16:00:00.000Z</pubTime>
+        
+        <tag>hack</tag>
+         
+        <tag>tips</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140427/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>IOS边缘回弹的禁止</title>
+        <pubTime>2014-04-26T16:00:00.000Z</pubTime>
+        
+        <tag>IOS</tag>
+         
+        <tag>touchmove</tag>
+         
+        <tag>scroll</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140427/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下Rhythmbox mp3音乐乱码</title>
+        <pubTime>2014-04-26T16:00:00.000Z</pubTime>
+        
+        <tag>messy</tag>
+         
+        <tag>乱码</tag>
+         
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140427/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>gem速度慢</title>
+        <pubTime>2014-04-26T16:00:00.000Z</pubTime>
+        
+        <tag>ruby</tag>
+         
+        <tag>gem</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E6%9D%82%E7%89%A9%E9%97%B4/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140427/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>jekyll安装不了？</title>
+        <pubTime>2014-04-26T16:00:00.000Z</pubTime>
+        
+        <tag>jekyll</tag>
+         
+        <tag>ruby</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140428/014100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>NodeJS写个爬虫，把文章放到kindle中阅读</title>
+        <pubTime>2014-04-27T17:41:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>NodeJS</tag>
+         
+        <tag>爬虫</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140428/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>git版本回退操作</title>
+        <pubTime>2014-04-27T16:00:00.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>CMS</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140428/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>当正则匹配零个字符</title>
+        <pubTime>2014-04-27T16:00:00.000Z</pubTime>
+        
+        <tag>正则</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140429/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>解析URL到对应的Object</title>
+        <pubTime>2014-04-28T16:00:00.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>解析</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140429/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>mysqldump的使用</title>
+        <pubTime>2014-04-28T16:00:00.000Z</pubTime>
+        
+        <tag>mysql</tag>
+         
+        <tag>mysqldump</tag>
+         
+         
+           
+             
+              <breadCrumb title="后端杂烩" url="https://www.onlystar.site/categories/%E5%90%8E%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140430/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>css选中前一个元素</title>
+        <pubTime>2014-04-29T16:00:00.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140430/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>git切换到远程分支</title>
+        <pubTime>2014-04-29T16:00:00.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140501/125900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>XSS零碎指南</title>
+        <pubTime>2014-05-01T04:59:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>hack</tag>
+         
+        <tag>XSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140502/094200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>ECMAScript 6入门</title>
+        <pubTime>2014-05-02T01:42:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140504/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>正则中分支示例</title>
+        <pubTime>2014-05-03T16:00:00.000Z</pubTime>
+        
+        <tag>正则</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140507/090000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>git版本管理策略及相关技巧(A)</title>
+        <pubTime>2014-05-07T01:00:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140511/072600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Etag缓存在PHP和NodeJS中的实现</title>
+        <pubTime>2014-05-10T23:26:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>PHP</tag>
+         
+        <tag>NodeJS</tag>
+         
+        <tag>Etag</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140513/111300/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>个人网站架构设计(一)</title>
+        <pubTime>2014-05-13T03:13:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140515/013200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>个人网站架构设计(二)</title>
+        <pubTime>2014-05-14T17:32:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140704/060600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>个人网站架构设计(三) - 从设计到前端到后台</title>
+        <pubTime>2014-07-03T22:06:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140801/120400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>学习和面试，这两件事儿</title>
+        <pubTime>2014-08-01T04:04:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140803/010600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>谈谈前后端的分工协作</title>
+        <pubTime>2014-08-02T17:06:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140807/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>绝对定位，margin:0 auto，让元素竖直居中</title>
+        <pubTime>2014-08-06T16:00:00.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140807/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Object + Array</title>
+        <pubTime>2014-08-06T16:00:00.000Z</pubTime>
+        
+        <tag>hack</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140819/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>POST请求失败，变成options请求</title>
+        <pubTime>2014-08-18T16:00:00.000Z</pubTime>
+        
+        <tag>跨域</tag>
+         
+        <tag>ajax</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140820/110700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何让你的JavaScript代码更加语义化</title>
+        <pubTime>2014-08-20T03:07:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140821/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>IE下title没有childNodes</title>
+        <pubTime>2014-08-20T16:00:00.000Z</pubTime>
+        
+        <tag>IEbug</tag>
+         
+        <tag>firstChild</tag>
+         
+        <tag>childNodes</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140829/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>评《别太听上司的话》</title>
+        <pubTime>2014-08-28T16:00:00.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+        <tag>work</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140829/121500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>PC远程调试移动设备</title>
+        <pubTime>2014-08-29T04:15:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>移动端调试</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140829/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>￥符号，少了一横</title>
+        <pubTime>2014-08-28T16:00:00.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140907/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>window.open被浏览器拦截</title>
+        <pubTime>2014-09-06T16:00:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>浏览器拦截</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140917/135018/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>千岛湖土菜馆</title>
+        <pubTime>2014-09-17T05:50:18.000Z</pubTime>
+        
+        <tag>生活</tag>
+         
+        <tag>吃</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140921/100127/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>徽杭古道游记</title>
+        <pubTime>2014-09-21T02:01:27.000Z</pubTime>
+        
+        <tag>游记</tag>
+         
+        <tag>徽杭古道</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+             
+              <breadCrumb title="在路上" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140923/020211/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>闲扯三国</title>
+        <pubTime>2014-09-22T18:02:11.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>三国演义</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140928/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>为什么我们的技术“落后”于国外？</title>
+        <pubTime>2014-09-27T16:00:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140929/083900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>细嗅Promise</title>
+        <pubTime>2014-09-29T00:39:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>异步</tag>
+         
+        <tag>Promise</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20140929/021052/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>工作半年多了</title>
+        <pubTime>2014-09-28T18:10:52.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141002/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>我们在追求什么？</title>
+        <pubTime>2014-10-01T16:00:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141004/001712/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>不敢选择，在怕什么？</title>
+        <pubTime>2014-10-03T16:17:12.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141006/212915/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>爱是平淡的</title>
+        <pubTime>2014-10-06T13:29:15.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141009/234439/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>百阿，我们是怎么‘走’到一起的</title>
+        <pubTime>2014-10-09T15:44:39.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141030/095400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>我在阿里这仨月</title>
+        <pubTime>2014-10-30T01:54:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141101/113200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>谈谈D2</title>
+        <pubTime>2014-11-01T03:32:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141117/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>去掉IE11中input右侧的关闭叉叉</title>
+        <pubTime>2014-11-16T16:00:00.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141117/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>让身体残疾的人可以访问Web</title>
+        <pubTime>2014-11-16T16:00:00.000Z</pubTime>
+        
+        <tag>WAI</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网页无障碍" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E9%A1%B5%E6%97%A0%E9%9A%9C%E7%A2%8D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141118/233318/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>擦肩而过的都是过眼云烟</title>
+        <pubTime>2014-11-18T15:33:18.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141128/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>数据交给谁来解析，前端还是后端？</title>
+        <pubTime>2014-11-27T16:00:00.000Z</pubTime>
+        
+        <tag>模板渲染</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141204/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>textarea高度自适应</title>
+        <pubTime>2014-12-03T16:00:00.000Z</pubTime>
+        
+        <tag>问答</tag>
+         
+        <tag>textarea</tag>
+         
+        <tag>自适应</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141214/211524/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>种子，的眺望</title>
+        <pubTime>2014-12-14T13:15:24.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141218/000601/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>种子，的迷惘</title>
+        <pubTime>2014-12-17T16:06:01.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141221/042800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>也让盲人拥抱互联网</title>
+        <pubTime>2014-12-20T20:28:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>WAI</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20141223/205143/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>我最近两周的生活</title>
+        <pubTime>2014-12-23T12:51:43.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150101/195558/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>2015，充满未知</title>
+        <pubTime>2015-01-01T11:55:58.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150210/003852/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>我没什么可以失去的</title>
+        <pubTime>2015-02-09T16:38:52.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150326/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>gulp打包压缩css遇到的坑</title>
+        <pubTime>2015-03-25T16:00:00.000Z</pubTime>
+        
+        <tag>hack</tag>
+         
+        <tag>gulp</tag>
+         
+        <tag>minifycss</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150328/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>mac数据克隆</title>
+        <pubTime>2015-03-27T16:00:00.000Z</pubTime>
+        
+        <tag>mac</tag>
+         
+        <tag>TimeMachine</tag>
+         
+        <tag>数据备份</tag>
+         
+         
+           
+             
+              <breadCrumb title="苹果" url="https://www.onlystar.site/categories/%E8%8B%B9%E6%9E%9C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150330/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Mac下的效率工具autojump</title>
+        <pubTime>2015-03-29T16:00:00.000Z</pubTime>
+        
+        <tag>mac</tag>
+         
+        <tag>效率</tag>
+         
+        <tag>autojump</tag>
+         
+         
+           
+             
+              <breadCrumb title="苹果" url="https://www.onlystar.site/categories/%E8%8B%B9%E6%9E%9C/"/>
+          
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E8%8B%B9%E6%9E%9C/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150331/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>干掉浏览器中的自动填充</title>
+        <pubTime>2015-03-30T16:00:00.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>autocomplete</tag>
+         
+        <tag>自动填充</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150329/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>mac数据迁移xcode错误问题</title>
+        <pubTime>2015-03-28T16:00:00.000Z</pubTime>
+        
+        <tag>mac</tag>
+         
+        <tag>数据迁移</tag>
+         
+        <tag>xcode</tag>
+         
+         
+           
+             
+              <breadCrumb title="苹果" url="https://www.onlystar.site/categories/%E8%8B%B9%E6%9E%9C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150402/101600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>前人挖坑，后人填坑</title>
+        <pubTime>2015-04-02T02:16:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150403/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>根据访问属性进行差异化数据加载</title>
+        <pubTime>2015-04-02T16:00:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>first-time-visit</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150403/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Safari不认识type为search的input</title>
+        <pubTime>2015-04-02T16:00:00.000Z</pubTime>
+        
+        <tag>bug</tag>
+         
+        <tag>CSS</tag>
+         
+        <tag>safari</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150407/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>从Facebook跑来阿里的赵海平大叔，你要干啥？</title>
+        <pubTime>2015-04-06T16:00:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150413/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>this的指向</title>
+        <pubTime>2015-04-12T16:00:00.000Z</pubTime>
+        
+        <tag>this</tag>
+         
+        <tag>reference</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150413/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Xcode-select Error</title>
+        <pubTime>2015-04-12T16:00:00.000Z</pubTime>
+        
+        <tag>mac</tag>
+         
+        <tag>Xcode</tag>
+         
+        <tag>Error</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150415/000000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>sublime text 3 没有node的build-system</title>
+        <pubTime>2015-04-14T16:00:00.000Z</pubTime>
+        
+        <tag>ST3</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150424/122400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>对前端质量保障的思考</title>
+        <pubTime>2015-04-24T04:24:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150503/125600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端工程架构探讨</title>
+        <pubTime>2015-05-03T04:56:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150511/104700/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>修改Hosts为何不生效，是DNS缓存？</title>
+        <pubTime>2015-05-11T02:47:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>hosts</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150530/230537/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>无题</title>
+        <pubTime>2015-05-30T15:05:37.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150709/114000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何快速定位不小心暴露到全局的变量</title>
+        <pubTime>2015-07-09T03:40:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150812/093800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>细说 Data URI</title>
+        <pubTime>2015-08-12T01:38:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150817/095400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>iconfont的蜕化操作</title>
+        <pubTime>2015-08-17T01:54:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150820/122000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端代码异常日志收集与监控</title>
+        <pubTime>2015-08-20T04:20:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150821/110800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>让浏览器不再显示 https 页面中的 http 请求警报</title>
+        <pubTime>2015-08-21T03:08:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+        <tag>CSP</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20120916/012500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>平时积累的一点东西</title>
+        <pubTime>2012-09-15T17:25:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150831/210602/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>按照这样的流程玩博客，最后都到了这里</title>
+        <pubTime>2015-08-31T13:06:02.000Z</pubTime>
+        
+        <tag>blog</tag>
+         
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150902/155055/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>网站的SEO以及它和站长工具的之间秘密</title>
+        <pubTime>2015-09-02T07:50:55.000Z</pubTime>
+        
+        <tag>爬虫</tag>
+         
+        <tag>SEO</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150906/113354/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>用对 gitignore</title>
+        <pubTime>2015-09-06T03:33:54.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>gitignore</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150907/222417/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>unix下的文件操纵</title>
+        <pubTime>2015-09-07T14:24:17.000Z</pubTime>
+        
+        <tag>lsof</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="Linux" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150908/212757/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>nodejs给图片批量加水印</title>
+        <pubTime>2015-09-08T13:27:57.000Z</pubTime>
+        
+        <tag>npm</tag>
+         
+        <tag>水印</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="网络技术" url="https://www.onlystar.site/categories/JavaScript/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150909/103505/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>京东首页前端技术剖析与对比</title>
+        <pubTime>2015-09-09T02:35:05.000Z</pubTime>
+        
+        <tag>京东</tag>
+         
+        <tag>技术架构</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150911/020736/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>做回一天学生</title>
+        <pubTime>2015-09-10T18:07:36.000Z</pubTime>
+        
+        <tag>教师节</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150911/152623/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>祭忘年之交文</title>
+        <pubTime>2015-09-11T07:26:23.000Z</pubTime>
+        
+        <tag>生活</tag>
+         
+        <tag>祈祷</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150915/145518/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>嘿，多说，你咋了？要不咱换成 DISQUS 吧~</title>
+        <pubTime>2015-09-15T06:55:18.000Z</pubTime>
+        
+        <tag>多说评论</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150916/200353/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>大流量的下兜底容灾方案</title>
+        <pubTime>2015-09-16T12:03:53.000Z</pubTime>
+        
+        <tag>兜底容灾</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150918/223750/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>这两天说到的苹果软件中毒是个什么情况？</title>
+        <pubTime>2015-09-18T14:37:50.000Z</pubTime>
+        
+        <tag>苹果中毒</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150919/165219/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery插件 - 文章图片弹出放大效果</title>
+        <pubTime>2015-09-19T08:52:19.000Z</pubTime>
+        
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150922/093202/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>好吧，今天是我的生日</title>
+        <pubTime>2015-09-22T01:32:02.000Z</pubTime>
+        
+        <tag>生日</tag>
+         
+        <tag>展望</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150924/222713/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>使用 JavaScript 截屏</title>
+        <pubTime>2015-09-24T14:27:13.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>截屏</tag>
+         
+        <tag>html2cavans</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150925/102130/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>走进 phantomjs 嵌入式测试</title>
+        <pubTime>2015-09-25T02:21:30.000Z</pubTime>
+        
+        <tag>phantomjs</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150929/071505/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>新应用上线 Snippet</title>
+        <pubTime>2015-09-28T23:15:05.000Z</pubTime>
+        
+        <tag>snippets</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20150930/162336/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript 关于 for 循环中的疑问</title>
+        <pubTime>2015-09-30T08:23:36.000Z</pubTime>
+        
+        <tag>for</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151005/152939/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTTPS证书生成原理和部署细节</title>
+        <pubTime>2015-10-05T07:29:39.000Z</pubTime>
+        
+        <tag>HTTPS</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151007/235423/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>NodeJS的代码调试和性能调优</title>
+        <pubTime>2015-10-07T15:54:23.000Z</pubTime>
+        
+        <tag>nodejs</tag>
+         
+        <tag>debugger</tag>
+         
+        <tag>commandLine</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151014/122718/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>记一次淘宝首页奇葩的渲染问题</title>
+        <pubTime>2015-10-14T04:27:18.000Z</pubTime>
+        
+        <tag>bug</tag>
+         
+        <tag>渲染</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151015/155957/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>三步，将多说评论迁移到 disqus</title>
+        <pubTime>2015-10-15T07:59:57.000Z</pubTime>
+        
+        <tag>disqus</tag>
+         
+        <tag>多说</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151022/174826/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>你所不知道的 HSTS</title>
+        <pubTime>2015-10-22T09:48:26.000Z</pubTime>
+        
+        <tag>HSTS</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151107/121214/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>将你家里的电脑连上广域网</title>
+        <pubTime>2015-11-07T04:12:14.000Z</pubTime>
+        
+        <tag>DDNS</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络技术" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151113/144426/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>淘宝 UED 前端团队究竟好不好？值得去吗？</title>
+        <pubTime>2015-11-13T06:44:26.000Z</pubTime>
+        
+        <tag>淘宝前端团队</tag>
+         
+        <tag>Taobao FED</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151116/223059/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>图片脚本懒加载 - Lazyload</title>
+        <pubTime>2015-11-16T14:30:59.000Z</pubTime>
+        
+        <tag>lazyload</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151120/182521/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>换新的输入法，Rime</title>
+        <pubTime>2015-11-20T10:25:21.000Z</pubTime>
+        
+        <tag>Rime</tag>
+         
+        <tag>鼠须管</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20151210/224655/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>近几年前端技术盘点以及 2016 年技术发展方向</title>
+        <pubTime>2015-12-10T14:46:55.000Z</pubTime>
+        
+        <tag>技术前瞻</tag>
+         
+        <tag>前端发展</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络技术" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160103/231412/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>时间都去哪儿了？</title>
+        <pubTime>2016-01-03T15:14:12.000Z</pubTime>
+        
+        <tag>展望</tag>
+         
+        <tag>总结</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160108/105422/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>简述淘宝团队的技术沉淀和对外分享</title>
+        <pubTime>2016-01-08T02:54:22.000Z</pubTime>
+        
+        <tag>分享</tag>
+         
+        <tag>团队</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160110/235633/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>简述 OAuth 2.0 的运作流程</title>
+        <pubTime>2016-01-10T15:56:33.000Z</pubTime>
+        
+        <tag>OAuth2</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160114/215608/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>2016，低版本浏览器活不过这一年</title>
+        <pubTime>2016-01-14T13:56:08.000Z</pubTime>
+        
+        <tag>低版本浏览器</tag>
+         
+        <tag>升级浏览器</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160214/100000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>开启命令行下的社交</title>
+        <pubTime>2016-02-14T02:00:00.000Z</pubTime>
+        
+        <tag>Mojo-WebQQ</tag>
+         
+        <tag>IRC</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="网络技术" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="Linux" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/Linux/"/>
+          
+             
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160216/200000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>当前端也拥有 Server 的能力</title>
+        <pubTime>2016-02-16T12:00:00.000Z</pubTime>
+        
+        <tag>Cache</tag>
+         
+        <tag>ServiceWorker</tag>
+         
+        <tag>Fetch</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160220/230856/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>页面跳转时，统计数据丢失问题探讨</title>
+        <pubTime>2016-02-20T15:08:56.000Z</pubTime>
+        
+        <tag>Beacon API</tag>
+         
+        <tag>navigator.sendBeacon</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160223/232111/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>WiFi 万能钥匙原理和危害探究</title>
+        <pubTime>2016-02-23T15:21:11.000Z</pubTime>
+        
+        <tag>WiFi万能钥匙</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160227/231900/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>谈一谈博客的著作版权问题</title>
+        <pubTime>2016-02-27T15:19:00.000Z</pubTime>
+        
+        <tag>爬虫</tag>
+         
+        <tag>Creative Commons</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160228/232042/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>信息无障碍不是献爱心更不是做公益慈善</title>
+        <pubTime>2016-02-28T15:20:42.000Z</pubTime>
+        
+        <tag>信息无障碍</tag>
+         
+         
+           
+             
+              <breadCrumb title="网页无障碍" url="https://www.onlystar.site/categories/%E7%BD%91%E9%A1%B5%E6%97%A0%E9%9A%9C%E7%A2%8D/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E7%BD%91%E9%A1%B5%E6%97%A0%E9%9A%9C%E7%A2%8D/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160305/162623/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>认识网页无障碍</title>
+        <pubTime>2016-03-05T08:26:23.000Z</pubTime>
+        
+        <tag>网页无障碍</tag>
+         
+         
+           
+             
+              <breadCrumb title="网页无障碍" url="https://www.onlystar.site/categories/%E7%BD%91%E9%A1%B5%E6%97%A0%E9%9A%9C%E7%A2%8D/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E9%A1%B5%E6%97%A0%E9%9A%9C%E7%A2%8D/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160309/195906/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>多 SSH Key 管理技巧与 Git 多账户登录问题</title>
+        <pubTime>2016-03-09T11:59:06.000Z</pubTime>
+        
+        <tag>SSH</tag>
+         
+        <tag>GIT</tag>
+         
+        <tag>多账户登录</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160319/152156/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>对系统链路问题排查的一些看法</title>
+        <pubTime>2016-03-19T07:21:56.000Z</pubTime>
+        
+        <tag>链路问题排查</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="网络技术" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160331/135500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>一起来看看淘宝首页的个性化</title>
+        <pubTime>2016-03-31T05:55:00.000Z</pubTime>
+        
+        <tag>个性化</tag>
+         
+        <tag>淘宝首页</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160401/201100/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>淘宝首页性能优化实践</title>
+        <pubTime>2016-04-01T12:11:00.000Z</pubTime>
+        
+        <tag>淘宝首页</tag>
+         
+        <tag>性能优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160406/122020/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Unix/Linux 系统中的 Operation Not Permitted 问题</title>
+        <pubTime>2016-04-06T04:20:20.000Z</pubTime>
+        
+        <tag>Operation Not Permitted</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+             
+              <breadCrumb title="Linux" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/Linux/"/>
+          
+             
+              <breadCrumb title="苹果" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/Linux/%E8%8B%B9%E6%9E%9C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160418/005112/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript 被忽视的细节</title>
+        <pubTime>2016-04-17T16:51:12.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/JavaScript/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160424/005647/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>细说 CA 和证书</title>
+        <pubTime>2016-04-23T16:56:47.000Z</pubTime>
+        
+        <tag>Catificate Authority</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160428/200023/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript 代码执行效率对比工具</title>
+        <pubTime>2016-04-28T12:00:23.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>Performance</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160428/120000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>元素选择器 - Mini Query</title>
+        <pubTime>2016-04-28T04:00:00.000Z</pubTime>
+        
+        <tag>Mini Query</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160520/120120/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Kindle 电子书生成工具</title>
+        <pubTime>2016-05-20T04:01:20.000Z</pubTime>
+        
+        <tag>Kindle</tag>
+         
+        <tag>kindleGen</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160530/003012/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>H5 Crash 研究</title>
+        <pubTime>2016-05-29T16:30:12.000Z</pubTime>
+        
+        <tag>H5</tag>
+         
+        <tag>无线</tag>
+         
+        <tag>Crash</tag>
+         
+         
+           
+             
+              <breadCrumb title="无线技术" url="https://www.onlystar.site/categories/%E6%97%A0%E7%BA%BF%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E6%97%A0%E7%BA%BF%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160602/120000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>聊一聊淘宝首页和它背后的一套</title>
+        <pubTime>2016-06-02T04:00:00.000Z</pubTime>
+        
+        <tag>淘宝首页</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160613/001034/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>谈一谈越来越难做的前端</title>
+        <pubTime>2016-06-12T16:10:34.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160707/194439/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>招行香港一卡通办理和使用</title>
+        <pubTime>2016-07-07T11:44:39.000Z</pubTime>
+        
+        <tag>招行香港一卡通</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="在路上" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160709/143040/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>ECMAScript 6 扫盲</title>
+        <pubTime>2016-07-09T06:30:40.000Z</pubTime>
+        
+        <tag>ES6</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160711/022935/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>谈谈我这三年在技术上的成长</title>
+        <pubTime>2016-07-10T18:29:35.000Z</pubTime>
+        
+        <tag>成长</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160713/001549/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>我需要学习 ECMAScript 6 么？</title>
+        <pubTime>2016-07-12T16:15:49.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>ECMAScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160714/000001/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>在公众号中优雅地呈现代码</title>
+        <pubTime>2016-07-13T16:00:01.000Z</pubTime>
+        
+        <tag>微信公众号</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160714/095609/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>向小胡子哥提问</title>
+        <pubTime>2016-07-14T01:56:09.000Z</pubTime>
+        
+        <tag>提问</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160721/222937/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>工作五年，后面四年重复着第一年的活儿？</title>
+        <pubTime>2016-07-21T14:29:37.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160802/010230/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>入 linode 之前</title>
+        <pubTime>2016-08-01T17:02:30.000Z</pubTime>
+        
+        <tag>linode</tag>
+         
+        <tag>信用卡</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160803/210840/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Shadowsocks 原理简介及安装指南</title>
+        <pubTime>2016-08-03T13:08:40.000Z</pubTime>
+        
+        <tag>Shadowsocks</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160804/225409/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>有意思的 git-log</title>
+        <pubTime>2016-08-04T14:54:09.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160811/202440/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>聊一聊排序算法</title>
+        <pubTime>2016-08-11T12:24:40.000Z</pubTime>
+        
+        <tag>排序算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="算法" url="https://www.onlystar.site/categories/%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160823/010513/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>构建一个安全的 JavaScript 沙箱</title>
+        <pubTime>2016-08-22T17:05:13.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+        <tag>沙箱</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160825/013150/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>详解代理自动配置 PAC</title>
+        <pubTime>2016-08-24T17:31:50.000Z</pubTime>
+        
+        <tag>proxy</tag>
+         
+        <tag>翻墙</tag>
+         
+        <tag>pac</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="网络安全" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160927/005923/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何做好一名实习生</title>
+        <pubTime>2016-09-26T16:59:23.000Z</pubTime>
+        
+        <tag>实习生</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20160928/230523/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>揭秘 0.1 + 0.2 != 0.3</title>
+        <pubTime>2016-09-28T15:05:23.000Z</pubTime>
+        
+        <tag>IEEE754</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20161021/032250/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>谈一谈我在阿里的成长</title>
+        <pubTime>2016-10-20T19:22:50.000Z</pubTime>
+        
+        <tag>成长</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+             
+              <breadCrumb title="笔记本" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20161119/235146/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx 配置简述</title>
+        <pubTime>2016-11-19T15:51:46.000Z</pubTime>
+        
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+             
+              <breadCrumb title="网络技术" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20161226/123959/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何设计友好的 WebHook</title>
+        <pubTime>2016-12-26T04:39:59.000Z</pubTime>
+        
+        <tag>WebHook</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170116/205709/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>聊聊设计模式（1）：桥接模式</title>
+        <pubTime>2017-01-16T12:57:09.000Z</pubTime>
+        
+        <tag>设计模式</tag>
+         
+        <tag>桥接模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170204/183144/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>聊聊设计模式（2）：享元模式</title>
+        <pubTime>2017-02-04T10:31:44.000Z</pubTime>
+        
+        <tag>设计模式</tag>
+         
+        <tag>享元模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170207/083503/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>聊聊设计模式（3）：门面模式</title>
+        <pubTime>2017-02-07T00:35:03.000Z</pubTime>
+        
+        <tag>设计模式</tag>
+         
+        <tag>门面模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170213/083347/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>因小程序卸载的软件，重新安装回来了么？</title>
+        <pubTime>2017-02-13T00:33:47.000Z</pubTime>
+        
+        <tag>小程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170214/084745/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>聊聊设计模式（4）：装饰模式</title>
+        <pubTime>2017-02-14T00:47:45.000Z</pubTime>
+        
+        <tag>设计模式</tag>
+         
+        <tag>装饰模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170219/214103/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>心流，从工作中找到快感</title>
+        <pubTime>2017-02-19T13:41:03.000Z</pubTime>
+        
+        <tag>心流</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170222/230132/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>知识付费，小密圈能走多远？</title>
+        <pubTime>2017-02-22T15:01:32.000Z</pubTime>
+        
+        <tag>小密圈</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170321/221826/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>多说即将关闭，评论迁至何处？</title>
+        <pubTime>2017-03-21T14:18:26.000Z</pubTime>
+        
+        <tag>多说</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170401/120002/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>聊聊 HSTS 下的 HTTPS 降级问题</title>
+        <pubTime>2017-04-01T04:00:02.000Z</pubTime>
+        
+        <tag>HTTPS</tag>
+         
+        <tag>HSTS</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络技术" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170403/101331/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>关于开源精神和小密圈</title>
+        <pubTime>2017-04-03T02:13:31.000Z</pubTime>
+        
+        <tag>吐槽</tag>
+         
+         
+           
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170421/122328/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何快速上手一款 IDE - VSC 配置指南和插件推荐</title>
+        <pubTime>2017-04-21T04:23:28.000Z</pubTime>
+        
+        <tag>VSC</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170426/120811/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>熟练工如何拔高 & 零碎知识的整理</title>
+        <pubTime>2017-04-26T04:08:11.000Z</pubTime>
+        
+        <tag>小密圈</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170427/125000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>理解 Gulp 和 Webpack</title>
+        <pubTime>2017-04-27T04:50:00.000Z</pubTime>
+        
+        <tag>Gulp</tag>
+         
+        <tag>Webpack</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="前端杂烩" url="https://www.onlystar.site/categories/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170501/232500/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Wordpress 本地调试</title>
+        <pubTime>2017-05-01T15:25:00.000Z</pubTime>
+        
+        <tag>Wordpress</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170829/195908/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>三年醇</title>
+        <pubTime>2017-08-29T11:59:08.000Z</pubTime>
+        
+        <tag>三年</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="在路上" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
+          
+             
+              <breadCrumb title="观点和感想" url="https://www.onlystar.site/categories/%E9%9A%8F%E7%AC%94/%E5%9C%A8%E8%B7%AF%E4%B8%8A/%E8%A7%82%E7%82%B9%E5%92%8C%E6%84%9F%E6%83%B3/"/>
+          
+             
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20120916/010200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>ajax请求管理</title>
+        <pubTime>2012-09-15T17:02:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170604/130600/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>通过 admin 后台管理 hexo 博客</title>
+        <pubTime>2017-06-04T05:06:00.000Z</pubTime>
+        
+        <tag>前端杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂谈" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E8%B0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170616/162400/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>BitTorrent DHT 协议简述</title>
+        <pubTime>2017-06-16T08:24:00.000Z</pubTime>
+        
+        <tag>DHT</tag>
+         
+        <tag>BitTorrent</tag>
+         
+         
+           
+             
+              <breadCrumb title="网络交互" url="https://www.onlystar.site/categories/%E7%BD%91%E7%BB%9C%E4%BA%A4%E4%BA%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170606/144621/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>深入理解 Node Stream 内部机制</title>
+        <pubTime>2017-06-06T06:46:21.000Z</pubTime>
+        
+        <tag>前端杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="前端杂谈" url="https://www.onlystar.site/categories/JavaScript/%E5%89%8D%E7%AB%AF%E6%9D%82%E8%B0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170603/142800/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>我眼中的前端九段</title>
+        <pubTime>2017-06-03T06:28:00.000Z</pubTime>
+        
+        <tag>前端杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂谈" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E8%B0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20170604/123000/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>为 Hexo 博客增加一个站内搜索</title>
+        <pubTime>2017-06-04T04:30:00.000Z</pubTime>
+        
+        <tag>前端杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端杂谈" url="https://www.onlystar.site/categories/%E5%89%8D%E7%AB%AF%E6%9D%82%E8%B0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <url>
+    <loc>https://www.onlystar.site/all/20120917/093200/</loc>
+    <lastmod>2017-08-31T06:52:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>javascript的灵活性</title>
+        <pubTime>2012-09-17T01:32:00.000Z</pubTime>
+        
+        <tag>tech</tag>
+         
+        <tag>cnblogs</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://www.onlystar.site/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="杂物间" url="https://www.onlystar.site/categories/JavaScript/%E6%9D%82%E7%89%A9%E9%97%B4/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 </urlset>

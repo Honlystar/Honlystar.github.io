@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript模板引擎原理，几行代码的事儿 | 星空守候的博客</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+  <meta name="author" content="https://plus.google.com/112634278852964994392?hl=zh-cn">
+  <meta name="email" content="barret.china@gmail.com">
+  <meta name="description" content="本文为归档内容,原始地址在 博客园.一、前言什么是模板引擎，说的简单点，就是一个字符串中有几个变量待定。比如：1var tpl = &amp;apos;Hei, my name is &amp;lt;%name%&amp;gt;, and I\&amp;apos;m &amp;lt;%age%&amp;gt; years old.&amp;apos;;通">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="JavaScript模板引擎原理，几行代码的事儿 | 星空守候的博客">
+  <meta property="og:url" content="https://www.onlystar.site/all/20131203/043500/">
+  <meta property="og:site_name" content="JavaScript模板引擎原理，几行代码的事儿">
+  <meta property="og:description" content="本文为归档内容,原始地址在 博客园.一、前言什么是模板引擎，说的简单点，就是一个字符串中有几个变量待定。比如：1var tpl = &amp;apos;Hei, my name is &amp;lt;%name%&amp;gt;, and I\&amp;apos;m &amp;lt;%age%&amp;gt; years old.&amp;apos;;通">
+  <meta name="generator" content="https://hexo.io" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <link href="https://www.onlystar.site/blogimgs/app-icon.png" rel="apple-touch-icon-precomposed">
+  <link rel="shoticon" href="https://www.onlystar.site/favicon.ico" type="image/x-icon">
+  <link rel="alternate" type="application/rss+xml" href="https://www.onlystar.site/rss2.xml" title="星空守候的博客" />
+  <link rel="prev" href="https://www.onlystar.site/all/20131206/101400/" title="PJAX的实现与应用" />
+  <link rel="next" href="https://www.onlystar.site/all/20131128/094600/" title="ECMAScript 6中的let和const关键词" />
+  <link rel="start" href="https://www.onlystar.site/entry/" title="Blog Entry" />
+  <link rel="stylesheet" href="/public/css/style.css?v=20170604">
+</head>
+<span class="aria-readonly" tabindex="0" aria-hidden="true">小胡子哥的博客良好支持读屏软件阅读，请放心使用。</span>
+
+
+<body>
+  <div class="rainbow"></div>
+  <div class="container">
+  <span class="local-search local-search-google local-search-plugin" style="position:absolute;right: 20px;top:30px;">
+  <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+  <i class="icon" aria-hidden="true" title="点击进入 Google 搜索">&#x2708;</i>
+  <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
+  <div class="article" itemscope itemtype="http://schema.org/Article">
+    <div class="post">
+      <div class="bread">
+        <a href="/">小胡子哥的个人博客</a> »
+        <a href="/entry/">博客</a> »
+        
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/前端杂烩/">前端杂烩</a>
+
+
+      </div>
+      <div class="post-title-wrapper">
+        <h1 class="post-title" itemprop="name">JavaScript模板引擎原理，几行代码的事儿<img src="https://game.weixin.qq.com/cgi-bin/comm/qrcode?s=50&m=1&d=http:https://www.onlystar.site/all/20131203/043500/" alt="扫码分享" onerror="this.style.display='none';"></h1>
+        <a href="/about/"><img src="/blogimgs/avatar.png" alt="rain" /></a>
+      </div>
+      <div class="post-info">
+        <span>作者: <a href="/about/">rain</a></span>
+        <span>
+          <time itemprop="timeCreated" aria-hidden="true">2013-12-03 04:35:00</time>
+          <span class="aria-readonly">本文发布时间为2013年12月03日04时35分00秒</span>
+        </span>
+        <span>分类: 
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/前端杂烩/">前端杂烩</a>
+
+</span>
+        <span tabindex="0" aria-hidden="true">标签: 
+<a class="article-tag-link" href="/tags/cnblogs/">cnblogs</a>, <a class="article-tag-link" href="/tags/tech/">tech</a>
+</span>
+        <span class="aria-readonly">下面是正文内容</span>
+        <span tabindex="0" aria-hidden="true">评论数: <a href="#comments"
+                      class="ds-thread-count hash-to-comments disqus-comment-count"
+                      data-thread-key="cb-principle-of-javascript-template"
+                      data-disqus-identifier="cb-principle-of-javascript-template"
+                      id="changyan_count_unit"></a></span>
+        <span tabindex="0" aria-hidden="true" id="busuanzi_container_site_pv">热度: <span id="busuanzi_value_page_pv"></span></span>
+      </div>
+      <div class="post-content" itemprop="articleBody">
+        <div class="shit-spider" title="防爬虫不注明出处" tabindex="0" aria-hidden="true">
+          <p>原文地址：<a href="https://www.onlystar.site/all/20131203/043500/">https://www.onlystar.site/all/20131203/043500/</a>，<a href="https://www.onlystar.site/all/20131203/043500/#comments">参与评论</a></p>
+          <img src="//www.barretlee.com/blogimgs/avatar.png" width="150">
+        </div>
+        <div class="history-article">本文为归档内容,原始地址在 <a href="http://www.cnblogs.com/hustskyking/archive/2013/12/03/principle-of-javascript-template.html" target="_blank">博客园</a>.</div>
+
+<p></p><h3>一、前言</h3><p></p>
+<p>什么是模板引擎，说的简单点，就是一个字符串中有几个变量待定。比如：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var tpl = &apos;Hei, my name is &lt;%name%&gt;, and I\&apos;m &lt;%age%&gt; years old.&apos;;</div></pre></td></tr></table></figure>
+<p>通过模板引擎函数把数据塞进去，</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var data = &#123;</div><div class="line">    &quot;name&quot;: &quot;Barret Lee&quot;,</div><div class="line">    &quot;age&quot;: &quot;20&quot;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var result = tplEngine(tpl, data);</div><div class="line">//Hei, my name is Barret Lee, and I&apos;m 20 years old.</div></pre></td></tr></table></figure>
+<p>那这玩意儿有什么作用呢？其实他就是一个预处理器（preprocessor），搞php开发的童鞋对Smarty必然是十分熟悉，Smarty是一个php模板引擎，tpl中待处理的字符通过数据匹配然后输出相应的html代码，加之比较给力的缓存技术，其速度和易用性是非常给力的！JS Template也是一样的，我们的数据库里保存着数以千万计的数据，而每一条数据都是通过同一种方式输入，就拿上面的例子来说，我们不可能在数据库里存几千条”Hei, my name…”，而是只保存对应的name和age，通过模板输出结果。</p><br><p>JS模板引擎应该做哪些事情？看看下面一串代码：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var tpl = &apos;&lt;% for(var i = 0; i &lt; this.posts.length; i++) &#123;&apos; +　</div><div class="line">    &apos;var post = posts[i]; %&gt;&apos; +</div><div class="line">    &apos;&lt;% if(!post.expert)&#123; %&gt;&apos; +</div><div class="line">        &apos;&lt;span&gt;post is null&lt;/span&gt;&apos; +</div><div class="line">    &apos;&lt;% &#125; else &#123; %&gt;&apos; +</div><div class="line">        &apos;&lt;a href=&quot;#&quot;&gt;&lt;% post.expert %&gt; at &lt;% post.time %&gt;&lt;/a&gt;&apos; +</div><div class="line">    &apos;&lt;% &#125; %&gt;&apos; +</div><div class="line">&apos;&lt;% &#125; %&gt;&apos;;</div></pre></td></tr></table></figure>
+<p><span>一个基本的模板引擎至少可以保证上面的代码可以正常解析。如送入的数据是：</span></p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var data = &#123;</div><div class="line">    &quot;posts&quot;: [&#123;</div><div class="line">        &quot;expert&quot;: &quot;content 1&quot;,</div><div class="line">        &quot;time&quot;: &quot;yesterday&quot;</div><div class="line">    &#125;,&#123;</div><div class="line">        &quot;expert&quot;: &quot;content 2&quot;,</div><div class="line">        &quot;time&quot;: &quot;today&quot;</div><div class="line">    &#125;,&#123;</div><div class="line">        &quot;expert&quot;: &quot;content 3&quot;,</div><div class="line">        &quot;time&quot;: &quot;tomorrow&quot;</div><div class="line">    &#125;,&#123;</div><div class="line">        &quot;expert&quot;: &quot;&quot;,</div><div class="line">        &quot;time&quot;: &quot;eee&quot;</div><div class="line">    &#125;]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>&nbsp;可以输出：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;#&quot;&gt;content 1 at yesterday&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot;&gt;content 2 at today&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot;&gt;content 3 at tomorrow&lt;/a&gt;</div><div class="line">&lt;span&gt;post is null&lt;/span&gt;</div></pre></td></tr></table></figure>
+<p><span>先戳这个</span><a href="http://qianduannotes.duapp.com/demo/javascript-template.html" target="_blank">demo</a>看看<span>。</span>&nbsp;</p><br><p>下面就具体说说这个模板引擎的原理是啥样的。</p>
+
+
+<p></p><h3>二、JS模板引擎的实现原理</h3><p></p>
+<h4><strong>1.正则抠出要匹配的内容</strong></h4><br><p>针对这一串代码，通过正则获取内容</p><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var tpl = &apos;Hei, my name is &lt;%name%&gt;, and I\&apos;m &lt;%age%&gt; years old.&apos;;</div><div class="line">var data = &#123;</div><div class="line">    &quot;name&quot;: &quot;Barret Lee&quot;,</div><div class="line">    &quot;age&quot;: &quot;20&quot;</div><div class="line">&#125;;</div></pre></td></tr></table></figure><br><br><p>&nbsp;最简单的方式就是通过replace函数了：</p><br><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var result = tpl.replace(/&lt;%([^%&gt;]+)?%&gt;/g, function(s0, s1)&#123;</div><div class="line">    return data[s1];</div><div class="line">&#125;);</div></pre></td></tr></table></figure><br><br><p>&nbsp;通过正则替换，我们很轻松的拿到了result，你可以去试一试，他正式我们想要的结果。但是这里又有了一个问题，改一下data和tpl，</p><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var tpl = &apos;Hei, my name is &lt;%name%&gt;, and I\&apos;m &lt;%info.age%&gt; years old.&apos;;</div><div class="line">var data = &#123;</div><div class="line">    &quot;name&quot;: &quot;Barret Lee&quot;,</div><div class="line">    &quot;info&quot;: &#123; age&quot;: &quot;20&quot;&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure><br><br><p>&nbsp;再用上面的方式去获取结果，呵呵，不行了吧~ 这里data[“info.age”]本身就是undefined，所以我们需要换一种方式来处理这个问题，那就是将它转换成真正的JS代码。如：</p><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">return &apos;Hei, my name is &apos; + data.name + &apos;, and I\&apos;m &apos; + data.info.age&apos; + &apos; years old.&apos;</div></pre></td></tr></table></figure><br><br><p>&nbsp;但是接着又有一个问题来了，当我们的代码中出现for循环和if的时候，上面的转换明显是不起作用的，如：</p><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var tpl = &apos;Posts: &apos; +</div><div class="line">          &apos;&lt;% for(var=&quot;&quot; i=&quot;0;&quot; &lt;=&quot;&quot; post.length;=&quot;&quot; i++)=&quot;&quot; &#123;&apos;+=&quot;&quot; &apos;&lt;a=&quot;&quot; href=&quot;#&quot;&gt;&lt;% post[i].expert=&quot;&quot; %=&quot;&quot;&gt;&apos; +</div><div class="line">          &apos;&lt;% &#125;=&quot;&quot; %=&quot;&quot;&gt;&apos;</div></pre></td></tr></table></figure><br><br><p>&nbsp;如果继续采用上面的方式，得到的结果便是：</p><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">return &apos;Posts: &apos; +</div><div class="line">       for(var i = 0; i &lt; post.length; i++) &#123; +</div><div class="line">         &apos;&lt;a href=&quot;#&quot;&gt;&apos; + post[i].exper + &apos;&lt;/a&gt;&apos; +</div><div class="line">       &#125;</div></pre></td></tr></table></figure><br><br><p>&nbsp;这显然不是我们愿意看到的，稍微观察一下上面的结构，如果可以返回一个这样的结果也挺不错哦：</p><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&apos;Posts: &apos;</div><div class="line">for(var i = 0; i &lt; post.length; i++) &#123;</div><div class="line">    &apos;&lt;a href=&quot;#&quot;&gt;&apos; + post[i].exper + &apos;&lt;/a&gt;&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure><br><br><p>&nbsp;但是我们需要得到的是一个字符串，而不是上面这样零散的片段，因此可以把这些东西装入数组中。</p><br><h4>2.装入数组</h4>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var r = [];</div><div class="line">r.push(&apos;Posts: &apos; );</div><div class="line">r.push(for(var i = 0; i &lt; post.length; i++) &#123;);</div><div class="line">r.push(&apos;&lt;a href=&quot;#&quot;&gt;&apos;);</div><div class="line">r.push(post[i].exper);</div><div class="line">r.push(&apos;&lt;/a&gt;&apos;);</div><div class="line">r.push(&#125;);</div></pre></td></tr></table></figure>
+<p>&nbsp;有人看到上面的代码就要笑了，第三行和最后一行代码的逻辑明显是不正确的嘛，那肿么办呢？呵呵，很简单，不放进去就行了呗，</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var r = [];</div><div class="line">r.push(&apos;Posts: &apos; );</div><div class="line">for(var i = 0; i &lt; post.length; i++) &#123;</div><div class="line">    r.push(&apos;&lt;a href=&quot;#&quot;&gt;&apos;);</div><div class="line">    r.push(post[i].exper);</div><div class="line">    r.push(&apos;&lt;/a&gt;&apos;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>&nbsp;这样的逻辑就十分完善了，不存在太多的漏洞，但是这个转化的过程是如何实现的？我们必须还是要写一个解析的模板函数出来。</p><br><h4>3.分辨js逻辑部分</h4><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var r = [];</div><div class="line">tpl.replace(/&lt;%([^%&gt;]+)?%&gt;/g, function(s0, s1)&#123;</div><div class="line">    //完蛋了，这里貌似又要回到上面那可笑的逻辑有错误的一步啦... 该怎么处理比较好？</div><div class="line">&#125;);</div></pre></td></tr></table></figure><br><br><p>&nbsp;完蛋了，这里貌似又要回到上面那可笑的逻辑有错误的一步啦… 该怎么处理比较好？我们知道，JS给我们提供了构造函数的\类”，</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var fn = new Function(&quot;data&quot;,</div><div class="line">    &quot;var r = []; for(var i in data)&#123; r.push(data[i]); &#125; return r.join(&apos; &apos;)&quot;);</div><div class="line">fn(&#123;&quot;name&quot;: &quot;barretlee&quot;, &quot;age&quot;: &quot;20&quot;&#125;); // barretlee 20</div></pre></td></tr></table></figure>
+<p>&nbsp;知道了这个就好办了，我们可以把逻辑部分和非逻辑部分的代码链接成一个字符串，然后利用类似fn的函数直接编译代码。而<code>/&lt;%([^%&gt;]+)?%&gt;/g</code>，这一个正则只能把逻辑部分匹配出来，要想把所有的代码都组合到一起，必须还得匹配非逻辑部分代码。replace函数虽然很强大，他也可以完成这个任务，但是实现的逻辑比较晦涩，所以我们换另外一种方式来处理。</p><br><p>先看一个简单的例子：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var reg = /&lt;%([^%&gt;]+)?%&gt;/g;</div><div class="line">var tpl = &apos;Hei, my name is &lt;%name%&gt;, and I\&apos;m &lt;%age%&gt; years old.&apos;;</div><div class="line">var match = reg.exec(tpl);</div><div class="line">console.log(match);</div></pre></td></tr></table></figure>
+<p>&nbsp;看到的是：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">    0: &quot;&lt;%name%&gt;&quot;,</div><div class="line">    1: name,</div><div class="line">    index: 16,</div><div class="line">    input: &quot;Hei, my name is &lt;%name%&gt;, and I&apos;m &lt;%age%&gt; years old.&quot;</div><div class="line">    length: 2</div><div class="line">]</div></pre></td></tr></table></figure>
+<p>&nbsp;这。。。我们可是想得到所有的匹配啊，他竟然只获取了name而忽略了后面的age，好吧，对正则稍微熟悉点的童鞋一定会知道应该这样处理：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var reg = /&lt;%([^%&gt;]+)?%&gt;/g;</div><div class="line">while(match = reg.exec(tpl)) &#123;</div><div class="line">    console.log(match);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>&nbsp;关于正则表达式的内容就不在这里细说了，有兴趣的同学可以多去了解下match,exec,search等正则的相关函数。这里主要是靠match的index属性来定位遍历位置，然后利用while循环获取所有的内容。</p><br><h4>4.引擎函数</h4><br><p>所以我们的引擎函数雏形差不多就出来了：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">var tplEngine = function(tpl, data)&#123;</div><div class="line">    var reg = /&lt;%([^%&gt;]+)?%&gt;/g,</div><div class="line">            code = &apos;var r=[];\n&apos;,</div><div class="line">            cursor = 0;  //主要的作用是定位代码最后一截</div><div class="line">    var add = function(line) &#123;</div><div class="line">        code += &apos;r.push(&quot;&apos; + line.replace(/&quot;/g, &apos;\\&quot;&apos;) + &apos;&quot;);\n&apos;;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    while(match = reg.exec(tpl)) &#123;</div><div class="line">        add(tpl.slice(cursor, match.index)); //添加非逻辑部分</div><div class="line">        add(match[1]);  //添加逻辑部分 match[0] = &quot;&lt;%&quot; +=&quot;&quot; match[1]=&quot;&quot; &quot;%=&quot;&quot;&gt;&quot;;</div><div class="line">        cursor = match.index + match[0].length;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    add(tpl.substr(cursor, tpl.length - cursor)); //代码的最后一截 如:&quot; years old.&quot;</div><div class="line"></div><div class="line">    code += &apos;return r.join(&quot;&quot;);&apos;; // 返回结果，在这里我们就拿到了装入数组后的代码</div><div class="line">    console.log(code);</div><div class="line"></div><div class="line">    return tpl;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>&nbsp;这样一来，测试一个小demo:</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"> var tpl = &apos;&lt;% for(var=&quot;&quot; i=&quot;0;&quot; &lt;=&quot;&quot; this.posts.length;=&quot;&quot; i++)=&quot;&quot; &#123;&apos;=&quot;&quot; +　=&quot;&quot; &apos;var=&quot;&quot; post=&quot;posts[i];&quot; %=&quot;&quot;&gt;&apos; +</div><div class="line">        &apos;&lt;% if(!post.expert)&#123;=&quot;&quot; %=&quot;&quot;&gt;&apos; +</div><div class="line">            &apos;&lt;span&gt;post is null&lt;/span&gt;&apos; +</div><div class="line">        &apos;&lt;% &#125;=&quot;&quot; else=&quot;&quot; &#123;=&quot;&quot; %=&quot;&quot;&gt;&apos; +</div><div class="line">            &apos;&lt;a href=&quot;#&quot;&gt;&lt;% post.expert=&quot;&quot; %=&quot;&quot;&gt; at &lt;% post.time=&quot;&quot; %=&quot;&quot;&gt;&lt;/%&gt;&lt;/%&gt;&lt;/a&gt;&apos; +</div><div class="line">        &apos;&lt;% &#125;=&quot;&quot; %=&quot;&quot;&gt;&apos; +</div><div class="line">    &apos;&lt;% &#125;=&quot;&quot; %=&quot;&quot;&gt;&apos;;</div><div class="line">tplEngine(tpl, data);</div></pre></td></tr></table></figure>
+<p>&nbsp;返回的结果让人很满意：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var r=[];</div><div class="line">r.push(&quot;&quot;);</div><div class="line">r.push(&quot; for(var i = 0; i &lt; this.posts.length; i++) &#123;var post = posts[i]; &quot;);</div><div class="line">r.push(&quot;&quot;);</div><div class="line">r.push(&quot; if(!post.expert)&#123; &quot;);</div><div class="line">r.push(&quot;&lt;span&gt;post is null&lt;/span&gt;&quot;);</div><div class="line">r.push(&quot; &#125; else &#123; &quot;);</div><div class="line">r.push(&quot;&lt;a href=&quot;\&quot;#\&quot;&quot;&gt;&quot;);</div><div class="line">r.push(&quot; post.expert &quot;);</div><div class="line">r.push(&quot; at &quot;);</div><div class="line">r.push(&quot; post.time &quot;);</div><div class="line">r.push(&quot;&lt;/a&gt;&quot;);</div><div class="line">r.push(&quot; &#125; &quot;);</div><div class="line">r.push(&quot;&quot;);</div><div class="line">r.push(&quot; &#125; &quot;);</div><div class="line">r.push(&quot;&quot;);</div><div class="line">return r.join(&quot;&quot;);</div></pre></td></tr></table></figure>
+<p>&nbsp;不过我们并需要for，if，switch等这些东西也push到r数组中去，所以呢，还得改善下上面的代码，如果在line中发现了包含js逻辑的代码，我们就不应该让他进门：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">regOut = /(^( )?(if|for|else|switch|case|break|&#123;|&#125;))(.*)?/g;</div><div class="line">var add = function(line, js) &#123;</div><div class="line">    js? code += line.match(regOut) ? line + &apos;\n&apos; : &apos;r.push(&apos; + line + &apos;);\n&apos; :</div><div class="line">        code += &apos;r.push(&quot;&apos; + line.replace(/&quot;/g, &apos;\\&quot;&apos;) + &apos;&quot;);\n&apos;;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>&nbsp;所以我们只剩下最后一步工作了，把data扔进去！</p><br><h4>5.把data扔进去</h4><br><p>没有比完成这东西更简单的事情啦，通过上面对Function这个函数的讲解，大家应该也知道怎么做了。</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">return new Function(code).apply(data);</div></pre></td></tr></table></figure>
+<p>&nbsp;使用apply的作用就是让code中的一些变量作用域绑定到data上，不然作用域就会跑到global上，这样得到的数据索引就会出问题啦~ 当然我们可以再优化一下：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">return new Function(code.replace(/[\r\t\n]/g, &apos;&apos;)).apply(data);</div></pre></td></tr></table></figure>
+<p>&nbsp;把回车换行以及tab键都给匹配掉，让代码更加干净一点。那么最终的代码就是：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">var tplEngine = function(tpl, data) &#123;</div><div class="line">    var reg = /&lt;%([^%&gt;]+)?%&gt;/g,</div><div class="line">        regOut = /(^( )?(if|for|else|switch|case|break|&#123;|&#125;))(.*)?/g,</div><div class="line">        code = &apos;var r=[];\n&apos;,</div><div class="line">        cursor = 0;</div><div class="line"></div><div class="line">    var add = function(line, js) &#123;</div><div class="line">        js? (code += line.match(regOut) ? line + &apos;\n&apos; : &apos;r.push(&apos; + line + &apos;);\n&apos;) :</div><div class="line">            (code += line != &apos;&apos; ? &apos;r.push(&quot;&apos; + line.replace(/&quot;/g, &apos;\\&quot;&apos;) + &apos;&quot;);\n&apos; : &apos;&apos;);</div><div class="line">        return add;</div><div class="line">    &#125;</div><div class="line">    while(match = reg.exec(tpl)) &#123;</div><div class="line">        add(tpl.slice(cursor, match.index))(match[1], true);</div><div class="line">        cursor = match.index + match[0].length;</div><div class="line">    &#125;</div><div class="line">    add(tpl.substr(cursor, tpl.length - cursor));</div><div class="line">    code += &apos;return r.join(&quot;&quot;);&apos;;</div><div class="line">    return new Function(code.replace(/[\r\t\n]/g, &apos;&apos;)).apply(data);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p></p><h3>三、应用场景</h3><p></p>
+<p>毕竟是前端代码，所以写出来是要为前端服务的，平时我们处理的一般是一个html的模板，通常的情况下，模板代码是放在script标签或者textarea中，所以首先是要获取到这里头的东西，然后再来做解析。</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var barretTpl = function(str, data) &#123;</div><div class="line"></div><div class="line">    //获取元素</div><div class="line">    var element = document.getElementById(str);</div><div class="line">    if (element) &#123;</div><div class="line">        //textarea或input则取value，其它情况取innerHTML</div><div class="line">        var html = /^(textarea|input)$/i.test(element.nodeName) ? element.value : element.innerHTML;</div><div class="line">        return tplEngine(html, data);</div><div class="line">    &#125; else &#123;</div><div class="line">        //是模板字符串，则生成一个函数</div><div class="line">        //如果直接传入字符串作为模板，则可能变化过多，因此不考虑缓存</div><div class="line">        return tplEngine(str, data);</div><div class="line">    &#125;</div><div class="line">    var tplEngine = function(tpl, data) &#123;</div><div class="line">        // content above</div><div class="line">    &#125;;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>这样一来就更加简单了，使用方式就是 <code>barretTpl(str, data)</code>， 这里的str可以是模板代码，也可以是一个DOM元素的id~ 可以看看这两段代码：<a href="//gist.github.com/barretlee/7765698" target="_blank">//gist.github.com/barretlee/7765698</a>, <a href="//gist.github.com/barretlee/7765587" target="_blank">//gist.github.com/barretlee/7765587</a></p><br><p>也可以直接戳这个<a href="http://qianduannotes.duapp.com/demo/javascript-template.html" target="_blank">demo</a>。</p>
+
+
+<p></p><h3>四、优化以及功能拓展</h3><p></p>
+<p>总共就三四十行代码，完成的东西肯定是一个简洁版的，不过对于一个简单的页面而言，这几行代码已经足够使用了，如果还想对他做优化，可以从这几个方面考虑：</p><br><ul><br><li>优化获取的模板代码，比如去掉行尾空格等</li><br><li>符号转义，如果我们想输出<code>&lt;span&gt;hehe&lt;/span&gt;</code>类似这样的源代码，在push之前必须进行转义</li><br><li>代码缓存，如果一个模板会经常使用，可以将它用一个数组缓存在barretTpl闭包内</li><br><li>用户自己设置分隔符</li><br></ul><br><br><br><h3>五、参考资料</h3><br><p>[1]&nbsp;<a href="http://tech.pro/tutorial/1743/javascript-template-engine-in-just-20-lines" target="_blank">http://tech.pro/tutorial/1743/javascript-template-engine-in-just-20-lines</a>&nbsp;&nbsp;Krasimir Tsonev&nbsp;</p><br><p>[2]&nbsp;<a href="http://tangram.baidu.com/BaiduTemplate/" target="_blank">http://tangram.baidu.com/BaiduTemplate/</a>&nbsp; JS template</p>
+
+
+
+      </div>
+    </div>
+    
+<div class="old-article-warning">
+	本文在 <b>1420</b> 天之前发表，技术更替飞快，文中部分内容可能已经过时，如有疑问，
+	请在下方留言，或者联系 <a href="/about">小胡子哥</a>。
+</div>
+
+    <div class="follow-wechat"><img src="/follow.jpg"></div>
+
+<div class="copyright" itemscope itemtype="http://schema.org/ProfilePage" tabindex="0" aria-hidden="true">
+	<!-- <a href="/about/#support" class="supportme">赏</a> -->
+	<ul>
+		<li>作者:  <a href="/about/" itemprop="name">Rain (Rain)</a></li>
+		<li>发表日期:  2013-12-03 04:35:00</li>
+		<li>文章分类: 
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/前端杂烩/">前端杂烩</a>
+
+</li>
+		<li>文章标签: 
+<a class="article-tag-link" href="/tags/cnblogs/">cnblogs</a>, <a class="article-tag-link" href="/tags/tech/">tech</a>
+</li>
+		<li>版权声明: 署名-非商业性使用-禁止演绎 3.0 国际（<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">CC BY-NC-ND 3.0</a>）</li>
+		<li>最后编辑时间: 2017-08-31 14:52:18</li>
+		<li>Feed订阅: <a href="/rss2.xml"><i class="icon">&#x25c8;</i></a></li>
+	</ul>
+	<a href="/about/"><img src="/blogimgs/avatar150.png" /></a>
+</div>
+
+    <em class="arrow-expend icon" tabindex="0" aria-hidden="true">&#xe618;
+      <ul>
+        <li><a href="/entry/">博客</a></li>
+        <li><a href="/message/">问答</a></li>
+        <li><a href="/about/">关于</a></li>
+        <li><a href="/demo/">实验室</a></li>
+        <li><a href="/comments/">最近评论</a></li>
+        <li><a href="/friends/">友情链接</a></li>
+      </ul>
+    </em>
+  </div>
+  <div class="post-relative">
+<div class="page-relative">
+  
+    <a href="/all/20131206/101400/" class="post-prev">
+      <i class="icon" tabindex="0" aria-hidden="true">&#x261c;</i>
+      <span class="aria-readonly">上一篇文章</span>
+      
+        <b>PJAX的实现与应用</b>
+      
+    </a>
+  
+  
+    <a href="/all/20131128/094600/" class="post-next">
+      <span class="aria-readonly">下一篇文章</span>
+      <b>ECMAScript 6中的let和const关键词</b>
+      <i class="icon" tabindex="0" aria-hidden="true">&#xe602;</i>
+    </a>
+  
+</div>
+
+
+<div class="page-relative-fixed" tabindex="0" aria-hidden="true">
+  
+  <a href="/all/20131206/101400/" class="prev" title="PJAX的实现与应用">
+    <i class="icon">&#xe600;</i>
+    
+    <b>PJAX的实现与应用</b>
+    
+  </a>
+  
+  
+  <a href="/all/20131128/094600/" class="next" title="ECMAScript 6中的let和const关键词">
+    <i class="icon">&#x261e;</i>
+    <b>ECMAScript 6中的let和const关键词</b>
+  </a>
+  
+</div>
+</div>
+</div>
+<div class="sidebar" tabindex="0" aria-hidden="true">
+	<div class="func-btns func-btns-up">
+    <span class="func-item">
+        <i class="func-nav icon">&#xe618;<span>目录</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="javascript:void(0);" onclick="return false;">显示目录</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-font icon">&#xe604;<span>设置</span></i>
+        <div class="font-choose-box">
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <div class="font-choose bg-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-sun font-type-song"><i class="icon">&#xe61a;</i></a>
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-moon font-type-hei"><i class="icon">&#xe619;</i></a>
+          </div>
+          <div class="font-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-song">黑体</a>
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-hei">宋体</a>
+          </div>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="http://weibo.com/173248656" target="_blank"><i class="func-fb icon">博<span>分享</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator sharecanvas"><a href="javascript: void(0);">截屏分享</a></p>
+          <p><a href="http://weibo.com/173248656" target="_blank">微博关注</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-about icon">&#x263b;<span>关于</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p><a href="/about/" class="func-about-link" target="_blank">关于作者</a></p>
+          <div id="followMeOnWeibo"></div>
+        </div>
+    </span>
+	</div>
+	<div class="func-btns">
+    <span class="func-item">
+        <a href="http://demo.barretlee.com" target="_blank"><i class="func-rss icon">&#xe603;<span>实验</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="http://demo.barretlee.com" target="_blank">Demo平台</a></p>
+          <p class="seperator"><a href="http://md.barretlee.com" target="_blank">WX格式</a></p>
+          <p><a href="http://snippets.barretlee.com" target="_blank">Snippet应用</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-fb icon">&#x2121;<span>留言</span></i>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="/message/" target="_blank">给我留言</a></p>
+          <p><a href="/comments/" target="_blank">近期留言</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/friends/" target="_blank"><i class="func-rss icon">&#xe601;<span>友链</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="/friends/" target="_blank">友情链接</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/rss2.xml" target="_blank"><i class="func-rss icon">&#x25c8;<span>订阅</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i><a href="/rss2.xml" target="_blank">订阅我吧！</a></div>
+    </span>
+	</div>
+</div>
+
+<div class="single-page-footer">
+<div class="footer">
+	<div class="footer-wraper">
+		<div class="footer-content">
+			<div class="footer-nav">
+	<a href="javascript: void(0);" class="ds-thread-count disqus-comment-count"
+	   data-thread-key="cb-principle-of-javascript-template"
+	   data-disqus-identifier="cb-principle-of-javascript-template" 
+		 tabindex="0" aria-hidden="true">评论内容</a>
+	<a href="javascript: void(0);" id="comments">相关文章</a>
+	<a href="/friends/" tabindex="0" aria-hidden="true">友情链接</a>
+</div>
+<div class="nav-detail">
+	<div tabindex="0" aria-hidden="true">
+		
+<div id="SOHUCS" sid="cb-principle-of-javascript-template">
+	<div class="ds-loading">
+		<img src="/blogimgs/loading.gif" alt="loading..."/>
+		<p>这网速真是弱爆了...客官稍等,评论还在加载~</p>
+	</div>
+</div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+  appid: 'cyt0XnPCt',
+  conf: 'prod_5fde9cb8b23a2209a1ad60ab2dd5fe82'
+});
+</script>
+
+	</div>
+	<div style="display:block;">
+		<div class="relative-to-comment" tabindex="0" aria-hidden="true"><span>打开评论</span></div>
+		<div class="relative-wrapper">
+	<div class="relative-article">
+		
+		<ul>
+			<li>
+				<span><font aria-hidden="true">2017-06-06 »</font> </span>
+				<a href="/all/20170606/144621/">深入理解 Node Stream 内部机制</a>
+				<span class="aria-readonly">发表时间为2017年06月06日</span>
+				<div class="relative-box">
+          <a href="/all/20170606/144621/" class="relative-img-wrapper" style="background-image:url(/blogimgs/node-stream-readable-flowing.png);"></a>
+          <span class="aria-readonly">文章概要 </span>相信很多人对 Node 的 Stream 已经不陌生了，不论是请求流、响应流、文件流还是 socke...
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-09-28 »</font> </span>
+				<a href="/all/20160928/230523/">揭秘 0.1 + 0.2 != 0.3</a>
+				<span class="aria-readonly">发表时间为2016年09月28日</span>
+				<div class="relative-box">
+          <a href="/all/20160928/230523/" class="relative-img-wrapper" style="background-image:url(http://ww4.sinaimg.cn/large/6c0378f8gw1f89pd8hm96j20p00dwacm.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>“0.1 + 0.2 = ?”，这道题如果给小学生，他会立马告诉你答案是 0.3，但是交给一些程序去计算，结果就不是那么简单了。
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-08-23 »</font> </span>
+				<a href="/all/20160823/010513/">构建一个安全的 JavaScript 沙箱</a>
+				<span class="aria-readonly">发表时间为2016年08月23日</span>
+				<div class="relative-box">
+          <a href="/all/20160823/010513/" class="relative-img-wrapper" style="background-image:url(http://ww1.sinaimg.cn/large/6c0378f8gw1f730uldkfrj20p00dwaf1.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>在 Node.js 中有一个模块叫做 VM，它提供了几个 API，允许代码在 V8 虚拟机上下文中运行，如：12345const vm = require('vm');const sandbox = &#123; a: 1, b: 2 &#125;;const script = new vm.Script('a + b');const context = new vm.createContext(sandbox);script.runInContext(context);vm.Script 中的代码是预编译好的，通过 vm.createContext 将代码加载到一个上下文环境中，置入沙箱（sandbox），然后通过 script.runInContext 执行代码，整个操作都在封闭的 VM 中进行。这是 Node.js 提供给我们的便捷功能，那么，在浏览器环境中呢？是否也能做到将代码运行在沙箱中？本文带着大家来探索一番。
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-07-13 »</font> </span>
+				<a href="/all/20160713/001549/">我需要学习 ECMAScript 6 么？</a>
+				<span class="aria-readonly">发表时间为2016年07月13日</span>
+				<div class="relative-box">
+          <a href="/all/20160713/001549/" class="relative-img-wrapper" style="background-image:url(//ww1.sinaimg.cn/large/6c0378f8gw1f5rkudyzzoj20p00dwt9x.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>前几天翻译了一篇 ECMAScript 6 的入门文章，看到几则评论说 JavaScript 越来越像 Java 了，我暗暗地笑了笑。也有同学很疑惑是否有必要学习 ES6，使用 TypeScript 的同学也有类似的疑惑。
+        </div>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+
+		<a href="/entry/" class="relative-to-comment-wrapper" tabindex="0" aria-hidden="true"><div class="relative-to-comment">回到首页</div></a>
+	</div>
+	<div class="friends-box">
+		<ul>
+			
+			<li><a href="http://hustskyking.cnblogs.com" target="_blank">旧博客</a> <font aria-hidden="true">»</font> <span>我的旧博客（博客园荣誉博客）</span></li>
+			
+			<li><a href="http://www.zhangmengxue.com" target="_blank">大额</a> <font aria-hidden="true">»</font> <span>大额大额哼歌等日落</span></li>
+			
+			<li><a href="http://www.zhangxinxu.com" target="_blank">张鑫旭</a> <font aria-hidden="true">»</font> <span>原来大学我俩一个团队的~</span></li>
+			
+			<li><a href="http://web-tinker.com" target="_blank">次碳酸钴</a> <font aria-hidden="true">»</font> <span>深度交流的一个好朋友</span></li>
+			
+			<li><a href="http://imququ.com" target="_blank">屈屈</a> <font aria-hidden="true">»</font> <span>好吧，蛐蛐同学</span></li>
+			
+			<li><a href="http://www.ruanyifeng.com" target="_blank">阮一峰</a> <font aria-hidden="true">»</font> <span>阮老师,哈哈,第一次设计博客就是抄的你的样式</span></li>
+			
+			<li><a href="http://annn.me" target="_blank">安记</a> <font aria-hidden="true">»</font> <span>阿安同学</span></li>
+			
+			<li><a href="http://mouto.org/" target="_blank">卜卜口</a> <font aria-hidden="true">»</font> <span>二次元化身</span></li>
+			
+			<li><a href="/friends/">更多列表 <font aria-hidden="true">»</font></a></li>
+		</ul>
+	</div>
+</div>
+			
+<div class="website-info" aria-hidden="true">
+	<a class="page_editor" href="/admin/#/posts/cj92lk7iv007x7wvvra322brl" target="_blank">🙈</a>
+	<span>&copy;2013-2017 <small><a href="http://www.miitbeian.gov.cn/" about="_blank">湘ICP备14007107号-1</a></small></span>
+	本站由 <a href="/">rain</a> 纯手工打造 | <a href="/about#contact">联系方式</a> | 总热度：<em id="busuanzi_value_site_pv"></em>
+</div>
+
+		</div>
+	</div>
+</div>
+</div>
+<div class="tools-wrapper" tabindex="0" aria-hidden="true">
+	<a class="gotop icon" href="#" title="回到顶部">&#x2191;</a>
+	<!-- <a class="wechart icon">&#xe60d;<span><img src="/wechart.png" title="扫码添加小胡子哥微信"/> </span></a> -->
+	<a class="hash-to-comments icon" title="我要评论">&#x2121;</a>
+</div>
+<div class="fixerr" tabindex="0" aria-hidden="true">纠错模式</div>
+
+</body>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/socket.io.js"></script>
+<script>
+  window.onerror = function(e) {
+    window.console && window.console.log && window.console.log(e);
+    $('#loadLayer').remove();
+    return true;
+  };
+</script>
+<script src="/public/js/aplayer.js"></script>
+<script src="/public/js/main.js?v=20170824"></script>
+</script>
+</html>

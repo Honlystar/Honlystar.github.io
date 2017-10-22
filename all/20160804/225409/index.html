@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>有意思的 git-log | 星空守候的博客</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+  <meta name="author" content="https://plus.google.com/112634278852964994392?hl=zh-cn">
+  <meta name="email" content="barret.china@gmail.com">
+  <meta name="description" content="之前写过几篇 git 相关的文章，内容很基础，但发现最近被搜索引擎检索的量还比较大，最近正好在阅读 git 相关的资料，准备将不错的几个点，详细地说一说，记录下来写出来分享给大家。今天要说的便是常用的 `git log` 命令。">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="有意思的 git-log | 星空守候的博客">
+  <meta property="og:url" content="https://www.onlystar.site/all/20160804/225409/">
+  <meta property="og:site_name" content="有意思的 git-log">
+  <meta property="og:description" content="之前写过几篇 git 相关的文章，内容很基础，但发现最近被搜索引擎检索的量还比较大，最近正好在阅读 git 相关的资料，准备将不错的几个点，详细地说一说，记录下来写出来分享给大家。今天要说的便是常用的 `git log` 命令。">
+  <meta name="generator" content="https://hexo.io" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <link href="https://www.onlystar.site/blogimgs/app-icon.png" rel="apple-touch-icon-precomposed">
+  <link rel="shoticon" href="https://www.onlystar.site/favicon.ico" type="image/x-icon">
+  <link rel="alternate" type="application/rss+xml" href="https://www.onlystar.site/rss2.xml" title="星空守候的博客" />
+  <link rel="prev" href="https://www.onlystar.site/all/20160811/202440/" title="聊一聊排序算法" />
+  <link rel="next" href="https://www.onlystar.site/all/20160803/210840/" title="Shadowsocks 原理简介及安装指南" />
+  <link rel="start" href="https://www.onlystar.site/entry/" title="Blog Entry" />
+  <link rel="stylesheet" href="/public/css/style.css?v=20170604">
+</head>
+<span class="aria-readonly" tabindex="0" aria-hidden="true">小胡子哥的博客良好支持读屏软件阅读，请放心使用。</span>
+
+
+<body>
+  <div class="rainbow"></div>
+  <div class="container">
+  <span class="local-search local-search-google local-search-plugin" style="position:absolute;right: 20px;top:30px;">
+  <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+  <i class="icon" aria-hidden="true" title="点击进入 Google 搜索">&#x2708;</i>
+  <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
+  <div class="article" itemscope itemtype="http://schema.org/Article">
+    <div class="post">
+      <div class="bread">
+        <a href="/">小胡子哥的个人博客</a> »
+        <a href="/entry/">博客</a> »
+        
+	<a class="category-link" href="/categories/工具/">工具</a>,<a class="category-link" href="/categories/工具/前端杂烩/">前端杂烩</a>
+
+
+      </div>
+      <div class="post-title-wrapper">
+        <h1 class="post-title" itemprop="name">有意思的 git-log<img src="https://game.weixin.qq.com/cgi-bin/comm/qrcode?s=50&m=1&d=http:https://www.onlystar.site/all/20160804/225409/" alt="扫码分享" onerror="this.style.display='none';"></h1>
+        <a href="/about/"><img src="/blogimgs/avatar.png" alt="rain" /></a>
+      </div>
+      <div class="post-info">
+        <span>作者: <a href="/about/">rain</a></span>
+        <span>
+          <time itemprop="timeCreated" aria-hidden="true">2016-08-04 22:54:09</time>
+          <span class="aria-readonly">本文发布时间为2016年08月04日22时54分09秒</span>
+        </span>
+        <span>分类: 
+	<a class="category-link" href="/categories/工具/">工具</a>,<a class="category-link" href="/categories/工具/前端杂烩/">前端杂烩</a>
+
+</span>
+        <span tabindex="0" aria-hidden="true">标签: 
+<a class="article-tag-link" href="/tags/git/">git</a>
+</span>
+        <span class="aria-readonly">下面是正文内容</span>
+        <span tabindex="0" aria-hidden="true">评论数: <a href="#comments"
+                      class="ds-thread-count hash-to-comments disqus-comment-count"
+                      data-thread-key="funning-gitlog"
+                      data-disqus-identifier="funning-gitlog"
+                      id="changyan_count_unit"></a></span>
+        <span tabindex="0" aria-hidden="true" id="busuanzi_container_site_pv">热度: <span id="busuanzi_value_page_pv"></span></span>
+      </div>
+      <div class="post-content" itemprop="articleBody">
+        <div class="shit-spider" title="防爬虫不注明出处" tabindex="0" aria-hidden="true">
+          <p>原文地址：<a href="https://www.onlystar.site/all/20160804/225409/">https://www.onlystar.site/all/20160804/225409/</a>，<a href="https://www.onlystar.site/all/20160804/225409/#comments">参与评论</a></p>
+          <img src="//www.barretlee.com/blogimgs/avatar.png" width="150">
+        </div>
+        <p>之前写过几篇 git 相关的文章，内容很基础，</p>
+<ul>
+<li><a href="//www.barretlee.com/blog/2014/04/28/git-roll-back/">git版本回退操作</a></li>
+<li><a href="//www.barretlee.com/blog/2014/04/30/switch-branch-in-git/">git切换到远程分支</a></li>
+<li><a href="//www.barretlee.com/blog/2014/05/07/cb-git-improve/">git版本管理策略及相关技巧(A)</a></li>
+</ul>
+<p>但发现最近被搜索引擎检索的量还比较大，最近正好在阅读 git 相关的资料，准备将不错的几个点，详细地说一说，记录下来写出来分享给大家。今天要说的便是常用的 <code>git log</code> 命令。</p>
+<a id="more"></a>
+<h3 id="先看几个栗子"><a href="#先看几个栗子" class="headerlink" title="先看几个栗子"></a>先看几个栗子</h3><p>以 React-Native 代码为例，演示几个有意思的 git-log 命令。</p>
+<ul>
+<li><p>普通查看：<code>git log</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">commit f84120a1669cd3a6c8db5e830a96565fa07d3ba8</div><div class="line">Author: Justin McPherson &lt;justin.mcpherson@canonical.com&gt;</div><div class="line">Date:   Thu Aug 4 18:09:50 2016 +1000</div><div class="line"></div><div class="line">    Update README</div><div class="line"></div><div class="line">    - Correct URL of git repo.</div><div class="line">    - Mention supported Ubuntu variants.</div><div class="line"></div><div class="line">commit cf3ade3eff98baf710d9f4134aa9ddde2ad96920</div><div class="line">Merge: 25a5a12 d47218e</div><div class="line">Author: Justin McPherson &lt;justin.mcpherson@canonical.com&gt;</div><div class="line">Date:   Thu Aug 4 17:57:25 2016 +1000</div><div class="line"></div><div class="line">    Merge pull request #1 from RodrigoHahn/patch-1</div><div class="line"></div><div class="line">    Rename README.ubuntu to README-ubuntu.md</div></pre></td></tr></table></figure>
+</li>
+<li><p>简略形式：<code>git log --oneline</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">f84120a Update README</div><div class="line">cf3ade3 Merge pull request #1 from RodrigoHahn/patch-1</div><div class="line">d47218e Rename README.ubuntu to README-ubuntu.md</div><div class="line">25a5a12 react: Don&apos;t throw exceptions on error</div><div class="line">4ced394 Cleanup</div><div class="line">c1bd457 Improve Image support</div><div class="line">7d0fa11 Improve timer handling</div><div class="line">88b7cef Move tmp directory into the ubuntu root</div><div class="line">f240917 Update for README</div><div class="line">e19c816 Refinements+fixes to running and packaging.</div><div class="line">8302160 Don&apos;t specify current directory for generic node executable.</div><div class="line">135ecc5 Executor and Packaging update.</div><div class="line">dafb051 Copy assets to phone on run</div><div class="line">e6aec7a Fix packaging step for assets</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看详细修改：<code>git log -p -2</code>，只看最近两条</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">commit f84120a1669cd3a6c8db5e830a96565fa07d3ba8</div><div class="line">Author: Justin McPherson &lt;justin.mcpherson@canonical.com&gt;</div><div class="line">Date:   Thu Aug 4 18:09:50 2016 +1000</div><div class="line"></div><div class="line">    Update README</div><div class="line"></div><div class="line">diff --git a/README-ubuntu.md b/README-ubuntu.md</div><div class="line">index ad3574f..0a732f8 100644</div><div class="line">--- a/README-ubuntu.md</div><div class="line">+++ b/README-ubuntu.md</div><div class="line">@@ -3,6 +3,10 @@</div><div class="line">+### Platforms</div><div class="line">+</div><div class="line">+There is support for applications on both Desktop Ubuntu and Ubuntu Touch.</div><div class="line">+</div><div class="line"> You should have an Ubuntu 16.04 (Xenial Xerus) installation.</div><div class="line">@@ -32,7 +36,7 @@ ubuntu need to be published to a local package repository.</div><div class="line"> Download the port for Ubuntu.</div><div class="line"></div><div class="line"> ~$ mkdir src; cd src</div><div class="line">-~/src$ git clone https://git.launchpad.net/reactnative-ubuntu -b ubuntu</div><div class="line">+~/src$ git clone https://github.com/CanonicalLtd/react-native -b ubuntu</div><div class="line"></div><div class="line"> And then follow the instruction in ~/src/reactnative-ubuntu/react-native-cli/README.md</div></pre></td></tr></table></figure>
+</li>
+<li><p>展示文件修改的量：<code>git log --shortstat</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">commit cf3ade3eff98baf710d9f4134aa9ddde2ad96920</div><div class="line">Merge: 25a5a12 d47218e</div><div class="line">Author: Justin McPherson &lt;justin.mcpherson@canonical.com&gt;</div><div class="line">Date:   Thu Aug 4 17:57:25 2016 +1000</div><div class="line"></div><div class="line">    Merge pull request #1 from RodrigoHahn/patch-1</div><div class="line"></div><div class="line"> 1 files changed, 22 insertions(+), 12 deletions(-)</div><div class="line"></div><div class="line">commit d47218e08cffb1479c1e3511031ae377023b01c2</div><div class="line">Author: RodrigoHahn &lt;rodrigo.rmh@gmail.com&gt;</div><div class="line">Date:   Wed Aug 3 10:16:59 2016 -0300</div><div class="line"></div><div class="line">    Rename README.ubuntu to README-ubuntu.md</div><div class="line"></div><div class="line"> 2 files changed, 226 insertions(+), 226 deletions(-)</div></pre></td></tr></table></figure>
+</li>
+<li><p>简略展示，加分支情况：<code>git log --pretty=format:&quot;%h %s&quot; --graph</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">* b36abb0 Initial support for ImageLoader</div><div class="line">*   9cf8f2a Merge branch &apos;master&apos; of https://github.com/facebook/react-native into ubuntu</div><div class="line">|\</div><div class="line">| * d363b1f Update Jest APIs on fbsource</div><div class="line">| * 192ab66 Fix 302 ImageLoader caching problem on iOS</div><div class="line">| * 6a26037 Fix build break of react native exopackage apps</div><div class="line">| * 50d8d46 Add ability to expose sync hooks from Java to JS</div><div class="line">| * 171c723 Simplify message passing in JSC-executor</div><div class="line">| * fb76154 handle null args array in proxy invocation handler</div><div class="line">| * 131970d Android Support Repository -&gt; Local Maven repository for Support Libr…</div><div class="line">* | 3cf6e03 Update measure function to match master</div><div class="line">* |   2fb11b3 Merge branch &apos;master&apos; into ubuntu</div><div class="line">|\ \</div><div class="line">| |/</div><div class="line">| * 8295d27 Fix usage of react-native cli inside package.json scripts</div><div class="line">| * b5d9bf0 merge InteractionManager stuff back into PanResponder</div><div class="line">| * dad39eb Move `Number` polyfills into the `/polyfills/` directory</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看单个文件被修改的情况：<code>git log -p React/Base/RCTAssert.m</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">commit 34d5fa2695971ba9c9b2271578ade4b700061066</div><div class="line">Author: Nick Lockwood &lt;nicklockwood@fb.com&gt;</div><div class="line">Date:   Thu Jan 21 07:49:45 2016 -0800</div><div class="line"></div><div class="line">    RCTUtils Obj-C nullability annotations</div><div class="line"></div><div class="line">diff --git a/React/Base/RCTAssert.m b/React/Base/RCTAssert.m</div><div class="line">index 4742cb3..d0006e2 100644</div><div class="line">--- a/React/Base/RCTAssert.m</div><div class="line">+++ b/React/Base/RCTAssert.m</div><div class="line">@@ -119,7 +119,7 @@ void _RCTAssertFormat(</div><div class="line"></div><div class="line"> void RCTFatal(NSError *error)</div><div class="line"> &#123;</div><div class="line">-  _RCTLogNativeInternal(RCTLogLevelFatal, NULL, 0, @&quot;%@&quot;, [error localizedDescription]);</div><div class="line">+  _RCTLogNativeInternal(RCTLogLevelFatal, NULL, 0, @&quot;%@&quot;, error.localizedDescription);</div><div class="line"></div><div class="line">   RCTFatalHandler fatalHandler = RCTGetFatalHandler();</div><div class="line">   if (fatalHandler) &#123;</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看 Brent Vatne 修改过的 md 文件：<code>git log --author=&#39;Brent Vatne&#39; \*.md</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">commit 2ed199fa2bd7b68546a0c688437657653e7dad03</div><div class="line">Author: Brent Vatne &lt;brentvatne@gmail.com&gt;</div><div class="line">Date:   Tue Jan 12 12:02:48 2016 -0800</div><div class="line"></div><div class="line">    Update KnownIssues.md</div><div class="line"></div><div class="line">commit 33d6293c607340836372201b0e7b26d7bddba0c8</div><div class="line">Author: Brent Vatne &lt;brentvatne@gmail.com&gt;</div><div class="line">Date:   Mon Dec 28 17:51:30 2015 -0800</div><div class="line"></div><div class="line">    Update KnownIssues.md</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看 James Ide 在 2016 年 2 月内的所有动态：<code>git log --author=&#39;James Ide&#39; --since=&#39;2016-02-01&#39; --before=&#39;2016-03-01&#39;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">commit b051d07b819be7ff01ac54106ca7f0f0289d1bd0</div><div class="line">Author: James Ide &lt;ide+github@jameside.com&gt;</div><div class="line">Date:   Wed Feb 10 12:46:26 2016 -0800</div><div class="line"></div><div class="line">    Update CONTRIBUTING.md</div><div class="line"></div><div class="line">commit 0e0f20c80683723a4f279910bd9d5a4c088fe039</div><div class="line">Merge: 82b0df9 e59efc1</div><div class="line">Author: James Ide &lt;ide+github@jameside.com&gt;</div><div class="line">Date:   Wed Feb 3 17:27:44 2016 -0800</div><div class="line"></div><div class="line">    Merge pull request #5744 from LoadDOCs/loaddocs</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看包含 ‘Fix bug’ 的日志，一行展示：<code>git log --grep=&#39;Fix bug&#39; --oneline</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">d637621 Fix bug #5604 - Unrecognised signal for touchable no longer on the screen</div><div class="line">5f4390b Fix bug related to removeClippedSubviews and view collapsing.</div><div class="line">041fb59 Fix bug with calculating Y offset in RecyclerViewBackedScrollView.</div><div class="line">64a78ed Fix bug in Android elevation implementation</div><div class="line">3a92f20 Fix buggy behavior of setBackgroundColor in react View.</div><div class="line">f4c7bb1 [react-packager] Fix bug on Bundles Layout algorithm</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看某次修改的内容：<code>git show 3a92f20</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">commit 3a92f2017fc2e51c2a915f0e535397cb3937d412</div><div class="line">Author: Krzysztof Magiera &lt;krzysztof@fb.com&gt;</div><div class="line">Date:   Mon Oct 26 14:21:12 2015 -0700</div><div class="line"></div><div class="line">    Fix buggy behavior of setBackgroundColor in react View.</div><div class="line"></div><div class="line">diff --git a/ReactAndroid/src/main/java/com/facebook/react/views/view/ReactViewGroup.java b/ReactAndroid/src/main/java/com/facebook/react/views/view/ReactViewGroup.java</div><div class="line">index b583eeb..6131f00 100644</div><div class="line">--- a/ReactAndroid/src/main/java/com/facebook/react/views/view/ReactViewGroup.java</div><div class="line">+++ b/ReactAndroid/src/main/java/com/facebook/react/views/view/ReactViewGroup.java</div><div class="line">@@ -118,18 +118,8 @@ public class ReactViewGroup extends ViewGroup implements</div><div class="line">-      Drawable backgroundDrawble = getBackground();</div><div class="line">-      if (mReactBackgroundDrawable != null &amp;&amp; (backgroundDrawble instanceof LayerDrawable)) &#123;</div><div class="line">-        // extract translucent background portion from layerdrawable</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="理解-git-log"><a href="#理解-git-log" class="headerlink" title="理解 git log"></a>理解 git log</h3><p>git log 详细记录了所有开发者在项目中的贡献情况，包括作者的信息、提交的内容（与上一次的差异对比 patch），还添加了一些额外的诸如时间、id（commit sha1）等内容。</p>
+<p>它就像是一个数据库，提供了很多很多参数可以被重新梳理、查询。</p>
+<table>
+<thead>
+<tr>
+<th>效果</th>
+<th>SQL</th>
+<th>git 命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>查询前两条</td>
+<td><code>SELECT * FROM git-log LIMIT 0,2</code></td>
+<td><code>git log -p -2</code></td>
+</tr>
+<tr>
+<td>查询5-8条</td>
+<td><code>SELECT * FROM git-log LIMIT 5,3</code></td>
+<td><code>git log -p --skip=5 -3</code></td>
+</tr>
+<tr>
+<td>关键词查询</td>
+<td><code>SELECT commitMsg FROM git-log WHERE commitMsg LIKE &#39;%Fix bug%&#39;</code></td>
+<td><code>git log --oneline --grep=&#39;Fix bug&#39;</code></td>
+</tr>
+<tr>
+<td>个人日志</td>
+<td><code>SELECT * FROM git-log WHERE DATE(ct) BETWEEN &#39;2016-02-01&#39; AND &#39;2016-03-01</code> AND author=’James Ide’</td>
+<td><code>git log --author=&#39;James Ide&#39; --since=&#39;2016-02-01&#39; --before=&#39;2016-03-01&#39;</code></td>
+</tr>
+</tbody>
+</table>
+<p>git-log 提供的命令相当多，可以通过 <code>git help log</code> 查看，基本上可以满足我们日常查询需求。</p>
+<p>最后列一条十分给力的查看 git-log 全貌命令，可以通过 alias 写到 <code>.bashrc/.zshrc</code> 中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alias gitlog=&quot;git log --all --graph --pretty=format:&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&apos; --abbrev-commit --date=relative&quot;</div></pre></td></tr></table></figure>
+<p>效果图（点击可放大）：</p>
+<p><img src="//ww4.sinaimg.cn/large/6c0378f8gw1f6imxm25vtj21kw16p7wh.jpg" alt="git log"></p>
+<p>本文完。</p>
+
+      </div>
+    </div>
+    
+    <div class="follow-wechat"><img src="/follow.jpg"></div>
+
+<div class="copyright" itemscope itemtype="http://schema.org/ProfilePage" tabindex="0" aria-hidden="true">
+	<!-- <a href="/about/#support" class="supportme">赏</a> -->
+	<ul>
+		<li>作者:  <a href="/about/" itemprop="name">Rain (Rain)</a></li>
+		<li>发表日期:  2016-08-04 22:54:09</li>
+		<li>文章分类: 
+	<a class="category-link" href="/categories/工具/">工具</a>,<a class="category-link" href="/categories/工具/前端杂烩/">前端杂烩</a>
+
+</li>
+		<li>文章标签: 
+<a class="article-tag-link" href="/tags/git/">git</a>
+</li>
+		<li>版权声明: 署名-非商业性使用-禁止演绎 3.0 国际（<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">CC BY-NC-ND 3.0</a>）</li>
+		<li>最后编辑时间: 2017-08-31 14:52:18</li>
+		<li>Feed订阅: <a href="/rss2.xml"><i class="icon">&#x25c8;</i></a></li>
+	</ul>
+	<a href="/about/"><img src="/blogimgs/avatar150.png" /></a>
+</div>
+
+    <em class="arrow-expend icon" tabindex="0" aria-hidden="true">&#xe618;
+      <ul>
+        <li><a href="/entry/">博客</a></li>
+        <li><a href="/message/">问答</a></li>
+        <li><a href="/about/">关于</a></li>
+        <li><a href="/demo/">实验室</a></li>
+        <li><a href="/comments/">最近评论</a></li>
+        <li><a href="/friends/">友情链接</a></li>
+      </ul>
+    </em>
+  </div>
+  <div class="post-relative">
+<div class="page-relative">
+  
+    <a href="/all/20160811/202440/" class="post-prev">
+      <i class="icon" tabindex="0" aria-hidden="true">&#x261c;</i>
+      <span class="aria-readonly">上一篇文章</span>
+      
+        <b>聊一聊排序算法</b>
+      
+    </a>
+  
+  
+    <a href="/all/20160803/210840/" class="post-next">
+      <span class="aria-readonly">下一篇文章</span>
+      <b>Shadowsocks 原理简介及安装指南</b>
+      <i class="icon" tabindex="0" aria-hidden="true">&#xe602;</i>
+    </a>
+  
+</div>
+
+
+<div class="page-relative-fixed" tabindex="0" aria-hidden="true">
+  
+  <a href="/all/20160811/202440/" class="prev" title="聊一聊排序算法">
+    <i class="icon">&#xe600;</i>
+    
+    <b>聊一聊排序算法</b>
+    
+  </a>
+  
+  
+  <a href="/all/20160803/210840/" class="next" title="Shadowsocks 原理简介及安装指南">
+    <i class="icon">&#x261e;</i>
+    <b>Shadowsocks 原理简介及安装指南</b>
+  </a>
+  
+</div>
+</div>
+</div>
+<div class="sidebar" tabindex="0" aria-hidden="true">
+	<div class="func-btns func-btns-up">
+    <span class="func-item">
+        <i class="func-nav icon">&#xe618;<span>目录</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="javascript:void(0);" onclick="return false;">显示目录</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-font icon">&#xe604;<span>设置</span></i>
+        <div class="font-choose-box">
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <div class="font-choose bg-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-sun font-type-song"><i class="icon">&#xe61a;</i></a>
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-moon font-type-hei"><i class="icon">&#xe619;</i></a>
+          </div>
+          <div class="font-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-song">黑体</a>
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-hei">宋体</a>
+          </div>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="http://weibo.com/173248656" target="_blank"><i class="func-fb icon">博<span>分享</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator sharecanvas"><a href="javascript: void(0);">截屏分享</a></p>
+          <p><a href="http://weibo.com/173248656" target="_blank">微博关注</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-about icon">&#x263b;<span>关于</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p><a href="/about/" class="func-about-link" target="_blank">关于作者</a></p>
+          <div id="followMeOnWeibo"></div>
+        </div>
+    </span>
+	</div>
+	<div class="func-btns">
+    <span class="func-item">
+        <a href="http://demo.barretlee.com" target="_blank"><i class="func-rss icon">&#xe603;<span>实验</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="http://demo.barretlee.com" target="_blank">Demo平台</a></p>
+          <p class="seperator"><a href="http://md.barretlee.com" target="_blank">WX格式</a></p>
+          <p><a href="http://snippets.barretlee.com" target="_blank">Snippet应用</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-fb icon">&#x2121;<span>留言</span></i>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="/message/" target="_blank">给我留言</a></p>
+          <p><a href="/comments/" target="_blank">近期留言</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/friends/" target="_blank"><i class="func-rss icon">&#xe601;<span>友链</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="/friends/" target="_blank">友情链接</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/rss2.xml" target="_blank"><i class="func-rss icon">&#x25c8;<span>订阅</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i><a href="/rss2.xml" target="_blank">订阅我吧！</a></div>
+    </span>
+	</div>
+</div>
+
+<div class="single-page-footer">
+<div class="footer">
+	<div class="footer-wraper">
+		<div class="footer-content">
+			<div class="footer-nav">
+	<a href="javascript: void(0);" class="ds-thread-count disqus-comment-count"
+	   data-thread-key="funning-gitlog"
+	   data-disqus-identifier="funning-gitlog" 
+		 tabindex="0" aria-hidden="true">评论内容</a>
+	<a href="javascript: void(0);" id="comments">相关文章</a>
+	<a href="/friends/" tabindex="0" aria-hidden="true">友情链接</a>
+</div>
+<div class="nav-detail">
+	<div tabindex="0" aria-hidden="true">
+		
+<div id="SOHUCS" sid="funning-gitlog">
+	<div class="ds-loading">
+		<img src="/blogimgs/loading.gif" alt="loading..."/>
+		<p>这网速真是弱爆了...客官稍等,评论还在加载~</p>
+	</div>
+</div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+  appid: 'cyt0XnPCt',
+  conf: 'prod_5fde9cb8b23a2209a1ad60ab2dd5fe82'
+});
+</script>
+
+	</div>
+	<div style="display:block;">
+		<div class="relative-to-comment" tabindex="0" aria-hidden="true"><span>打开评论</span></div>
+		<div class="relative-wrapper">
+	<div class="relative-article">
+		
+		<ul>
+			<li>
+				<span><font aria-hidden="true">2017-04-27 »</font> </span>
+				<a href="/all/20170427/125000/">理解 Gulp 和 Webpack</a>
+				<span class="aria-readonly">发表时间为2017年04月27日</span>
+				<div class="relative-box">
+          <a href="/all/20170427/125000/" class="relative-img-wrapper" style="background-image:url(http://ww1.sinaimg.cn/large/6c0378f8gy1ff18pl2w55j21400m8tag.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>Gulp 和 webpack 之间的关系是十分暧昧的，却也经常被人误解，以为它俩是竞争关系，其实不然。
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2017-04-21 »</font> </span>
+				<a href="/all/20170421/122328/">如何快速上手一款 IDE - VSC 配置指南和插件推荐</a>
+				<span class="aria-readonly">发表时间为2017年04月21日</span>
+				<div class="relative-box">
+          <a href="/all/20170421/122328/" class="relative-img-wrapper" style="background-image:url(//ww3.sinaimg.cn/large/006tKfTcgy1feu3asuhi8j31400p0jxr.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>VSCode 刚出来的时候并不是特别看好，因为 Sublime 和 Atom 的插件生态已经做起来了，成千上万个可供选择，VSC 从零开始，除了自身提供的几个内置插件外几乎没有多余的选择，没想到短短一年多的时间，发展如此快，下图是我在其他平台也比较常用的几个插件，我安装了挺多，大概二三十个。
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2017-03-21 »</font> </span>
+				<a href="/all/20170321/221826/">多说即将关闭，评论迁至何处？</a>
+				<span class="aria-readonly">发表时间为2017年03月21日</span>
+				<div class="relative-box">
+          <a href="/all/20170321/221826/" class="relative-img-wrapper" style="background-image:url(http://ww1.sinaimg.cn/large/6c0378f8gy1fduu7gthbfj21me0oeq6v.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴。详细信息 &gt;
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-12-26 »</font> </span>
+				<a href="/all/20161226/123959/">如何设计友好的 WebHook</a>
+				<span class="aria-readonly">发表时间为2016年12月26日</span>
+				<div class="relative-box">
+          <a href="/all/20161226/123959/" class="relative-img-wrapper" style="background-image:url(http://img.alicdn.com/tfs/TB19mqDOVXXXXceapXXXXXXXXXX-580-283.png);"></a>
+          <span class="aria-readonly">文章概要 </span>在一些工具流的设计中，经常遇到一个体验非常不好的情况：每次都需要采用长轮询或者隔一段时间再尝试的方式获取结果。其原因可能有两个：调用方（Client）没有一个稳定的在线服务，Server 无法主动联系 ClientServer 并没有考虑主动 Push 消息
+        </div>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+
+		<a href="/entry/" class="relative-to-comment-wrapper" tabindex="0" aria-hidden="true"><div class="relative-to-comment">回到首页</div></a>
+	</div>
+	<div class="friends-box">
+		<ul>
+			
+			<li><a href="http://hustskyking.cnblogs.com" target="_blank">旧博客</a> <font aria-hidden="true">»</font> <span>我的旧博客（博客园荣誉博客）</span></li>
+			
+			<li><a href="http://www.zhangmengxue.com" target="_blank">大额</a> <font aria-hidden="true">»</font> <span>大额大额哼歌等日落</span></li>
+			
+			<li><a href="http://www.zhangxinxu.com" target="_blank">张鑫旭</a> <font aria-hidden="true">»</font> <span>原来大学我俩一个团队的~</span></li>
+			
+			<li><a href="http://web-tinker.com" target="_blank">次碳酸钴</a> <font aria-hidden="true">»</font> <span>深度交流的一个好朋友</span></li>
+			
+			<li><a href="http://imququ.com" target="_blank">屈屈</a> <font aria-hidden="true">»</font> <span>好吧，蛐蛐同学</span></li>
+			
+			<li><a href="http://www.ruanyifeng.com" target="_blank">阮一峰</a> <font aria-hidden="true">»</font> <span>阮老师,哈哈,第一次设计博客就是抄的你的样式</span></li>
+			
+			<li><a href="http://annn.me" target="_blank">安记</a> <font aria-hidden="true">»</font> <span>阿安同学</span></li>
+			
+			<li><a href="http://mouto.org/" target="_blank">卜卜口</a> <font aria-hidden="true">»</font> <span>二次元化身</span></li>
+			
+			<li><a href="/friends/">更多列表 <font aria-hidden="true">»</font></a></li>
+		</ul>
+	</div>
+</div>
+			
+<div class="website-info" aria-hidden="true">
+	<a class="page_editor" href="/admin/#/posts/cj92lk86h00ql7wvv4rtmu2pa" target="_blank">🙈</a>
+	<span>&copy;2013-2017 <small><a href="http://www.miitbeian.gov.cn/" about="_blank">湘ICP备14007107号-1</a></small></span>
+	本站由 <a href="/">rain</a> 纯手工打造 | <a href="/about#contact">联系方式</a> | 总热度：<em id="busuanzi_value_site_pv"></em>
+</div>
+
+		</div>
+	</div>
+</div>
+</div>
+<div class="tools-wrapper" tabindex="0" aria-hidden="true">
+	<a class="gotop icon" href="#" title="回到顶部">&#x2191;</a>
+	<!-- <a class="wechart icon">&#xe60d;<span><img src="/wechart.png" title="扫码添加小胡子哥微信"/> </span></a> -->
+	<a class="hash-to-comments icon" title="我要评论">&#x2121;</a>
+</div>
+<div class="fixerr" tabindex="0" aria-hidden="true">纠错模式</div>
+
+</body>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/socket.io.js"></script>
+<script>
+  window.onerror = function(e) {
+    window.console && window.console.log && window.console.log(e);
+    $('#loadLayer').remove();
+    return true;
+  };
+</script>
+<script src="/public/js/aplayer.js"></script>
+<script src="/public/js/main.js?v=20170824"></script>
+</script>
+</html>

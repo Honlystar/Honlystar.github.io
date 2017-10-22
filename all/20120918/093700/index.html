@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>如何设计一个支持方法链式调用的JavaScript库 | 星空守候的博客</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+  <meta name="author" content="https://plus.google.com/112634278852964994392?hl=zh-cn">
+  <meta name="email" content="barret.china@gmail.com">
+  <meta name="description" content="本文为归档内容,原始地址在 博客园.本文从ITeye导入可以先了解下&amp;nbsp;javascript链式调用的实现方式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="如何设计一个支持方法链式调用的JavaScript库 | 星空守候的博客">
+  <meta property="og:url" content="https://www.onlystar.site/all/20120918/093700/">
+  <meta property="og:site_name" content="如何设计一个支持方法链式调用的JavaScript库">
+  <meta property="og:description" content="本文为归档内容,原始地址在 博客园.本文从ITeye导入可以先了解下&amp;nbsp;javascript链式调用的实现方式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950">
+  <meta name="generator" content="https://hexo.io" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <link href="https://www.onlystar.site/blogimgs/app-icon.png" rel="apple-touch-icon-precomposed">
+  <link rel="shoticon" href="https://www.onlystar.site/favicon.ico" type="image/x-icon">
+  <link rel="alternate" type="application/rss+xml" href="https://www.onlystar.site/rss2.xml" title="星空守候的博客" />
+  <link rel="prev" href="https://www.onlystar.site/all/20120922/122700/" title="在Javascript中模仿接口（一）" />
+  <link rel="next" href="https://www.onlystar.site/all/20120918/085800/" title="javascript链式调用的实现方式" />
+  <link rel="start" href="https://www.onlystar.site/entry/" title="Blog Entry" />
+  <link rel="stylesheet" href="/public/css/style.css?v=20170604">
+</head>
+<span class="aria-readonly" tabindex="0" aria-hidden="true">小胡子哥的博客良好支持读屏软件阅读，请放心使用。</span>
+
+
+<body>
+  <div class="rainbow"></div>
+  <div class="container">
+  <span class="local-search local-search-google local-search-plugin" style="position:absolute;right: 20px;top:30px;">
+  <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+  <i class="icon" aria-hidden="true" title="点击进入 Google 搜索">&#x2708;</i>
+  <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
+  <div class="article" itemscope itemtype="http://schema.org/Article">
+    <div class="post">
+      <div class="bread">
+        <a href="/">小胡子哥的个人博客</a> »
+        <a href="/entry/">博客</a> »
+        
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/杂物间/">杂物间</a>
+
+
+      </div>
+      <div class="post-title-wrapper">
+        <h1 class="post-title" itemprop="name">如何设计一个支持方法链式调用的JavaScript库<img src="https://game.weixin.qq.com/cgi-bin/comm/qrcode?s=50&m=1&d=http:https://www.onlystar.site/all/20120918/093700/" alt="扫码分享" onerror="this.style.display='none';"></h1>
+        <a href="/about/"><img src="/blogimgs/avatar.png" alt="rain" /></a>
+      </div>
+      <div class="post-info">
+        <span>作者: <a href="/about/">rain</a></span>
+        <span>
+          <time itemprop="timeCreated" aria-hidden="true">2012-09-18 09:37:00</time>
+          <span class="aria-readonly">本文发布时间为2012年09月18日09时37分00秒</span>
+        </span>
+        <span>分类: 
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/杂物间/">杂物间</a>
+
+</span>
+        <span tabindex="0" aria-hidden="true">标签: 
+<a class="article-tag-link" href="/tags/cnblogs/">cnblogs</a>, <a class="article-tag-link" href="/tags/tech/">tech</a>
+</span>
+        <span class="aria-readonly">下面是正文内容</span>
+        <span tabindex="0" aria-hidden="true">评论数: <a href="#comments"
+                      class="ds-thread-count hash-to-comments disqus-comment-count"
+                      data-thread-key="如何设计一个支持方法链式调用的JavaScript库"
+                      data-disqus-identifier="如何设计一个支持方法链式调用的JavaScript库"
+                      id="changyan_count_unit"></a></span>
+        <span tabindex="0" aria-hidden="true" id="busuanzi_container_site_pv">热度: <span id="busuanzi_value_page_pv"></span></span>
+      </div>
+      <div class="post-content" itemprop="articleBody">
+        <div class="shit-spider" title="防爬虫不注明出处" tabindex="0" aria-hidden="true">
+          <p>原文地址：<a href="https://www.onlystar.site/all/20120918/093700/">https://www.onlystar.site/all/20120918/093700/</a>，<a href="https://www.onlystar.site/all/20120918/093700/#comments">参与评论</a></p>
+          <img src="//www.barretlee.com/blogimgs/avatar.png" width="150">
+        </div>
+        <div class="history-article">本文为归档内容,原始地址在 <a href="http://www.cnblogs.com/hustskyking/archive/2012/09/18/3049801.html" target="_blank">博客园</a>.</div>
+
+<p><strong>本文从ITeye导入</strong></p>
+
+
+<p>可以先了解下&nbsp;<a class="titlelink" href="http://www.cnblogs.com/hustskyking/archive/2012/09/18/3049802.html" target="_blank" rel="external">javascript链式调用的实现方式</a></p>
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div></pre></td><td class="code"><pre><div class="line">//设计一个支持方法链式调用的JavaScript库</div><div class="line"></div><div class="line">/*</div><div class="line">    常见于大多数JavaScript库中的特性</div><div class="line"> &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;</div><div class="line">       特性          |                       说明</div><div class="line"> &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;</div><div class="line">       事件          |   添加和删除事件监听器，对时间对象进行规范内化处理</div><div class="line">       DOM          |   类名管理，样式管理</div><div class="line">       Ajax         |   多XMLHttpRequest进行规范化处理</div><div class="line"> &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;</div><div class="line"></div><div class="line">    注：可以对私有的_$构造函数进行扩充</div><div class="line">*/</div><div class="line">Function.prototype.method = function(name, fn)&#123;</div><div class="line">    this.prototype[name] = fn;</div><div class="line">    return this;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">(function()&#123;</div><div class="line"></div><div class="line">    function _$(els)&#123;</div><div class="line">        this.element = [];</div><div class="line">        for(var i = 0, len = els.length; i &lt; len; i++)&#123;</div><div class="line">            var element = els[i];</div><div class="line">            if(typeof element === &apos;string&apos;)&#123;</div><div class="line">                element = document.getElementById(element);</div><div class="line">            &#125;</div><div class="line">            this.element.push(element);</div><div class="line">        &#125;</div><div class="line">        return this;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    /*</div><div class="line">        Events</div><div class="line">            * addEvent</div><div class="line">    */</div><div class="line"></div><div class="line">    _$.method(&apos;addEvent&apos;, function(type, fn)&#123;</div><div class="line">            var add = function(el)&#123;</div><div class="line">            if(window.addEventListener)&#123;</div><div class="line">                el.addEventListener(type, fn, false);</div><div class="line">            &#125;else if(window.attachEvent)&#123;</div><div class="line">                el.attachEvent(&apos;on&apos; + type, fn);</div><div class="line">            &#125;</div><div class="line">            this.each(function(el)&#123;</div><div class="line">                add(el);</div><div class="line">            &#125;);</div><div class="line">        &#125;).</div><div class="line"></div><div class="line">    /*</div><div class="line">        otherFun</div><div class="line">            * each</div><div class="line">            * setStyle</div><div class="line">            * show</div><div class="line">    */</div><div class="line"></div><div class="line">        method(&apos;otherFun&apos;, function(fn)&#123;</div><div class="line">            for(var i = 0, len = this.element.length; i &lt; len; i++)&#123;</div><div class="line">                fn.call(this, this.element[i]);</div><div class="line">            &#125;</div><div class="line">            return this;</div><div class="line">        &#125;).</div><div class="line">        method(&apos;setStyle&apos;, function(prop, val)&#123;</div><div class="line">            this.each(function(el)&#123;</div><div class="line">                el.style[prop] = val;</div><div class="line">            &#125;);</div><div class="line">            return this;</div><div class="line">        &#125;).</div><div class="line">        method(&apos;show&apos;, function()&#123;</div><div class="line">            var that = this;</div><div class="line">            this.each(function(el)&#123;</div><div class="line">                that.setStyle(&apos;display&apos;, &apos;none&apos;);</div><div class="line">            &#125;);</div><div class="line">            return this;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line">    window.installHelper = function(scope, interface)&#123;</div><div class="line">        scope[interface] = function()&#123;</div><div class="line">            return new _$(arguments);</div><div class="line">        &#125;;</div><div class="line">    &#125;;</div><div class="line">&#125;)();</div><div class="line"></div><div class="line">/*</div><div class="line">    //处理库中$的冲突问题</div><div class="line"></div><div class="line">    用户可能会这样使用：</div><div class="line">    installHelper(window, &quot;$&quot;);</div><div class="line"></div><div class="line">    $(&apos;example&apos;).show();</div><div class="line"></div><div class="line">    也可以将功能添加到实现定义好的命名空间对象中：</div><div class="line">    window.com = window.com || &#123;&#125;;</div><div class="line">    com.example = com.example || &#123;&#125;;</div><div class="line">    com.example.util = com.example.util || &#123;&#125;;</div><div class="line"></div><div class="line">    installHelper(com.example.util, &apos;$&apos;);</div><div class="line">    (function()&#123;</div><div class="line">        var get = com.example.util.get;</div><div class="line">        get(&apos;example&apos;).show();</div><div class="line">    &#125;)();</div><div class="line">*/</div></pre></td></tr></table></figure>
+
+      </div>
+    </div>
+    
+<div class="old-article-warning">
+	本文在 <b>1861</b> 天之前发表，技术更替飞快，文中部分内容可能已经过时，如有疑问，
+	请在下方留言，或者联系 <a href="/about">小胡子哥</a>。
+</div>
+
+    <div class="follow-wechat"><img src="/follow.jpg"></div>
+
+<div class="copyright" itemscope itemtype="http://schema.org/ProfilePage" tabindex="0" aria-hidden="true">
+	<!-- <a href="/about/#support" class="supportme">赏</a> -->
+	<ul>
+		<li>作者:  <a href="/about/" itemprop="name">Rain (Rain)</a></li>
+		<li>发表日期:  2012-09-18 09:37:00</li>
+		<li>文章分类: 
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/杂物间/">杂物间</a>
+
+</li>
+		<li>文章标签: 
+<a class="article-tag-link" href="/tags/cnblogs/">cnblogs</a>, <a class="article-tag-link" href="/tags/tech/">tech</a>
+</li>
+		<li>版权声明: 署名-非商业性使用-禁止演绎 3.0 国际（<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">CC BY-NC-ND 3.0</a>）</li>
+		<li>最后编辑时间: 2017-08-31 14:52:18</li>
+		<li>Feed订阅: <a href="/rss2.xml"><i class="icon">&#x25c8;</i></a></li>
+	</ul>
+	<a href="/about/"><img src="/blogimgs/avatar150.png" /></a>
+</div>
+
+    <em class="arrow-expend icon" tabindex="0" aria-hidden="true">&#xe618;
+      <ul>
+        <li><a href="/entry/">博客</a></li>
+        <li><a href="/message/">问答</a></li>
+        <li><a href="/about/">关于</a></li>
+        <li><a href="/demo/">实验室</a></li>
+        <li><a href="/comments/">最近评论</a></li>
+        <li><a href="/friends/">友情链接</a></li>
+      </ul>
+    </em>
+  </div>
+  <div class="post-relative">
+<div class="page-relative">
+  
+    <a href="/all/20120922/122700/" class="post-prev">
+      <i class="icon" tabindex="0" aria-hidden="true">&#x261c;</i>
+      <span class="aria-readonly">上一篇文章</span>
+      
+        <b>在Javascript中模仿接口（一）</b>
+      
+    </a>
+  
+  
+    <a href="/all/20120918/085800/" class="post-next">
+      <span class="aria-readonly">下一篇文章</span>
+      <b>javascript链式调用的实现方式</b>
+      <i class="icon" tabindex="0" aria-hidden="true">&#xe602;</i>
+    </a>
+  
+</div>
+
+
+<div class="page-relative-fixed" tabindex="0" aria-hidden="true">
+  
+  <a href="/all/20120922/122700/" class="prev" title="在Javascript中模仿接口（一）">
+    <i class="icon">&#xe600;</i>
+    
+    <b>在Javascript中模仿接口（一）</b>
+    
+  </a>
+  
+  
+  <a href="/all/20120918/085800/" class="next" title="javascript链式调用的实现方式">
+    <i class="icon">&#x261e;</i>
+    <b>javascript链式调用的实现方式</b>
+  </a>
+  
+</div>
+</div>
+</div>
+<div class="sidebar" tabindex="0" aria-hidden="true">
+	<div class="func-btns func-btns-up">
+    <span class="func-item">
+        <i class="func-nav icon">&#xe618;<span>目录</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="javascript:void(0);" onclick="return false;">显示目录</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-font icon">&#xe604;<span>设置</span></i>
+        <div class="font-choose-box">
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <div class="font-choose bg-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-sun font-type-song"><i class="icon">&#xe61a;</i></a>
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-moon font-type-hei"><i class="icon">&#xe619;</i></a>
+          </div>
+          <div class="font-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-song">黑体</a>
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-hei">宋体</a>
+          </div>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="http://weibo.com/173248656" target="_blank"><i class="func-fb icon">博<span>分享</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator sharecanvas"><a href="javascript: void(0);">截屏分享</a></p>
+          <p><a href="http://weibo.com/173248656" target="_blank">微博关注</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-about icon">&#x263b;<span>关于</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p><a href="/about/" class="func-about-link" target="_blank">关于作者</a></p>
+          <div id="followMeOnWeibo"></div>
+        </div>
+    </span>
+	</div>
+	<div class="func-btns">
+    <span class="func-item">
+        <a href="http://demo.barretlee.com" target="_blank"><i class="func-rss icon">&#xe603;<span>实验</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="http://demo.barretlee.com" target="_blank">Demo平台</a></p>
+          <p class="seperator"><a href="http://md.barretlee.com" target="_blank">WX格式</a></p>
+          <p><a href="http://snippets.barretlee.com" target="_blank">Snippet应用</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-fb icon">&#x2121;<span>留言</span></i>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="/message/" target="_blank">给我留言</a></p>
+          <p><a href="/comments/" target="_blank">近期留言</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/friends/" target="_blank"><i class="func-rss icon">&#xe601;<span>友链</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="/friends/" target="_blank">友情链接</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/rss2.xml" target="_blank"><i class="func-rss icon">&#x25c8;<span>订阅</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i><a href="/rss2.xml" target="_blank">订阅我吧！</a></div>
+    </span>
+	</div>
+</div>
+
+<div class="single-page-footer">
+<div class="footer">
+	<div class="footer-wraper">
+		<div class="footer-content">
+			<div class="footer-nav">
+	<a href="javascript: void(0);" class="ds-thread-count disqus-comment-count"
+	   data-thread-key="如何设计一个支持方法链式调用的JavaScript库"
+	   data-disqus-identifier="如何设计一个支持方法链式调用的JavaScript库" 
+		 tabindex="0" aria-hidden="true">评论内容</a>
+	<a href="javascript: void(0);" id="comments">相关文章</a>
+	<a href="/friends/" tabindex="0" aria-hidden="true">友情链接</a>
+</div>
+<div class="nav-detail">
+	<div tabindex="0" aria-hidden="true">
+		
+<div id="SOHUCS" sid="如何设计一个支持方法链式调用的JavaScript库">
+	<div class="ds-loading">
+		<img src="/blogimgs/loading.gif" alt="loading..."/>
+		<p>这网速真是弱爆了...客官稍等,评论还在加载~</p>
+	</div>
+</div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+  appid: 'cyt0XnPCt',
+  conf: 'prod_5fde9cb8b23a2209a1ad60ab2dd5fe82'
+});
+</script>
+
+	</div>
+	<div style="display:block;">
+		<div class="relative-to-comment" tabindex="0" aria-hidden="true"><span>打开评论</span></div>
+		<div class="relative-wrapper">
+	<div class="relative-article">
+		
+		<ul>
+			<li>
+				<span><font aria-hidden="true">2017-06-06 »</font> </span>
+				<a href="/all/20170606/144621/">深入理解 Node Stream 内部机制</a>
+				<span class="aria-readonly">发表时间为2017年06月06日</span>
+				<div class="relative-box">
+          <a href="/all/20170606/144621/" class="relative-img-wrapper" style="background-image:url(/blogimgs/node-stream-readable-flowing.png);"></a>
+          <span class="aria-readonly">文章概要 </span>相信很多人对 Node 的 Stream 已经不陌生了，不论是请求流、响应流、文件流还是 socke...
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-09-28 »</font> </span>
+				<a href="/all/20160928/230523/">揭秘 0.1 + 0.2 != 0.3</a>
+				<span class="aria-readonly">发表时间为2016年09月28日</span>
+				<div class="relative-box">
+          <a href="/all/20160928/230523/" class="relative-img-wrapper" style="background-image:url(http://ww4.sinaimg.cn/large/6c0378f8gw1f89pd8hm96j20p00dwacm.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>“0.1 + 0.2 = ?”，这道题如果给小学生，他会立马告诉你答案是 0.3，但是交给一些程序去计算，结果就不是那么简单了。
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-08-23 »</font> </span>
+				<a href="/all/20160823/010513/">构建一个安全的 JavaScript 沙箱</a>
+				<span class="aria-readonly">发表时间为2016年08月23日</span>
+				<div class="relative-box">
+          <a href="/all/20160823/010513/" class="relative-img-wrapper" style="background-image:url(http://ww1.sinaimg.cn/large/6c0378f8gw1f730uldkfrj20p00dwaf1.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>在 Node.js 中有一个模块叫做 VM，它提供了几个 API，允许代码在 V8 虚拟机上下文中运行，如：12345const vm = require('vm');const sandbox = &#123; a: 1, b: 2 &#125;;const script = new vm.Script('a + b');const context = new vm.createContext(sandbox);script.runInContext(context);vm.Script 中的代码是预编译好的，通过 vm.createContext 将代码加载到一个上下文环境中，置入沙箱（sandbox），然后通过 script.runInContext 执行代码，整个操作都在封闭的 VM 中进行。这是 Node.js 提供给我们的便捷功能，那么，在浏览器环境中呢？是否也能做到将代码运行在沙箱中？本文带着大家来探索一番。
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-07-13 »</font> </span>
+				<a href="/all/20160713/001549/">我需要学习 ECMAScript 6 么？</a>
+				<span class="aria-readonly">发表时间为2016年07月13日</span>
+				<div class="relative-box">
+          <a href="/all/20160713/001549/" class="relative-img-wrapper" style="background-image:url(//ww1.sinaimg.cn/large/6c0378f8gw1f5rkudyzzoj20p00dwt9x.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>前几天翻译了一篇 ECMAScript 6 的入门文章，看到几则评论说 JavaScript 越来越像 Java 了，我暗暗地笑了笑。也有同学很疑惑是否有必要学习 ES6，使用 TypeScript 的同学也有类似的疑惑。
+        </div>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+
+		<a href="/entry/" class="relative-to-comment-wrapper" tabindex="0" aria-hidden="true"><div class="relative-to-comment">回到首页</div></a>
+	</div>
+	<div class="friends-box">
+		<ul>
+			
+			<li><a href="http://hustskyking.cnblogs.com" target="_blank">旧博客</a> <font aria-hidden="true">»</font> <span>我的旧博客（博客园荣誉博客）</span></li>
+			
+			<li><a href="http://www.zhangmengxue.com" target="_blank">大额</a> <font aria-hidden="true">»</font> <span>大额大额哼歌等日落</span></li>
+			
+			<li><a href="http://www.zhangxinxu.com" target="_blank">张鑫旭</a> <font aria-hidden="true">»</font> <span>原来大学我俩一个团队的~</span></li>
+			
+			<li><a href="http://web-tinker.com" target="_blank">次碳酸钴</a> <font aria-hidden="true">»</font> <span>深度交流的一个好朋友</span></li>
+			
+			<li><a href="http://imququ.com" target="_blank">屈屈</a> <font aria-hidden="true">»</font> <span>好吧，蛐蛐同学</span></li>
+			
+			<li><a href="http://www.ruanyifeng.com" target="_blank">阮一峰</a> <font aria-hidden="true">»</font> <span>阮老师,哈哈,第一次设计博客就是抄的你的样式</span></li>
+			
+			<li><a href="http://annn.me" target="_blank">安记</a> <font aria-hidden="true">»</font> <span>阿安同学</span></li>
+			
+			<li><a href="http://mouto.org/" target="_blank">卜卜口</a> <font aria-hidden="true">»</font> <span>二次元化身</span></li>
+			
+			<li><a href="/friends/">更多列表 <font aria-hidden="true">»</font></a></li>
+		</ul>
+	</div>
+</div>
+			
+<div class="website-info" aria-hidden="true">
+	<a class="page_editor" href="/admin/#/posts/cj92lk7a9000c7wvvgmgsijzw" target="_blank">🙈</a>
+	<span>&copy;2013-2017 <small><a href="http://www.miitbeian.gov.cn/" about="_blank">湘ICP备14007107号-1</a></small></span>
+	本站由 <a href="/">rain</a> 纯手工打造 | <a href="/about#contact">联系方式</a> | 总热度：<em id="busuanzi_value_site_pv"></em>
+</div>
+
+		</div>
+	</div>
+</div>
+</div>
+<div class="tools-wrapper" tabindex="0" aria-hidden="true">
+	<a class="gotop icon" href="#" title="回到顶部">&#x2191;</a>
+	<!-- <a class="wechart icon">&#xe60d;<span><img src="/wechart.png" title="扫码添加小胡子哥微信"/> </span></a> -->
+	<a class="hash-to-comments icon" title="我要评论">&#x2121;</a>
+</div>
+<div class="fixerr" tabindex="0" aria-hidden="true">纠错模式</div>
+
+</body>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/socket.io.js"></script>
+<script>
+  window.onerror = function(e) {
+    window.console && window.console.log && window.console.log(e);
+    $('#loadLayer').remove();
+    return true;
+  };
+</script>
+<script src="/public/js/aplayer.js"></script>
+<script src="/public/js/main.js?v=20170824"></script>
+</script>
+</html>

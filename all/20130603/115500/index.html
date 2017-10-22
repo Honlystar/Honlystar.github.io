@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>3D遥控坦克大战 | 星空守候的博客</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+  <meta name="author" content="https://plus.google.com/112634278852964994392?hl=zh-cn">
+  <meta name="email" content="barret.china@gmail.com">
+  <meta name="description" content="本文为归档内容,原始地址在 博客园.昨天参加了hack day的一个比赛，赛制大致是：24小时，自由组队2~4人，任意发挥。运气比较好，拿了第三名和最佳创意奖。建议先看看这个demo，bug是有的，chrome下玩玩，测试测试就行，O(&amp;cap;_&amp;cap;)O~　　DEMO：http://qian">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="3D遥控坦克大战 | 星空守候的博客">
+  <meta property="og:url" content="https://www.onlystar.site/all/20130603/115500/">
+  <meta property="og:site_name" content="3D遥控坦克大战">
+  <meta property="og:description" content="本文为归档内容,原始地址在 博客园.昨天参加了hack day的一个比赛，赛制大致是：24小时，自由组队2~4人，任意发挥。运气比较好，拿了第三名和最佳创意奖。建议先看看这个demo，bug是有的，chrome下玩玩，测试测试就行，O(&amp;cap;_&amp;cap;)O~　　DEMO：http://qian">
+  <meta name="generator" content="https://hexo.io" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <link href="https://www.onlystar.site/blogimgs/app-icon.png" rel="apple-touch-icon-precomposed">
+  <link rel="shoticon" href="https://www.onlystar.site/favicon.ico" type="image/x-icon">
+  <link rel="alternate" type="application/rss+xml" href="https://www.onlystar.site/rss2.xml" title="星空守候的博客" />
+  <link rel="prev" href="https://www.onlystar.site/all/20130604/104100/" title="正则表达式30分钟入门教程" />
+  <link rel="next" href="https://www.onlystar.site/all/20130531/115500/" title="删除数组中的某个元素" />
+  <link rel="start" href="https://www.onlystar.site/entry/" title="Blog Entry" />
+  <link rel="stylesheet" href="/public/css/style.css?v=20170604">
+</head>
+<span class="aria-readonly" tabindex="0" aria-hidden="true">小胡子哥的博客良好支持读屏软件阅读，请放心使用。</span>
+
+
+<body>
+  <div class="rainbow"></div>
+  <div class="container">
+  <span class="local-search local-search-google local-search-plugin" style="position:absolute;right: 20px;top:30px;">
+  <input type="search" placeholder="站内搜索" id="local-search-input" class="local-search-input-cls" style="">
+  <i class="icon" aria-hidden="true" title="点击进入 Google 搜索">&#x2708;</i>
+  <div id="local-search-result" class="local-search-result-cls"></div>
+</span>
+  <div class="article" itemscope itemtype="http://schema.org/Article">
+    <div class="post">
+      <div class="bread">
+        <a href="/">小胡子哥的个人博客</a> »
+        <a href="/entry/">博客</a> »
+        
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/前端杂烩/">前端杂烩</a>
+
+
+      </div>
+      <div class="post-title-wrapper">
+        <h1 class="post-title" itemprop="name">3D遥控坦克大战<img src="https://game.weixin.qq.com/cgi-bin/comm/qrcode?s=50&m=1&d=http:https://www.onlystar.site/all/20130603/115500/" alt="扫码分享" onerror="this.style.display='none';"></h1>
+        <a href="/about/"><img src="/blogimgs/avatar.png" alt="rain" /></a>
+      </div>
+      <div class="post-info">
+        <span>作者: <a href="/about/">rain</a></span>
+        <span>
+          <time itemprop="timeCreated" aria-hidden="true">2013-06-03 11:55:00</time>
+          <span class="aria-readonly">本文发布时间为2013年06月03日11时55分00秒</span>
+        </span>
+        <span>分类: 
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/前端杂烩/">前端杂烩</a>
+
+</span>
+        <span tabindex="0" aria-hidden="true">标签: 
+<a class="article-tag-link" href="/tags/cnblogs/">cnblogs</a>, <a class="article-tag-link" href="/tags/tech/">tech</a>
+</span>
+        <span class="aria-readonly">下面是正文内容</span>
+        <span tabindex="0" aria-hidden="true">评论数: <a href="#comments"
+                      class="ds-thread-count hash-to-comments disqus-comment-count"
+                      data-thread-key="cb-3D-Tank-War"
+                      data-disqus-identifier="cb-3D-Tank-War"
+                      id="changyan_count_unit"></a></span>
+        <span tabindex="0" aria-hidden="true" id="busuanzi_container_site_pv">热度: <span id="busuanzi_value_page_pv"></span></span>
+      </div>
+      <div class="post-content" itemprop="articleBody">
+        <div class="shit-spider" title="防爬虫不注明出处" tabindex="0" aria-hidden="true">
+          <p>原文地址：<a href="https://www.onlystar.site/all/20130603/115500/">https://www.onlystar.site/all/20130603/115500/</a>，<a href="https://www.onlystar.site/all/20130603/115500/#comments">参与评论</a></p>
+          <img src="//www.barretlee.com/blogimgs/avatar.png" width="150">
+        </div>
+        <div class="history-article">本文为归档内容,原始地址在 <a href="http://www.cnblogs.com/hustskyking/archive/2013/06/03/3D-Tank-War.html" target="_blank">博客园</a>.</div>
+
+<p><span>昨天参加了hack day的一个比赛，赛制大致是：24小时，自由组队2~4人，任意发挥。运气比较好，拿了第三名和最佳创意奖。</span></p><br><p><span>建议先看看这个demo，bug是有的，chrome下玩玩，测试测试就行，O(&cap;_&cap;)O~</span></p><br><p><span>　　DEMO：<a title="3D tank" href="http://qianduannotes.sinaapp.com/3dtank/html/index.html" target="_blank">http://qianduannotes.sinaapp.com/3dtank/html/index.html</a></span></p><br><p>&nbsp;基本效果:</p><br><p><img src="http://images.cnitblog.com/blog/387325/201306/03235624-efc5a0a6284d45ce867229cc73a5d3f0.png" alt="" width="573" height="300"></p>
+
+
+<p></p><h3><span>关于</span></h3><p></p>
+<p><span>懒得去SAE上折腾，没把那另外一半的功能补上，不过我还是介绍下这几个没补上功能吧。</span></p><br><p><span>　　<strong>1. 音效</strong>。开始音乐是比较古老的坦克大战开机音乐。</span></p><br><p><span>　　　　① 开始音效 <a title="start" href="http://qianduannotes.sinaapp.com/3dtank/test.html#begin" target="_blank">点击播放</a></span></p><br><p><span>　　　　② 发子弹 &nbsp; &nbsp;<a title="shoot" href="http://qianduannotes.sinaapp.com/3dtank/test.html#shoot" target="_blank">点击播放</a></span></p><br><p><span>　　　　③ 击中坦克&nbsp;<a title="hit" href="http://qianduannotes.sinaapp.com/3dtank/test.html#hit" target="_blank">点击播放</a></span></p><br><p><span>　　　　④ 爆炸 &nbsp; &nbsp; &nbsp;&nbsp;<a title="explode" href="http://qianduannotes.sinaapp.com/3dtank/test.html#explode" target="_blank">点击播放</a></span></p><br><p><span>　　②和③是自己录制的，呵呵，DIY的东西才好玩。</span></p>
+
+
+<p><span>　　<strong>2. 登录验证</strong></span></p><br><p><span>　　<img src="http://images.cnitblog.com/blog/387325/201306/03231602-a2fe0e78de744ae5a32b23132f769107.png" alt=""></span></p><br><p>　　采用的是解锁，这个创意应该是非常不错的，当登录的时候，A、B玩家下方会生成一个如上图的canvas解锁块，当然这个解锁卡也会通过socket传送到手机遥控端，手机解锁成功后方可登录。</p><br><p>　　<img src="http://images.cnitblog.com/blog/387325/201306/03231922-39fd5ae76f1041e1a6cd2238b97b6a9b.png" alt="" width="497" height="260"></p>
+
+
+<p><strong>　　3. 坦克360&deg;旋转</strong></p><br><p>　　由于键盘控制只能上下左右，所以360&deg;是转不出来的..刚想截一张手机控制游戏的图，总是报错…囧（后台用的是php，socket控制信号传输，刚打开手机端网页的时候php socket报错）。<strong></strong></p><br><p>手机遥控端视图：</p><br><p><img src="http://images.cnitblog.com/blog/387325/201306/04082543-27c0d64ccf184cd08477d5a2c6b87e2d.png" alt=""></p><br><p>　　这里主要利用的是手机多点触控，touchstart,touchmove,touchend这三个事件。</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function canvasAddListener() &#123;</div><div class="line">    canvas.addEventListener(&apos;touchstart&apos;, onTouchStart, false);</div><div class="line">    canvas.addEventListener(&apos;touchmove&apos;, onTouchMove, false);</div><div class="line">    canvas.addEventListener(&apos;touchend&apos;, onTouchEnd, false);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><span>&nbsp;</span></p><br><p><strong>　　4. 重新开始游戏和打死坦克添加效果等</strong></p>
+
+
+<p><em>以上都是没有公开显示出来的效果，下次弄好了再上传吧，嘻嘻。</em></p>
+
+
+<p></p><h3>先说说前台</h3><p></p>
+<p>前台主要采用的是css3和js（这是废话）。</p><br><p><strong>1. css3构建一个3D游戏场地</strong></p><br><p>效果：</p><br><p><img src="http://images.cnitblog.com/blog/387325/201306/04000040-cee0817672774eb8bdd6a3a2e14e22f4.png" alt="" width="339" height="338"></p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">    width:500px;</div><div class="line">    height:500px;</div><div class="line">    position:relative;</div><div class="line">    -webkit-transform-style: preserve-3d;</div><div class="line">    /*-webkit-transform: rotateY(40deg);*/</div><div class="line">    -webkit-transition:all 1s ease-in-out;</div><div class="line">&#125;</div><div class="line">.inBox &#123;</div><div class="line">    width:300px;</div><div class="line">    height:300px;</div><div class="line">    overflow: hidden;</div><div class="line">    text-align: center;</div><div class="line">    box-shadow: 0px 0px 2px white;</div><div class="line">    background:rgba(255,255,255,.2);</div><div class="line">    /*background:#779443;*/</div><div class="line">    position:absolute;</div><div class="line">    top:100px;</div><div class="line">    left:100px;</div><div class="line">    color:white;</div><div class="line">&#125;</div><div class="line">.box-forward &#123;</div><div class="line">    -webkit-transform: rotateY(0deg) translateZ(150px);</div><div class="line">&#125;</div><div class="line">.box-back &#123;</div><div class="line">    -webkit-transform: rotateY(180deg) translateZ(150px);</div><div class="line">&#125;</div><div class="line">.box-left &#123;</div><div class="line">    -webkit-transform: rotateY(270deg) translateZ(150px);</div><div class="line">&#125;</div><div class="line">.box-right &#123;</div><div class="line">    -webkit-transform: rotateY(90deg) translateZ(150px);</div><div class="line">&#125;</div><div class="line">.box-top &#123;</div><div class="line">    -webkit-transform:rotateX(90deg) translateZ(150px);</div><div class="line">&#125;</div><div class="line">.box-bottom &#123;</div><div class="line">    -webkit-transform:rotateX(-90deg) translateZ(150px);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面是css部分，比赛过程中，参看了下张鑫旭大哥的文章（之前这块还不是很了解的），<a title="好吧，CSS3 3D transform变换，不过如此！" href="http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/" target="_blank">文章链接</a>。就不细说了。</p><br><p>下面是HTML部分：</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;w&quot;&gt;</div><div class="line">    &lt;div class=&quot;box&quot;&gt;</div><div class="line">        &lt;div class=&quot;inBox box-forward&quot; data-num=&quot;upF rightF downF leftF&quot; data-v=&quot;1&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;inBox box-back&quot; data-num=&quot;upF leftF downF rightF&quot; data-v=&quot;2&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;inBox box-left&quot; data-num=&quot;upF forwardF downF backF&quot; data-v=&quot;3&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;inBox box-right&quot; data-num=&quot;upF backF downF forwardF&quot; data-v=&quot;4&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;inBox box-top&quot; data-num=&quot;backF rightF forwardF leftF&quot; data-v=&quot;5&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;inBox box-bottom&quot; data-num=&quot;backF leftF forwardF rightF&quot; data-v=&quot;6&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p><strong>2. JS这块，写了比较多。</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">var $ = document.querySelectorAll.bind(document);</div><div class="line"></div><div class="line">/**</div><div class="line">* @description core part</div><div class="line">* @author hustskyking</div><div class="line">*/</div><div class="line">var faces = $(&quot;.inBox&quot;),</div><div class="line">    bloodA = $(&quot;.bloodA div&quot;)[0],</div><div class="line">    bloodB = $(&quot;.bloodB div&quot;)[0],</div><div class="line"></div><div class="line">    box = $(&quot;.box&quot;)[0],</div><div class="line">    upF = $(&quot;.box-top&quot;)[0],</div><div class="line">    downF = $(&quot;.box-bottom&quot;)[0],</div><div class="line">    leftF = $(&quot;.box-left&quot;)[0],</div><div class="line">    rightF = $(&quot;.box-right&quot;)[0],</div><div class="line">    forwardF = $(&quot;.box-forward&quot;)[0],</div><div class="line">    backF = $(&quot;.box-back&quot;)[0],</div><div class="line"></div><div class="line">    cSize = upF.clientWidth,</div><div class="line">    datas = &#123;</div><div class="line">        &quot;upF&quot;: upF,</div><div class="line">        &quot;downF&quot;: downF,</div><div class="line">        &quot;leftF&quot;: leftF,</div><div class="line">        &quot;rightF&quot;: rightF,</div><div class="line">        &quot;forwardF&quot;: forwardF,</div><div class="line">        &quot;backF&quot;: backF</div><div class="line">    &#125;,</div><div class="line">    stopN = 0,</div><div class="line">    tanks = &#123;&#125;,</div><div class="line">    randomTank = 2,</div><div class="line">    tankLimit  = 20,</div><div class="line">                    //a   w   d  s   j      ←   ↑   →  ↓   p</div><div class="line">    debug_keySet = [[65, 87, 68, 83, 74], [37, 38, 39, 40, 80]];</div><div class="line"></div><div class="line">/**</div><div class="line">* @Class Tank</div><div class="line">* @attrs width, height, currentX, currentY, speedX, speedY, angleX, angleY, plusy, plusx</div><div class="line">*        container, dataset, stopN, tank, tankId, life, bulletBox, color, timerLimit, timer, gap,</div><div class="line">         sTime</div><div class="line">*/</div><div class="line">var Tank = function(setting)&#123;</div><div class="line">    var opts = setting || &#123;&#125;;</div><div class="line">    this.container = opts.container || forwardF;</div><div class="line">    this.dataset   = this.container.getAttribute(&apos;data-num&apos;).split(&quot; &quot;);</div><div class="line">    this.belong = 0;</div><div class="line">    this.grade  = 0;</div><div class="line">    this.debug  = false;</div><div class="line">    this.width  = opts.width || 14;</div><div class="line">    this.height = opts.height || 18;</div><div class="line">    this.stopN  = &quot;keyup&quot; + (window.stopN++);</div><div class="line">    this.gap    = opts.gap || 30;</div><div class="line">    this.speed  = opts.speed || 3;</div><div class="line">    this.ax     = 0;</div><div class="line">    this.ay     = 0;</div><div class="line">    this.cx     = opts.cx || (cSize - this.width) / 2;</div><div class="line">    this.cy     = opts.cy || (cSize - this.height) / 2;</div><div class="line">    this.sx     = 0;</div><div class="line">    this.sy     = 0;</div><div class="line"></div><div class="line">    this.tank   = null;</div><div class="line">    this.tankId = &quot;&quot;;</div><div class="line">    this.life   = 100;</div><div class="line">    this.color  = opts.color || &quot;#0047B3&quot;;</div><div class="line"></div><div class="line">    this.bulletBox = [];</div><div class="line">    this.bColor = opts.bColor || &quot;#0047B3&quot;;</div><div class="line">    this.timerLimit= 400;</div><div class="line">    this.gunAngle  = 0;</div><div class="line">    this.timer     = null;</div><div class="line">    this.sTime     = 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Tank.prototype = &#123;</div><div class="line">    init: function(tankId, debug)&#123;</div><div class="line">        if(tankId)&#123;</div><div class="line">            this.tankId = tankId;</div><div class="line">            this.belong = (Number(tankId) &gt; 2 ? 2 :Number(tankId));</div><div class="line">        &#125;else&#123;</div><div class="line">            throw new Error(&quot;必须设置tank ID&quot;);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        var this_ = this;</div><div class="line"></div><div class="line">        //绘制坦克</div><div class="line">        this.paintTank();</div><div class="line"></div><div class="line">        if(debug)&#123;</div><div class="line">            this.debug = true;</div><div class="line">            this.keySet = debug.keySet;</div><div class="line">            window.addEventListener(&quot;keydown&quot;, function()&#123;</div><div class="line">                this_.move_debug();</div><div class="line">            &#125;, false);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        window.addEventListener(this.stopN, function()&#123;</div><div class="line">            clearInterval(this_.timer);</div><div class="line">        &#125;, false);</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    paintTank: function()&#123;</div><div class="line">        var tank = document.createElement(&quot;span&quot;);</div><div class="line">        var circle = document.createElement(&quot;span&quot;);</div><div class="line">        var gun = document.createElement(&quot;span&quot;);</div><div class="line"></div><div class="line">        gun.setAttribute(&quot;class&quot;, &quot;gun&quot;);</div><div class="line">        tank.setAttribute(&quot;class&quot;, &quot;tank&quot;);</div><div class="line">        circle.setAttribute(&quot;class&quot;, &quot;circle&quot;);</div><div class="line">        tank.setAttribute(&quot;id&quot;, &quot;tank&quot; + this.tankId);</div><div class="line"></div><div class="line">        gun.style.borderColor = this.color;</div><div class="line">        circle.style.borderColor = this.color;</div><div class="line">        tank.style.cssText = &quot;width:&quot; + this.width + &quot;px;height:&quot; + this.height +</div><div class="line">                             &quot;px;top:&quot; + this.cy + &quot;px;left:&quot; + this.cx + &quot;px;border-color:&quot;</div><div class="line">                             + this.color;</div><div class="line"></div><div class="line">        tank.appendChild(gun);</div><div class="line">        tank.appendChild(circle);</div><div class="line"></div><div class="line">        this.container.getElementsByTagName(&quot;div&quot;)[0].appendChild(tank);</div><div class="line"></div><div class="line">        this.tank = tank;</div><div class="line"></div><div class="line">        return tank;</div><div class="line">    &#125;,</div><div class="line">    switchPainter: function(N)&#123;</div><div class="line">        //N  1-&gt;up 2-&gt;right 3-&gt;down 4-&gt;down</div><div class="line">        this.ay %= 360;</div><div class="line">        var r = false,</div><div class="line">            a = 0;</div><div class="line">        if (this.ay &gt; 180) &#123;</div><div class="line">            this.ay -= 360;</div><div class="line">            r = true;</div><div class="line">        &#125;</div><div class="line">        if (this.ay &lt; -180) this.ay += 360;</div><div class="line">        this.container = datas[this.dataset[N]];</div><div class="line">        this.dataset   = this.container.getAttribute(&apos;data-num&apos;).split(&quot; &quot;);</div><div class="line">        this.container.getElementsByTagName(&quot;div&quot;)[0].appendChild(this.tank);</div><div class="line">        if(this.belong &gt;= 2) return;</div><div class="line"></div><div class="line">        box.style.cssText = &quot;-webkit-transform: rotateY(&quot; + (this.ay + (r ? -a : a)) + &quot;deg);&quot;;</div><div class="line">    &#125;,</div><div class="line">    setAngle: function(x, y, ang)&#123;</div><div class="line">        this.sx = x;</div><div class="line">        this.sy = y;</div><div class="line">        this.gunAngle = 90 - ang / Math.PI * 180;</div><div class="line">        $(&quot;#tank&quot; + this.tankId)[0].style.cssText += &quot;-webkit-transform: rotate(&quot; + this.gunAngle + &quot;deg);&quot;;</div><div class="line">    &#125;,</div><div class="line">    move: function(ang)&#123;</div><div class="line">        this.setAngle(Math.cos(ang), -Math.sin(ang), ang);</div><div class="line"></div><div class="line">        this.stopAni();</div><div class="line">        this.ani();</div><div class="line">    &#125;,</div><div class="line">    direction_debug: function()&#123;</div><div class="line">        switch(event.keyCode) &#123;</div><div class="line">            case this.keySet[0]:</div><div class="line">                return &quot;left&quot;;</div><div class="line">            case this.keySet[1]:</div><div class="line">                return &quot;up&quot;;</div><div class="line">            case this.keySet[2]:</div><div class="line">                return &quot;right&quot;;</div><div class="line">            case this.keySet[3]:</div><div class="line">                return &quot;down&quot;;</div><div class="line">            case this.keySet[4]:</div><div class="line">                return &quot;shooter&quot;;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    move_debug: function()&#123;</div><div class="line">        this.stopAni();</div><div class="line">        switch(this.direction_debug()) &#123;</div><div class="line">            case &quot;up&quot;:</div><div class="line">                console.log(&quot;up&quot;);</div><div class="line">                this.setAngle(0, -1, Math.PI / 2);</div><div class="line">                this.gunAngle_debug = 0;</div><div class="line">                break;</div><div class="line">            case &quot;down&quot;:</div><div class="line">                console.log(&quot;down&quot;);</div><div class="line">                this.setAngle(0, 1, Math.PI / 2 * 3);</div><div class="line">                this.gunAngle_debug = 180;</div><div class="line">                break;</div><div class="line">            case &quot;left&quot;:</div><div class="line">                console.log(&quot;left&quot;);</div><div class="line">                this.setAngle(-1, 0, Math.PI);</div><div class="line">                this.gunAngle_debug = 90;</div><div class="line">                break;</div><div class="line">            case &quot;right&quot;:</div><div class="line">                console.log(&quot;right&quot;);</div><div class="line">                this.setAngle(1, 0, Math.PI * 2);</div><div class="line">                this.gunAngle_debug = -90;</div><div class="line">                break;</div><div class="line">            case &quot;shooter&quot;:</div><div class="line">                console.log(&quot;shooter&quot;);</div><div class="line">                this.shooter();</div><div class="line">            default:</div><div class="line">                return;</div><div class="line">        &#125;</div><div class="line">        this.ani();</div><div class="line">    &#125;,</div><div class="line">    ani: function()&#123;</div><div class="line">        var this_ = this;</div><div class="line">        this.timer = setInterval(function()&#123;</div><div class="line">            this_.detective();</div><div class="line">            // this_.detectiveTank();  </div><div class="line"></div><div class="line">            this_.cx += this_.sx * this_.speed;</div><div class="line">            this_.cy += this_.sy * this_.speed;</div><div class="line"></div><div class="line">            this_.detective();</div><div class="line"></div><div class="line">            this_.tank.style.top = this_.cy + &quot;px&quot;;</div><div class="line">            this_.tank.style.left = this_.cx + &quot;px&quot;;</div><div class="line"></div><div class="line">        &#125;, this.gap);</div><div class="line">    &#125;,</div><div class="line">    stopAni: function()&#123;</div><div class="line">        var event = document.createEvent(&apos;HTMLEvents&apos;);</div><div class="line">        event.initEvent(this.stopN, true, true);</div><div class="line">    　　event.eventName = this.stopN;</div><div class="line">        window.dispatchEvent(event);</div><div class="line">    &#125;,</div><div class="line">    detective: function()&#123;</div><div class="line">        if(this.cx - this.width &gt;= cSize)&#123;  //right</div><div class="line">            this.ay += -90;</div><div class="line">            this.ax += 0;</div><div class="line">            this.switchPainter(1);</div><div class="line">            this.cx = 1;</div><div class="line">        &#125;</div><div class="line">        if(this.cx + this.width &lt;= 0)&#123;=&quot;&quot; left=&quot;&quot; this.ay=&quot;&quot; +=&quot;90;&quot; this.ax=&quot;&quot; this.switchpainter(3);=&quot;&quot; this.cx=&quot;cSize&quot; this.width=&quot;&quot; -=&quot;&quot; 1;=&quot;&quot; &#125;=&quot;&quot; if(this.cy=&quot;&quot; &lt;=&quot;0)&#123;&quot; top=&quot;&quot; this.sy=&quot;0;&quot; this.cy=&quot;4;&quot;&gt;= cSize)&#123;  //bottom</div><div class="line">            this.sy = 0;</div><div class="line">            this.cy = cSize - this.width - 8;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    detectiveTank: function()&#123;</div><div class="line"></div><div class="line">        if(this.cx - this.width &gt;= cSize)&#123;  //right</div><div class="line">            this.ay += -90;</div><div class="line">            this.ax += 0;</div><div class="line">            this.switchPainter(1);</div><div class="line">            this.cx = 1;</div><div class="line">        &#125;</div><div class="line">        if(this.cx + this.width &lt;= 0)&#123;=&quot;&quot; left=&quot;&quot; this.ay=&quot;&quot; +=&quot;90;&quot; this.ax=&quot;&quot; this.switchpainter(3);=&quot;&quot; this.cx=&quot;cSize&quot; this.width=&quot;&quot; -=&quot;&quot; 1;=&quot;&quot; &#125;=&quot;&quot; if(this.cy=&quot;&quot; &lt;=&quot;0)&#123;&quot; top=&quot;&quot; this.sy=&quot;0;&quot; this.cy=&quot;4;&quot;&gt;= cSize)&#123;  //bottom</div><div class="line">            this.sy = 0;</div><div class="line">            this.cy = cSize - this.width - 8;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    shooter: function()&#123;</div><div class="line">        if((new Date()).getTime() - this.sTime &lt; this.timerLimit) return;</div><div class="line">        var bullet = new Bullet(this.gunAngle, this.cx, this.cy, this.tankId);</div><div class="line">        this.container.getElementsByTagName(&quot;div&quot;)[0].appendChild(bullet.bullet);</div><div class="line">        bullet.move();</div><div class="line">        this.sTime = (new Date()).getTime();</div><div class="line">    &#125;,</div><div class="line">    destroy: function()&#123;</div><div class="line">        this.stopAni();</div><div class="line">        this.shooterTimer &amp;&amp; clearInterval(this.shooterTimer);</div><div class="line">        this.moveTimer &amp;&amp; clearInterval(this.moveTimer);</div><div class="line">        if(this.tankId &gt;= 2 &amp;&amp; randomTank &lt;= 180=&quot;&quot; tanklimit)=&quot;&quot; createrandomtank();=&quot;&quot; delete=&quot;&quot; tanks[this.tankid];=&quot;&quot; this.tank.parentnode=&quot;&quot; &amp;&amp;=&quot;&quot; this.tank.parentnode.removechild(this.tank);=&quot;&quot; this;=&quot;&quot; &#125;=&quot;&quot; **=&quot;&quot; *=&quot;&quot; @bullet=&quot;&quot; tank=&quot;&quot; @attrs=&quot;&quot; bullet,=&quot;&quot; timer,=&quot;&quot; gap,=&quot;&quot; x,=&quot;&quot; yadsjsw=&quot;&quot; var=&quot;&quot; bullet=&quot;function(gA,&quot; y,=&quot;&quot; tankid)&#123;=&quot;&quot; this.bullet=&quot;document.createElement(&quot;span&quot;);&quot; this.timer=&quot;null;&quot; this.gap=&quot;30;&quot; this.passed=&quot;0;&quot; a=&quot;Math.cos(gA&quot; math.pi=&quot;&quot; -=&quot;&quot; 2),=&quot;&quot; b=&quot;Math.sin(gA&quot; 2);=&quot;&quot; if(math.abs(a)=&quot;&quot;&gt; 1) a = a &gt; 0 ? Math.floor(a) : Math.ceil(a);</div><div class="line">    if(Math.abs(b) &gt; 1) b = b &gt; 0 ? Math.floor(b) : Math.ceil(b);</div><div class="line">    this.a = a;</div><div class="line">    this.b = b;</div><div class="line"></div><div class="line">    this.x = x + 6;</div><div class="line">    this.y = y + 7;</div><div class="line">    this.bullet.setAttribute(&quot;class&quot;, &quot;bullet&quot;);</div><div class="line">    this.bullet.style.top = -10 + &quot;px&quot;;</div><div class="line">    this.bullet.style.left = -10 + &quot;px&quot;;</div><div class="line">    this.bullet.style.borderColor = tanks[tankId].bColor;</div><div class="line">    this.tankId = tankId;</div><div class="line">    this.container = $(&quot;#tank&quot; + this.tankId)[0].parentNode.parentNode;</div><div class="line">    this.belong = tanks[this.tankId].belong;</div><div class="line">&#125;</div><div class="line">Bullet.prototype = &#123;</div><div class="line">    bSwitchPainter: function(N)&#123;</div><div class="line">        this.container = this.bullet.parentNode.parentNode;</div><div class="line">        this.dataset   = this.container.getAttribute(&apos;data-num&apos;).split(&quot; &quot;);</div><div class="line">        this.container = datas[this.dataset[N]];</div><div class="line">        this.dataset   = this.container.getAttribute(&apos;data-num&apos;).split(&quot; &quot;);</div><div class="line">        this.container.getElementsByTagName(&quot;div&quot;)[0].appendChild(this.bullet);</div><div class="line">        this.passed++;</div><div class="line">        if(this.passed == 4)&#123;</div><div class="line">            this.destroy();</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    detective: function()&#123;</div><div class="line">        if(this.x - 2 &gt;= cSize)&#123;      //right</div><div class="line">            this.bSwitchPainter(1);</div><div class="line">            this.x = 1;</div><div class="line">        &#125;</div><div class="line">        if(this.y - 2 &gt;= cSize)&#123;      //bottom</div><div class="line">            this.destroy();</div><div class="line">        &#125;</div><div class="line">        if(this.x + 2 &lt;= 2=&quot;&quot; 0)&#123;=&quot;&quot; left=&quot;&quot; this.bswitchpainter(3);=&quot;&quot; this.x=&quot;cSize&quot; +=&quot;&quot; 3;=&quot;&quot; &#125;=&quot;&quot; if(this.y=&quot;&quot; &lt;=&quot;0)&#123;&quot; top=&quot;&quot; this.destroy();=&quot;&quot; &#125;,=&quot;&quot; move:=&quot;&quot; function()&#123;=&quot;&quot; var=&quot;&quot; this_=&quot;this;&quot; this.timer=&quot;setInterval(function()&#123;&quot; this_.detective();=&quot;&quot; this_.x=&quot;&quot; *=&quot;&quot; 5;=&quot;&quot; this_.y=&quot;&quot; this_.checkhit();=&quot;&quot; this_.bullet.style.top=&quot;this_.y&quot; &quot;px&quot;;=&quot;&quot; this_.bullet.style.left=&quot;this_.x&quot; this.gap);=&quot;&quot; checkhit:=&quot;&quot; for=&quot;&quot; (var=&quot;&quot; i=&quot;&quot; in=&quot;&quot; tanks)=&quot;&quot; &#123;=&quot;&quot; if=&quot;&quot; (i=&quot;=&quot; this.tankid)=&quot;&quot; continue;=&quot;&quot; (tanks[i].belong=&quot;=&quot; this.belong)=&quot;&quot; tx=&quot;tanks[i].cx,&quot; ty=&quot;tanks[i].cy,&quot; bc=&quot;this.container.getAttribute(&quot;data-v&quot;),&quot; tc=&quot;tanks[i].container.getAttribute(&quot;data-v&quot;),&quot; w=&quot;14;&quot; ((bc=&quot;=&quot; tc)=&quot;&quot; &amp;&amp;=&quot;&quot; (this.x=&quot;&quot; w)=&quot;&quot;&gt; tx - w) &amp;&amp; (this.y &lt; ty + w) &amp;&amp; (this.y &gt; ty - w) ) &#123;</div><div class="line">                console.log(i, tanks[i].life);</div><div class="line">                this.hit(tanks[i]);</div><div class="line">                this.destroy();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    hit: function(tTank)&#123;</div><div class="line">        tTank.life -= 20;</div><div class="line">        if(tTank.belong == 0)&#123;</div><div class="line">            console.log(&quot;1掉血&quot;);</div><div class="line">            bloodA.style.bottom = 300 * tTank.life / 100 + &quot;px&quot;;</div><div class="line">            if(tTank.life == 0)&#123;</div><div class="line">                setTimeout(function()&#123;</div><div class="line">                    $(&quot;.pujieL&quot;)[0].style.display = &quot;block&quot;;</div><div class="line">                &#125;, 2000);</div><div class="line">            &#125;</div><div class="line">        &#125;else if(tTank.belong == 1)&#123;</div><div class="line">            console.log(&quot;2掉血&quot;);</div><div class="line">            bloodB.style.bottom = 300 * tTank.life / 100 + &quot;px&quot;;</div><div class="line">            if(tTank.life == 0)&#123;</div><div class="line">                setTimeout(function()&#123;</div><div class="line">                    $(&quot;.pujieR&quot;)[0].style.display = &quot;block&quot;;</div><div class="line">                &#125;, 2000);</div><div class="line">            &#125;</div><div class="line">        &#125;else &#123;</div><div class="line">            var add = 5;</div><div class="line">            if(tanks[this.tankId].belong == 0)&#123;</div><div class="line">                if(tTank.life == 0)&#123;</div><div class="line">                    add = 20;</div><div class="line">                    //window.addTankGrade(0);</div><div class="line">                &#125;</div><div class="line">                tanks[this.tankId].grade += add;</div><div class="line">                $(&quot;#gradeA&quot;)[0].innerHTML = tanks[this.tankId].grade;</div><div class="line">            &#125;else&#123;</div><div class="line">                if(tTank.life == 0)&#123;</div><div class="line">                    add = 20;</div><div class="line">                    //window.addTankGrade(1);</div><div class="line">                &#125;</div><div class="line">                tanks[this.tankId].grade += add;</div><div class="line">                $(&quot;#gradeB&quot;)[0].innerHTML = tanks[this.tankId].grade;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        if(tTank.life &lt;= 0)&#123;=&quot;&quot; ttank.destroy();=&quot;&quot; console.log(&quot;destroyed&quot;);=&quot;&quot; &#125;=&quot;&quot; &#125;,=&quot;&quot; destroy:=&quot;&quot; function()&#123;=&quot;&quot; clearinterval(this.timer);=&quot;&quot; if=&quot;&quot; (typeof=&quot;&quot; tanks[this.tankid]=&quot;&quot; !=&quot;undefined&quot; )=&quot;&quot; &#123;=&quot;&quot; var=&quot;&quot; tankarr=&quot;tanks[this.tankId].bulletBox;&quot; tankarr.splice(tankarr.indexof(this),1);=&quot;&quot; this.bullet.parentnode=&quot;&quot; &amp;&amp;=&quot;&quot; this.bullet.parentnode.removechild(this.bullet);=&quot;&quot; *=&quot;&quot; function=&quot;&quot; createtank(color)&#123;=&quot;&quot; tank=&quot;document.createElement(&quot;span&quot;);&quot; circle=&quot;document.createElement(&quot;span&quot;);&quot; gun=&quot;document.createElement(&quot;span&quot;);&quot; gun.setattribute(&quot;class&quot;,=&quot;&quot; &quot;gun&quot;);=&quot;&quot; tank.setattribute(&quot;class&quot;,=&quot;&quot; &quot;tank&quot;);=&quot;&quot; circle.setattribute(&quot;class&quot;,=&quot;&quot; &quot;circle&quot;);=&quot;&quot; gun.style.bordercolor=&quot;color;&quot; circle.style.bordercolor=&quot;color;&quot; tank.style.csstext=&quot;width:14px;height:18px;position:relative;border-color:&quot; +=&quot;&quot; color;=&quot;&quot; tank.appendchild(gun);=&quot;&quot; tank.appendchild(circle);=&quot;&quot; return=&quot;&quot; tank;=&quot;&quot; addtankgrade(n)&#123;=&quot;&quot; box,=&quot;&quot; color,=&quot;&quot; if(n=&quot;=&quot; 0)=&quot;&quot; box=&quot;$(&quot;#tankBoxA&quot;)[0];&quot; color=&quot;#8500FF&quot; ;=&quot;&quot; &#125;else&#123;=&quot;&quot; box.appendchild(tank);=&quot;&quot; createrandomtank(obj)=&quot;&quot; obj=&quot;obj&quot; ||=&quot;&quot; &#123;cx:=&quot;&quot; 150,=&quot;&quot; cy:=&quot;&quot; color:&quot;#ecff0b&quot;,=&quot;&quot; bcolor:&quot;#ecff0b&quot;,=&quot;&quot; speed:=&quot;&quot; 1,=&quot;&quot; container:=&quot;&quot; backf&#125;;=&quot;&quot; rtank=&quot;new&quot; tank(obj);=&quot;&quot; rtank.init(string(randomtank));=&quot;&quot; rtank.shootertimer=&quot;null;&quot; if(math.random()=&quot;&quot;&gt; 0.8)&#123;</div><div class="line">            rTank.shooter();</div><div class="line">        &#125;</div><div class="line">    &#125;, 200);</div><div class="line"></div><div class="line">    rTank.moveTimer = null;</div><div class="line">    rTank.moveTimer = setInterval(function()&#123;</div><div class="line">        if(Math.random() &gt; 0.4)&#123;</div><div class="line">            var ang = Math.PI * 2 * Math.random();</div><div class="line">            rTank.move.call(rTank, ang);</div><div class="line">        &#125;</div><div class="line">    &#125;, 1200);</div><div class="line">    tanks[randomTank] = rTank;</div><div class="line">    randomTank++;</div><div class="line">&#125;</div><div class="line"></div><div class="line">function run_debug()&#123;</div><div class="line">    tanks[0] = new Tank(&#123;cx: 50, cy: 220, color:&quot;red&quot;, bColor:&quot;red&quot;&#125;);</div><div class="line">    tanks[0].init(&apos;0&apos;, &#123;</div><div class="line">        keySet:debug_keySet[0]</div><div class="line">    &#125;);</div><div class="line">    tanks[1] = new Tank();</div><div class="line">    tanks[1].init(&apos;1&apos;, &#123;</div><div class="line">        keySet:debug_keySet[1]</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">    createRandomTank(&#123;cx: 250, cy: 220, color:&quot;#ECFF0B&quot;, bColor:&quot;#ECFF0B&quot;, speed: 1, container: backF&#125;);</div><div class="line">    createRandomTank(&#123;cx: 220, cy: 220, color:&quot;#ECFF0B&quot;, bColor:&quot;#ECFF0B&quot;, speed: 1, container: backF&#125;);</div><div class="line">    createRandomTank(&#123;cx: 190, cy: 220, color:&quot;#ECFF0B&quot;, bColor:&quot;#ECFF0B&quot;, speed: 1, container: backF&#125;);</div><div class="line">    createRandomTank(&#123;cx: 160, cy: 220, color:&quot;#ECFF0B&quot;, bColor:&quot;#ECFF0B&quot;, speed: 1, container: backF&#125;);</div><div class="line">    createRandomTank(&#123;cx: 130, cy: 220, color:&quot;#ECFF0B&quot;, bColor:&quot;#ECFF0B&quot;, speed: 1, container: backF&#125;);</div><div class="line">    createRandomTank(&#123;cx: 100, cy: 220, color:&quot;#ECFF0B&quot;, bColor:&quot;#ECFF0B&quot;, speed: 1, container: backF&#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*</div><div class="line">window.onload = function()&#123;</div><div class="line">    var layer = document.createElement(&quot;div&quot;);</div><div class="line">    layer.setAttribute(&quot;id&quot;, &quot;layer&quot;);</div><div class="line"></div><div class="line">    var stripe = document.createElement(&quot;div&quot;);</div><div class="line">    stripe.setAttribute(&quot;id&quot;, &quot;stripe&quot;);</div><div class="line"></div><div class="line">    stripe.style.top = (document.clientHeight - 250) / 2 + &quot;px&quot;;</div><div class="line"></div><div class="line">    document.body.appendChild(layer);</div><div class="line">    document.body.appendChild(stripe);</div><div class="line">&#125;*/</div><div class="line">$(&quot;#gradeA&quot;)[0].innerHTML = $(&quot;#gradeB&quot;)[0].innerHTML = 0;</div><div class="line"></div><div class="line">//run_debug();</div><div class="line"></div><div class="line">function showMsg(msgContent)&#123;</div><div class="line">    var box = document.createElement(&quot;div&quot;);</div><div class="line">    var msg = document.createElement(&quot;div&quot;);</div><div class="line">    box.setAttribute(&quot;id&quot;, &quot;showMsgBox&quot;);</div><div class="line">    msg.setAttribute(&quot;id&quot;, &quot;msgBox&quot;);</div><div class="line">    with(box.style)&#123;</div><div class="line">        position = &quot;absolute&quot;;</div><div class="line">        top = 0;</div><div class="line">        left = 0;</div><div class="line">        bottom = 0;</div><div class="line">        right = 0;</div><div class="line">    &#125;</div><div class="line">    with(msg.style)&#123;</div><div class="line">        margin = &quot;0 auto&quot;;</div><div class="line">        width = &quot;500px&quot;;</div><div class="line">        height = &quot;400px&quot;;</div><div class="line">        marginTop = &quot;100px&quot;;</div><div class="line">        padding = &quot;55px&quot;;</div><div class="line">        fontSize = &quot;30px&quot;;</div><div class="line">        fontFamily = &quot;微软雅黑&quot;;</div><div class="line">        lineHeight = &quot;40px&quot;;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    msg.innerHTML = msgContent || &quot;空&quot;;</div><div class="line">    box.appendChild(msg);</div><div class="line">    document.body.appendChild(box);</div><div class="line">&#125;</div><div class="line"></div><div class="line">showMsg(&quot;&lt;b&gt;[测试版本]&lt;/b&gt;本版本只实现了一半的功能，最终版本是手机控制，并且有音效、登录验证、坦克可以360&amp;deg;旋转，因为需要配置环境，没有公开。左右边界可以穿过，为3D效果。5枪可以搞定一个坦克。&quot; +</div><div class="line">&quot;&lt;p&gt;按键 ctrl+alt+J 开始&lt;/p&gt;&lt;p&gt;①：WSAD 控制上下左右，J发子弹&lt;/p&gt;&lt;p&gt;②：↑↓←→ 控制上下左右，p发子弹&lt;/p&gt;&quot;)</div><div class="line"></div><div class="line">window.onkeydown = function()&#123;</div><div class="line">    if(event.ctrlKey &amp;&amp; event.altKey &amp;&amp; event.keyCode == 74)&#123;</div><div class="line">        $(&quot;#showMsgBox&quot;)[0].style.display = &quot;none&quot;;</div><div class="line">        $(&quot;#msgBox&quot;)[0].style.display = &quot;none&quot;;</div><div class="line">        run_debug();</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">3D Tank JavaScript</div></pre></td></tr></table></figure>
+<p>&lt;/=&gt;&lt;/=&gt;&lt;/=&gt;&lt;/=&gt;&lt;/=&gt;</p>
+<p>拆开分析下：</p><br><p>　　<strong>① Tank对象</strong></p><br><p>DIY坦克（还行，哈哈哈~）：</p><br><p><img src="http://images.cnitblog.com/blog/387325/201306/04000220-9eec8435edc64f18a644e960407fc644.png" alt=""></p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line">var Tank = function(setting)&#123;</div><div class="line">    var opts = setting || &#123;&#125;;</div><div class="line">    this.container = opts.container || forwardF;</div><div class="line">    this.dataset   = this.container.getAttribute(&apos;data-num&apos;).split(&quot; &quot;);</div><div class="line">       //....</div><div class="line">&#125;</div><div class="line"></div><div class="line">Tank.prototype = &#123;</div><div class="line">    init: function(tankId, debug)&#123;</div><div class="line">        //....</div><div class="line"></div><div class="line">        if(debug)&#123;</div><div class="line">            this.debug = true;</div><div class="line">            this.keySet = debug.keySet;</div><div class="line">            window.addEventListener(&quot;keydown&quot;, function()&#123;</div><div class="line">                this_.move_debug();</div><div class="line">            &#125;, false);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        window.addEventListener(this.stopN, function()&#123;</div><div class="line">            clearInterval(this_.timer);</div><div class="line">        &#125;, false);</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    paintTank: function()&#123;</div><div class="line">       //....</div><div class="line">    &#125;,</div><div class="line">    switchPainter: function(N)&#123;</div><div class="line">        //....</div><div class="line">    &#125;,</div><div class="line">    direction_debug: function()&#123;</div><div class="line">        //....</div><div class="line">    &#125;,</div><div class="line">    move_debug: function()&#123;</div><div class="line">        //....</div><div class="line">    &#125;,</div><div class="line">    ani: function()&#123;</div><div class="line">        //....</div><div class="line">    &#125;,</div><div class="line">    stopAni: function()&#123;</div><div class="line">        var event = document.createEvent(&apos;HTMLEvents&apos;);</div><div class="line">        event.initEvent(this.stopN, true, true);</div><div class="line">    　　event.eventName = this.stopN;</div><div class="line">        window.dispatchEvent(event);</div><div class="line">    &#125;,</div><div class="line">    detective: function()&#123;</div><div class="line">        //....</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    detectiveTank: function()&#123;</div><div class="line"></div><div class="line">       //....</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    shooter: function()&#123;</div><div class="line">       //....</div><div class="line">    &#125;,</div><div class="line">    destroy: function()&#123;</div><div class="line">       //....</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>　　</p><br><p>　　难点在于一些边界的判断，但是好好考虑下也不算什么难点咯~这些代码中应该看到了很多debug之类的变量和函数，因为我写了两种模式，一种是手机端玩，一中是电脑键盘控制（debug模式）。</p>
+
+
+<p><strong>　　②子弹对象</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line">* @Bullet Tank</div><div class="line">* @attrs bullet, timer, gap, x, yadsjsw</div><div class="line">*/</div><div class="line">var Bullet = function(gA, x, y, tankId)&#123;</div><div class="line">           //....</div><div class="line">&#125;;Bullet.prototype = &#123;</div><div class="line">    move: function()&#123;</div><div class="line">         //....</div><div class="line">    &#125;,</div><div class="line">    checkHit: function()&#123;</div><div class="line">         //....</div><div class="line">    &#125;,</div><div class="line">    hit: function(tTank)&#123;</div><div class="line">        //....</div><div class="line">    &#125;,</div><div class="line">    destroy: function()&#123;</div><div class="line">        clearInterval(this.timer);</div><div class="line">        if (typeof tanks[this.tankId] != &apos;undefined&apos;) &#123;</div><div class="line">            var tankArr = tanks[this.tankId].bulletBox;</div><div class="line">            tankArr.splice(tankArr.indexOf(this),1);</div><div class="line">        &#125;</div><div class="line">        this.bullet.parentNode &amp;&amp; this.bullet.parentNode.removeChild(this.bullet);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>&nbsp;　　和坦克一样，都有一个destroy函数，销毁对象。</p>
+
+
+<p><strong>　　③ 构建AI对象</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">function createRandomTank(obj) &#123;</div><div class="line">    var obj = obj || &#123;cx: 150, cy: 150, color:&quot;#ECFF0B&quot;, bColor:&quot;#ECFF0B&quot;, speed: 1, container: backF&#125;;</div><div class="line">    var rTank = new Tank(obj);</div><div class="line">    rTank.init(String(randomTank));</div><div class="line">    rTank.shooterTimer = null;</div><div class="line">    rTank.shooterTimer = setInterval(function()&#123;</div><div class="line">        if(Math.random() &gt; 0.8)&#123;</div><div class="line">            rTank.shooter();</div><div class="line">        &#125;</div><div class="line">    &#125;, 200);</div><div class="line"></div><div class="line">    rTank.moveTimer = null;</div><div class="line">    rTank.moveTimer = setInterval(function()&#123;</div><div class="line">        if(Math.random() &gt; 0.4)&#123;</div><div class="line">            var ang = Math.PI * 2 * Math.random();</div><div class="line">            rTank.move.call(rTank, ang);</div><div class="line">        &#125;</div><div class="line">    &#125;, 1200);</div><div class="line">    tanks[randomTank] = rTank;</div><div class="line">    randomTank++;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>　　机器人是个麻烦的东西，这块虽然不难，销毁他们的时候费了不少力气~~~主要是那么timer要跟着一起销毁。</p>
+
+
+<p><strong>　　④ 构建对象说明</strong></p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">tanks[0] = new Tank(&#123;cx: 50, cy: 220, color:&quot;red&quot;, bColor:&quot;red&quot;&#125;);</div><div class="line">tanks[0].init(&apos;0&apos;, &#123;</div><div class="line">    keySet:debug_keySet[0]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>　　这里需要说明一下，只要init后面加了第二个参数，就是调试模式，也就是说键盘是可以控制运行的。</p><br><p>　　设置了一个全局变量</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">                //a   w   d  s   j      ←   ↑   →  ↓   p</div><div class="line">debug_keySet = [[65, 87, 68, 83, 74], [37, 38, 39, 40, 80]];</div></pre></td></tr></table></figure>
+<p><strong>3. socket这块</strong></p><br><p>　　整个平台信息的交互就是以他为核心，socket这个东西还算比较新，所以学习的时候也没找到太多的资料，只能对着w3c的一些文档边试边做。</p>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">var socket;</div><div class="line">function ws_init() &#123;</div><div class="line">    var host = &quot;ws://192.168.86.1:1111/&quot;;</div><div class="line">    // var host = &quot;ws://202.114.20.79:1111/&quot;;</div><div class="line">    try &#123;</div><div class="line">        socket = new WebSocket(host);</div><div class="line">        logMsg(&apos;WebSocket - status &apos;+socket.readyState);</div><div class="line">        socket.onopen    = function(msg) &#123; logMsg(&quot;Welcome - status &quot;+this.readyState); send(&apos;display&apos;); &#125;;</div><div class="line">        socket.onclose   = function(msg) &#123; logMsg(&quot;Disconnected - status &quot;+this.readyState); &#125;;</div><div class="line">        socket.onmessage = function(msg) &#123; //.... &#125;;</div><div class="line">    &#125; catch(ex) &#123;</div><div class="line">        logMsg(ex);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">function send(msg) &#123;</div><div class="line">    try　&#123;</div><div class="line">        socket.send(msg + &apos;=&apos;);</div><div class="line">    &#125; catch(ex) &#123;</div><div class="line">        logMsg(ex);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>　　socket在前端部分是非常简单的，就是三个事件onopen, onclose, onmessage来驱动，重点还是后台操作，真心麻烦！</p>
+
+
+<p></p><h3><strong>后台部分</strong></h3><p></p>
+<p>后台用的是php，本来打算使用nodeJS，不是十分熟练，24个小时的赛制花太长时间去学习也不现实，所以就用了比较熟悉的php来建立socket连接，还算成功吧。</p><br><p>这个部分以后有时间说。先碎觉~~</p>
+
+
+<p>最后，别忘了这个DEMO哦，&nbsp;<a title="3D tank" href="http://qianduannotes.sinaapp.com/3dtank/html/index.html" target="_blank">http://qianduannotes.sinaapp.com/3dtank/html/index.html</a></p>
+
+
+
+
+      </div>
+    </div>
+    
+<div class="old-article-warning">
+	本文在 <b>1603</b> 天之前发表，技术更替飞快，文中部分内容可能已经过时，如有疑问，
+	请在下方留言，或者联系 <a href="/about">小胡子哥</a>。
+</div>
+
+    <div class="follow-wechat"><img src="/follow.jpg"></div>
+
+<div class="copyright" itemscope itemtype="http://schema.org/ProfilePage" tabindex="0" aria-hidden="true">
+	<!-- <a href="/about/#support" class="supportme">赏</a> -->
+	<ul>
+		<li>作者:  <a href="/about/" itemprop="name">Rain (Rain)</a></li>
+		<li>发表日期:  2013-06-03 11:55:00</li>
+		<li>文章分类: 
+	<a class="category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="category-link" href="/categories/JavaScript/前端杂烩/">前端杂烩</a>
+
+</li>
+		<li>文章标签: 
+<a class="article-tag-link" href="/tags/cnblogs/">cnblogs</a>, <a class="article-tag-link" href="/tags/tech/">tech</a>
+</li>
+		<li>版权声明: 署名-非商业性使用-禁止演绎 3.0 国际（<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">CC BY-NC-ND 3.0</a>）</li>
+		<li>最后编辑时间: 2017-08-31 14:52:18</li>
+		<li>Feed订阅: <a href="/rss2.xml"><i class="icon">&#x25c8;</i></a></li>
+	</ul>
+	<a href="/about/"><img src="/blogimgs/avatar150.png" /></a>
+</div>
+
+    <em class="arrow-expend icon" tabindex="0" aria-hidden="true">&#xe618;
+      <ul>
+        <li><a href="/entry/">博客</a></li>
+        <li><a href="/message/">问答</a></li>
+        <li><a href="/about/">关于</a></li>
+        <li><a href="/demo/">实验室</a></li>
+        <li><a href="/comments/">最近评论</a></li>
+        <li><a href="/friends/">友情链接</a></li>
+      </ul>
+    </em>
+  </div>
+  <div class="post-relative">
+<div class="page-relative">
+  
+    <a href="/all/20130604/104100/" class="post-prev">
+      <i class="icon" tabindex="0" aria-hidden="true">&#x261c;</i>
+      <span class="aria-readonly">上一篇文章</span>
+      
+        <b>正则表达式30分钟入门教程</b>
+      
+    </a>
+  
+  
+    <a href="/all/20130531/115500/" class="post-next">
+      <span class="aria-readonly">下一篇文章</span>
+      <b>删除数组中的某个元素</b>
+      <i class="icon" tabindex="0" aria-hidden="true">&#xe602;</i>
+    </a>
+  
+</div>
+
+
+<div class="page-relative-fixed" tabindex="0" aria-hidden="true">
+  
+  <a href="/all/20130604/104100/" class="prev" title="正则表达式30分钟入门教程">
+    <i class="icon">&#xe600;</i>
+    
+    <b>正则表达式30分钟入门教程</b>
+    
+  </a>
+  
+  
+  <a href="/all/20130531/115500/" class="next" title="删除数组中的某个元素">
+    <i class="icon">&#x261e;</i>
+    <b>删除数组中的某个元素</b>
+  </a>
+  
+</div>
+</div>
+</div>
+<div class="sidebar" tabindex="0" aria-hidden="true">
+	<div class="func-btns func-btns-up">
+    <span class="func-item">
+        <i class="func-nav icon">&#xe618;<span>目录</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="javascript:void(0);" onclick="return false;">显示目录</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-font icon">&#xe604;<span>设置</span></i>
+        <div class="font-choose-box">
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <div class="font-choose bg-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-sun font-type-song"><i class="icon">&#xe61a;</i></a>
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-moon font-type-hei"><i class="icon">&#xe619;</i></a>
+          </div>
+          <div class="font-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-song">黑体</a>
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-hei">宋体</a>
+          </div>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="http://weibo.com/173248656" target="_blank"><i class="func-fb icon">博<span>分享</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator sharecanvas"><a href="javascript: void(0);">截屏分享</a></p>
+          <p><a href="http://weibo.com/173248656" target="_blank">微博关注</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-about icon">&#x263b;<span>关于</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p><a href="/about/" class="func-about-link" target="_blank">关于作者</a></p>
+          <div id="followMeOnWeibo"></div>
+        </div>
+    </span>
+	</div>
+	<div class="func-btns">
+    <span class="func-item">
+        <a href="http://demo.barretlee.com" target="_blank"><i class="func-rss icon">&#xe603;<span>实验</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="http://demo.barretlee.com" target="_blank">Demo平台</a></p>
+          <p class="seperator"><a href="http://md.barretlee.com" target="_blank">WX格式</a></p>
+          <p><a href="http://snippets.barretlee.com" target="_blank">Snippet应用</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-fb icon">&#x2121;<span>留言</span></i>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="/message/" target="_blank">给我留言</a></p>
+          <p><a href="/comments/" target="_blank">近期留言</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/friends/" target="_blank"><i class="func-rss icon">&#xe601;<span>友链</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="/friends/" target="_blank">友情链接</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/rss2.xml" target="_blank"><i class="func-rss icon">&#x25c8;<span>订阅</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i><a href="/rss2.xml" target="_blank">订阅我吧！</a></div>
+    </span>
+	</div>
+</div>
+
+<div class="single-page-footer">
+<div class="footer">
+	<div class="footer-wraper">
+		<div class="footer-content">
+			<div class="footer-nav">
+	<a href="javascript: void(0);" class="ds-thread-count disqus-comment-count"
+	   data-thread-key="cb-3D-Tank-War"
+	   data-disqus-identifier="cb-3D-Tank-War" 
+		 tabindex="0" aria-hidden="true">评论内容</a>
+	<a href="javascript: void(0);" id="comments">相关文章</a>
+	<a href="/friends/" tabindex="0" aria-hidden="true">友情链接</a>
+</div>
+<div class="nav-detail">
+	<div tabindex="0" aria-hidden="true">
+		
+<div id="SOHUCS" sid="cb-3D-Tank-War">
+	<div class="ds-loading">
+		<img src="/blogimgs/loading.gif" alt="loading..."/>
+		<p>这网速真是弱爆了...客官稍等,评论还在加载~</p>
+	</div>
+</div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+  appid: 'cyt0XnPCt',
+  conf: 'prod_5fde9cb8b23a2209a1ad60ab2dd5fe82'
+});
+</script>
+
+	</div>
+	<div style="display:block;">
+		<div class="relative-to-comment" tabindex="0" aria-hidden="true"><span>打开评论</span></div>
+		<div class="relative-wrapper">
+	<div class="relative-article">
+		
+		<ul>
+			<li>
+				<span><font aria-hidden="true">2017-06-06 »</font> </span>
+				<a href="/all/20170606/144621/">深入理解 Node Stream 内部机制</a>
+				<span class="aria-readonly">发表时间为2017年06月06日</span>
+				<div class="relative-box">
+          <a href="/all/20170606/144621/" class="relative-img-wrapper" style="background-image:url(/blogimgs/node-stream-readable-flowing.png);"></a>
+          <span class="aria-readonly">文章概要 </span>相信很多人对 Node 的 Stream 已经不陌生了，不论是请求流、响应流、文件流还是 socke...
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-09-28 »</font> </span>
+				<a href="/all/20160928/230523/">揭秘 0.1 + 0.2 != 0.3</a>
+				<span class="aria-readonly">发表时间为2016年09月28日</span>
+				<div class="relative-box">
+          <a href="/all/20160928/230523/" class="relative-img-wrapper" style="background-image:url(http://ww4.sinaimg.cn/large/6c0378f8gw1f89pd8hm96j20p00dwacm.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>“0.1 + 0.2 = ?”，这道题如果给小学生，他会立马告诉你答案是 0.3，但是交给一些程序去计算，结果就不是那么简单了。
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-08-23 »</font> </span>
+				<a href="/all/20160823/010513/">构建一个安全的 JavaScript 沙箱</a>
+				<span class="aria-readonly">发表时间为2016年08月23日</span>
+				<div class="relative-box">
+          <a href="/all/20160823/010513/" class="relative-img-wrapper" style="background-image:url(http://ww1.sinaimg.cn/large/6c0378f8gw1f730uldkfrj20p00dwaf1.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>在 Node.js 中有一个模块叫做 VM，它提供了几个 API，允许代码在 V8 虚拟机上下文中运行，如：12345const vm = require('vm');const sandbox = &#123; a: 1, b: 2 &#125;;const script = new vm.Script('a + b');const context = new vm.createContext(sandbox);script.runInContext(context);vm.Script 中的代码是预编译好的，通过 vm.createContext 将代码加载到一个上下文环境中，置入沙箱（sandbox），然后通过 script.runInContext 执行代码，整个操作都在封闭的 VM 中进行。这是 Node.js 提供给我们的便捷功能，那么，在浏览器环境中呢？是否也能做到将代码运行在沙箱中？本文带着大家来探索一番。
+        </div>
+			</li>
+			
+			<li>
+				<span><font aria-hidden="true">2016-07-13 »</font> </span>
+				<a href="/all/20160713/001549/">我需要学习 ECMAScript 6 么？</a>
+				<span class="aria-readonly">发表时间为2016年07月13日</span>
+				<div class="relative-box">
+          <a href="/all/20160713/001549/" class="relative-img-wrapper" style="background-image:url(//ww1.sinaimg.cn/large/6c0378f8gw1f5rkudyzzoj20p00dwt9x.jpg);"></a>
+          <span class="aria-readonly">文章概要 </span>前几天翻译了一篇 ECMAScript 6 的入门文章，看到几则评论说 JavaScript 越来越像 Java 了，我暗暗地笑了笑。也有同学很疑惑是否有必要学习 ES6，使用 TypeScript 的同学也有类似的疑惑。
+        </div>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+
+		<a href="/entry/" class="relative-to-comment-wrapper" tabindex="0" aria-hidden="true"><div class="relative-to-comment">回到首页</div></a>
+	</div>
+	<div class="friends-box">
+		<ul>
+			
+			<li><a href="http://hustskyking.cnblogs.com" target="_blank">旧博客</a> <font aria-hidden="true">»</font> <span>我的旧博客（博客园荣誉博客）</span></li>
+			
+			<li><a href="http://www.zhangmengxue.com" target="_blank">大额</a> <font aria-hidden="true">»</font> <span>大额大额哼歌等日落</span></li>
+			
+			<li><a href="http://www.zhangxinxu.com" target="_blank">张鑫旭</a> <font aria-hidden="true">»</font> <span>原来大学我俩一个团队的~</span></li>
+			
+			<li><a href="http://web-tinker.com" target="_blank">次碳酸钴</a> <font aria-hidden="true">»</font> <span>深度交流的一个好朋友</span></li>
+			
+			<li><a href="http://imququ.com" target="_blank">屈屈</a> <font aria-hidden="true">»</font> <span>好吧，蛐蛐同学</span></li>
+			
+			<li><a href="http://www.ruanyifeng.com" target="_blank">阮一峰</a> <font aria-hidden="true">»</font> <span>阮老师,哈哈,第一次设计博客就是抄的你的样式</span></li>
+			
+			<li><a href="http://annn.me" target="_blank">安记</a> <font aria-hidden="true">»</font> <span>阿安同学</span></li>
+			
+			<li><a href="http://mouto.org/" target="_blank">卜卜口</a> <font aria-hidden="true">»</font> <span>二次元化身</span></li>
+			
+			<li><a href="/friends/">更多列表 <font aria-hidden="true">»</font></a></li>
+		</ul>
+	</div>
+</div>
+			
+<div class="website-info" aria-hidden="true">
+	<a class="page_editor" href="/admin/#/posts/cj92lk7fj004w7wvvt8gksg4f" target="_blank">🙈</a>
+	<span>&copy;2013-2017 <small><a href="http://www.miitbeian.gov.cn/" about="_blank">湘ICP备14007107号-1</a></small></span>
+	本站由 <a href="/">rain</a> 纯手工打造 | <a href="/about#contact">联系方式</a> | 总热度：<em id="busuanzi_value_site_pv"></em>
+</div>
+
+		</div>
+	</div>
+</div>
+</div>
+<div class="tools-wrapper" tabindex="0" aria-hidden="true">
+	<a class="gotop icon" href="#" title="回到顶部">&#x2191;</a>
+	<!-- <a class="wechart icon">&#xe60d;<span><img src="/wechart.png" title="扫码添加小胡子哥微信"/> </span></a> -->
+	<a class="hash-to-comments icon" title="我要评论">&#x2121;</a>
+</div>
+<div class="fixerr" tabindex="0" aria-hidden="true">纠错模式</div>
+
+</body>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/socket.io.js"></script>
+<script>
+  window.onerror = function(e) {
+    window.console && window.console.log && window.console.log(e);
+    $('#loadLayer').remove();
+    return true;
+  };
+</script>
+<script src="/public/js/aplayer.js"></script>
+<script src="/public/js/main.js?v=20170824"></script>
+</script>
+</html>

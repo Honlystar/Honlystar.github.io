@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Tag: 链路问题排查 | 星空守候的博客</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+  <meta name="author" content="https://plus.google.com/112634278852964994392?hl=zh-cn">
+  <meta name="email" content="barret.china@gmail.com">
+  <meta name="description" content="这是属于星空守候的专属个人空间，这里是web开发工程师的天堂，这里欢迎每一个开发者，希望你们在这里有所提高">
+  <meta property="og:type" content="tag page">
+  <meta property="og:title" content="Tag: 链路问题排查 | 星空守候的博客">
+  <meta property="og:url" content="https://www.onlystar.site/tags/链路问题排查/index.html">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="这是属于星空守候的专属个人空间，这里是web开发工程师的天堂，这里欢迎每一个开发者，希望你们在这里有所提高">
+  <meta name="generator" content="https://hexo.io" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <link href="https://www.onlystar.site/blogimgs/app-icon.png" rel="apple-touch-icon-precomposed">
+  <link rel="shoticon" href="https://www.onlystar.site/favicon.ico" type="image/x-icon">
+  <link rel="alternate" type="application/rss+xml" href="https://www.onlystar.site/rss2.xml" title="星空守候的博客" />
+  
+  
+  <link rel="start" href="https://www.onlystar.site/entry/" title="Blog Entry" />
+  <link rel="stylesheet" href="/public/css/style.css?v=20170604">
+</head>
+<span class="aria-readonly" tabindex="0" aria-hidden="true">小胡子哥的博客良好支持读屏软件阅读，请放心使用。</span>
+
+
+<body>
+  <div class="rainbow"></div>
+  
+
+<div class="container">
+  <div class="cate-wraper post">
+    <div class="share-article clearfix">
+      <span class="share-box" aria-hidden="true">
+  <b>分享到: </b>
+  <i class="icon on" title="新浪微博" id="share-weibo">&#x535a;</i>
+  <i class="icon" title="腾讯微博" id="share-tencent">&#xe61c;</i>
+  <i class="icon" title="twitter" id="share-twitter">&#x9e1f;</i>
+  <i class="icon" title="豆瓣社区" id="share-douban">&#x8c46;</i>
+</span>
+
+      <h2>
+        <a href="/" tabindex="0" aria-label="回到小胡子哥首页导航">rain</a> <font aria-hidden="true">»</font>
+        <a href="/entry/">博客</a>
+         <em  class="arrow-expend" tabindex="0" aria-label="点击展开网页导航">▾
+          <ul>
+            <li><a href="/message/">问答</a></li>
+            <li><a href="/about/">关于</a></li>
+            <li><a href="/demo/">实验室</a></li>
+            <li><a href="/comments/">最近评论</a></li>
+            <li><a href="/friends/">友情链接</a></li>
+          </ul>
+        </em> <font aria-hidden="true">»</font>
+        
+        文章分类
+        
+      </h2>
+    </div>
+    
+    <div class="cate-header text-info">
+    <div>
+      <span>类别:</span>
+      <div class="cate-list">
+      
+        <a href='/tags/tech/'>tech</a>
+      
+        <a href='/tags/cnblogs/'>cnblogs</a>
+      
+        <a href='/tags/跨域/'>跨域</a>
+      
+        <a href='/tags/柯里化/'>柯里化</a>
+      
+        <a href='/tags/options/'>options</a>
+      
+        <a href='/tags/XMLHttpRequest/'>XMLHttpRequest</a>
+      
+        <a href='/tags/老板/'>老板</a>
+      
+        <a href='/tags/学会提问/'>学会提问</a>
+      
+        <a href='/tags/tree/'>tree</a>
+      
+        <a href='/tags/兼容性/'>兼容性</a>
+      
+        <a href='/tags/JavaScript闭包/'>JavaScript闭包</a>
+      
+        <a href='/tags/垃圾回收/'>垃圾回收</a>
+      
+        <a href='/tags/腾讯面试/'>腾讯面试</a>
+      
+        <a href='/tags/http/'>http</a>
+      
+        <a href='/tags/异步编程/'>异步编程</a>
+      
+        <a href='/tags/php/'>php</a>
+      
+        <a href='/tags/PHP/'>PHP</a>
+      
+        <a href='/tags/编码转换/'>编码转换</a>
+      
+        <a href='/tags/splice/'>splice</a>
+      
+        <a href='/tags/正则/'>正则</a>
+      
+        <a href='/tags/VIM/'>VIM</a>
+      
+        <a href='/tags/ES6/'>ES6</a>
+      
+        <a href='/tags/模板引擎/'>模板引擎</a>
+      
+        <a href='/tags/PJAX/'>PJAX</a>
+      
+        <a href='/tags/websocket/'>websocket</a>
+      
+        <a href='/tags/模块化/'>模块化</a>
+      
+        <a href='/tags/异步/'>异步</a>
+      
+        <a href='/tags/webicon/'>webicon</a>
+      
+        <a href='/tags/font-face/'>font-face</a>
+      
+        <a href='/tags/多文件下载/'>多文件下载</a>
+      
+        <a href='/tags/webaudio/'>webaudio</a>
+      
+        <a href='/tags/git/'>git</a>
+      
+        <a href='/tags/大数据/'>大数据</a>
+      
+        <a href='/tags/blog/'>blog</a>
+      
+        <a href='/tags/demo/'>demo</a>
+      
+        <a href='/tags/npm/'>npm</a>
+      
+        <a href='/tags/proxy/'>proxy</a>
+      
+        <a href='/tags/talk/'>talk</a>
+      
+        <a href='/tags/webview/'>webview</a>
+      
+        <a href='/tags/highlight/'>highlight</a>
+      
+        <a href='/tags/hack/'>hack</a>
+      
+        <a href='/tags/bug/'>bug</a>
+      
+        <a href='/tags/chrome/'>chrome</a>
+      
+        <a href='/tags/NodeJS/'>NodeJS</a>
+      
+        <a href='/tags/print/'>print</a>
+      
+        <a href='/tags/tips/'>tips</a>
+      
+        <a href='/tags/clip/'>clip</a>
+      
+        <a href='/tags/error/'>error</a>
+      
+        <a href='/tags/jekyll/'>jekyll</a>
+      
+        <a href='/tags/ruby/'>ruby</a>
+      
+        <a href='/tags/IOS/'>IOS</a>
+      
+        <a href='/tags/touchmove/'>touchmove</a>
+      
+        <a href='/tags/scroll/'>scroll</a>
+      
+        <a href='/tags/messy/'>messy</a>
+      
+        <a href='/tags/乱码/'>乱码</a>
+      
+        <a href='/tags/Ubuntu/'>Ubuntu</a>
+      
+        <a href='/tags/gem/'>gem</a>
+      
+        <a href='/tags/images/'>images</a>
+      
+        <a href='/tags/爬虫/'>爬虫</a>
+      
+        <a href='/tags/CMS/'>CMS</a>
+      
+        <a href='/tags/JavaScript/'>JavaScript</a>
+      
+        <a href='/tags/解析/'>解析</a>
+      
+        <a href='/tags/mysql/'>mysql</a>
+      
+        <a href='/tags/mysqldump/'>mysqldump</a>
+      
+        <a href='/tags/css/'>css</a>
+      
+        <a href='/tags/XSS/'>XSS</a>
+      
+        <a href='/tags/Etag/'>Etag</a>
+      
+        <a href='/tags/CSS/'>CSS</a>
+      
+        <a href='/tags/ajax/'>ajax</a>
+      
+        <a href='/tags/IEbug/'>IEbug</a>
+      
+        <a href='/tags/firstChild/'>firstChild</a>
+      
+        <a href='/tags/childNodes/'>childNodes</a>
+      
+        <a href='/tags/life/'>life</a>
+      
+        <a href='/tags/work/'>work</a>
+      
+        <a href='/tags/移动端调试/'>移动端调试</a>
+      
+        <a href='/tags/javascript/'>javascript</a>
+      
+        <a href='/tags/浏览器拦截/'>浏览器拦截</a>
+      
+        <a href='/tags/生活/'>生活</a>
+      
+        <a href='/tags/吃/'>吃</a>
+      
+        <a href='/tags/游记/'>游记</a>
+      
+        <a href='/tags/徽杭古道/'>徽杭古道</a>
+      
+        <a href='/tags/随笔/'>随笔</a>
+      
+        <a href='/tags/三国演义/'>三国演义</a>
+      
+        <a href='/tags/Promise/'>Promise</a>
+      
+        <a href='/tags/WAI/'>WAI</a>
+      
+        <a href='/tags/模板渲染/'>模板渲染</a>
+      
+        <a href='/tags/问答/'>问答</a>
+      
+        <a href='/tags/textarea/'>textarea</a>
+      
+        <a href='/tags/自适应/'>自适应</a>
+      
+        <a href='/tags/gulp/'>gulp</a>
+      
+        <a href='/tags/minifycss/'>minifycss</a>
+      
+        <a href='/tags/mac/'>mac</a>
+      
+        <a href='/tags/TimeMachine/'>TimeMachine</a>
+      
+        <a href='/tags/数据备份/'>数据备份</a>
+      
+        <a href='/tags/效率/'>效率</a>
+      
+        <a href='/tags/autojump/'>autojump</a>
+      
+        <a href='/tags/autocomplete/'>autocomplete</a>
+      
+        <a href='/tags/自动填充/'>自动填充</a>
+      
+        <a href='/tags/数据迁移/'>数据迁移</a>
+      
+        <a href='/tags/xcode/'>xcode</a>
+      
+        <a href='/tags/first-time-visit/'>first-time-visit</a>
+      
+        <a href='/tags/safari/'>safari</a>
+      
+        <a href='/tags/this/'>this</a>
+      
+        <a href='/tags/reference/'>reference</a>
+      
+        <a href='/tags/Xcode/'>Xcode</a>
+      
+        <a href='/tags/Error/'>Error</a>
+      
+        <a href='/tags/ST3/'>ST3</a>
+      
+        <a href='/tags/node/'>node</a>
+      
+        <a href='/tags/hosts/'>hosts</a>
+      
+        <a href='/tags/CSP/'>CSP</a>
+      
+        <a href='/tags/hexo/'>hexo</a>
+      
+        <a href='/tags/SEO/'>SEO</a>
+      
+        <a href='/tags/gitignore/'>gitignore</a>
+      
+        <a href='/tags/lsof/'>lsof</a>
+      
+        <a href='/tags/linux/'>linux</a>
+      
+        <a href='/tags/水印/'>水印</a>
+      
+        <a href='/tags/京东/'>京东</a>
+      
+        <a href='/tags/技术架构/'>技术架构</a>
+      
+        <a href='/tags/教师节/'>教师节</a>
+      
+        <a href='/tags/祈祷/'>祈祷</a>
+      
+        <a href='/tags/多说评论/'>多说评论</a>
+      
+        <a href='/tags/兜底容灾/'>兜底容灾</a>
+      
+        <a href='/tags/苹果中毒/'>苹果中毒</a>
+      
+        <a href='/tags/jQuery/'>jQuery</a>
+      
+        <a href='/tags/生日/'>生日</a>
+      
+        <a href='/tags/展望/'>展望</a>
+      
+        <a href='/tags/截屏/'>截屏</a>
+      
+        <a href='/tags/html2cavans/'>html2cavans</a>
+      
+        <a href='/tags/phantomjs/'>phantomjs</a>
+      
+        <a href='/tags/snippets/'>snippets</a>
+      
+        <a href='/tags/for/'>for</a>
+      
+        <a href='/tags/HTTPS/'>HTTPS</a>
+      
+        <a href='/tags/nodejs/'>nodejs</a>
+      
+        <a href='/tags/debugger/'>debugger</a>
+      
+        <a href='/tags/commandLine/'>commandLine</a>
+      
+        <a href='/tags/渲染/'>渲染</a>
+      
+        <a href='/tags/disqus/'>disqus</a>
+      
+        <a href='/tags/多说/'>多说</a>
+      
+        <a href='/tags/HSTS/'>HSTS</a>
+      
+        <a href='/tags/DDNS/'>DDNS</a>
+      
+        <a href='/tags/淘宝前端团队/'>淘宝前端团队</a>
+      
+        <a href='/tags/Taobao FED/'>Taobao FED</a>
+      
+        <a href='/tags/lazyload/'>lazyload</a>
+      
+        <a href='/tags/Rime/'>Rime</a>
+      
+        <a href='/tags/鼠须管/'>鼠须管</a>
+      
+        <a href='/tags/减肥/'>减肥</a>
+      
+        <a href='/tags/技术前瞻/'>技术前瞻</a>
+      
+        <a href='/tags/前端发展/'>前端发展</a>
+      
+        <a href='/tags/总结/'>总结</a>
+      
+        <a href='/tags/分享/'>分享</a>
+      
+        <a href='/tags/团队/'>团队</a>
+      
+        <a href='/tags/OAuth2/'>OAuth2</a>
+      
+        <a href='/tags/低版本浏览器/'>低版本浏览器</a>
+      
+        <a href='/tags/升级浏览器/'>升级浏览器</a>
+      
+        <a href='/tags/Mojo-WebQQ/'>Mojo-WebQQ</a>
+      
+        <a href='/tags/IRC/'>IRC</a>
+      
+        <a href='/tags/Cache/'>Cache</a>
+      
+        <a href='/tags/ServiceWorker/'>ServiceWorker</a>
+      
+        <a href='/tags/Fetch/'>Fetch</a>
+      
+        <a href='/tags/Beacon API/'>Beacon API</a>
+      
+        <a href='/tags/navigator.sendBeacon/'>navigator.sendBeacon</a>
+      
+        <a href='/tags/WiFi万能钥匙/'>WiFi万能钥匙</a>
+      
+        <a href='/tags/Creative Commons/'>Creative Commons</a>
+      
+        <a href='/tags/信息无障碍/'>信息无障碍</a>
+      
+        <a href='/tags/网页无障碍/'>网页无障碍</a>
+      
+        <a href='/tags/SSH/'>SSH</a>
+      
+        <a href='/tags/GIT/'>GIT</a>
+      
+        <a href='/tags/多账户登录/'>多账户登录</a>
+      
+        <a href='/tags/链路问题排查/' class='cate-header_on' onclick='return false;'>链路问题排查</a>
+      
+        <a href='/tags/个性化/'>个性化</a>
+      
+        <a href='/tags/淘宝首页/'>淘宝首页</a>
+      
+        <a href='/tags/性能优化/'>性能优化</a>
+      
+        <a href='/tags/Operation Not Permitted/'>Operation Not Permitted</a>
+      
+        <a href='/tags/Catificate Authority/'>Catificate Authority</a>
+      
+        <a href='/tags/Performance/'>Performance</a>
+      
+        <a href='/tags/Mini Query/'>Mini Query</a>
+      
+        <a href='/tags/Kindle/'>Kindle</a>
+      
+        <a href='/tags/kindleGen/'>kindleGen</a>
+      
+        <a href='/tags/H5/'>H5</a>
+      
+        <a href='/tags/无线/'>无线</a>
+      
+        <a href='/tags/Crash/'>Crash</a>
+      
+        <a href='/tags/前端/'>前端</a>
+      
+        <a href='/tags/招行香港一卡通/'>招行香港一卡通</a>
+      
+        <a href='/tags/成长/'>成长</a>
+      
+        <a href='/tags/ECMAScript/'>ECMAScript</a>
+      
+        <a href='/tags/微信公众号/'>微信公众号</a>
+      
+        <a href='/tags/提问/'>提问</a>
+      
+        <a href='/tags/linode/'>linode</a>
+      
+        <a href='/tags/信用卡/'>信用卡</a>
+      
+        <a href='/tags/Shadowsocks/'>Shadowsocks</a>
+      
+        <a href='/tags/排序算法/'>排序算法</a>
+      
+        <a href='/tags/Javascript/'>Javascript</a>
+      
+        <a href='/tags/沙箱/'>沙箱</a>
+      
+        <a href='/tags/翻墙/'>翻墙</a>
+      
+        <a href='/tags/pac/'>pac</a>
+      
+        <a href='/tags/实习生/'>实习生</a>
+      
+        <a href='/tags/IEEE754/'>IEEE754</a>
+      
+        <a href='/tags/Nginx/'>Nginx</a>
+      
+        <a href='/tags/WebHook/'>WebHook</a>
+      
+        <a href='/tags/设计模式/'>设计模式</a>
+      
+        <a href='/tags/桥接模式/'>桥接模式</a>
+      
+        <a href='/tags/享元模式/'>享元模式</a>
+      
+        <a href='/tags/门面模式/'>门面模式</a>
+      
+        <a href='/tags/小程序/'>小程序</a>
+      
+        <a href='/tags/装饰模式/'>装饰模式</a>
+      
+        <a href='/tags/wechat/'>wechat</a>
+      
+        <a href='/tags/心流/'>心流</a>
+      
+        <a href='/tags/小密圈/'>小密圈</a>
+      
+        <a href='/tags/吐槽/'>吐槽</a>
+      
+        <a href='/tags/VSC/'>VSC</a>
+      
+        <a href='/tags/Gulp/'>Gulp</a>
+      
+        <a href='/tags/Webpack/'>Webpack</a>
+      
+        <a href='/tags/Wordpress/'>Wordpress</a>
+      
+        <a href='/tags/三年/'>三年</a>
+      
+        <a href='/tags/前端杂谈/'>前端杂谈</a>
+      
+        <a href='/tags/DHT/'>DHT</a>
+      
+        <a href='/tags/BitTorrent/'>BitTorrent</a>
+      
+      
+      </div>
+    </div>
+  </div>
+  
+  <div class="cate-detail response-overflow">
+    
+    <a href="/archives/2016/" class="archive-year"><strong>2016 年</strong></a>
+    <ul>
+      
+      <li>
+        <a href="/all/20160319/152156/">对系统链路问题排查的一些看法
+        
+        </a>
+        <span>(2016/03/19
+          · 归类:
+	<a class="category-link" href="/categories/网络交互/">网络交互</a>,<a class="category-link" href="/categories/网络交互/网络技术/">网络技术</a>,<a class="category-link" href="/categories/网络交互/网络技术/观点和感想/">观点和感想</a>
+
+
+         ·<span
+              class="ds-thread-count disqus-comment-count cy_cmt_count"
+              data-thread-key="problem-debugging"
+              data-disqus-identifier="problem-debugging"
+              id="sourceId::problem-debugging"
+              ></span>)</span>
+      </li>
+      
+    </ul>
+    
+  </div>
+</div>
+</div>
+<div class="sidebar" tabindex="0" aria-hidden="true">
+	<div class="func-btns func-btns-up">
+    <span class="func-item">
+        <i class="func-nav icon">&#xe618;<span>目录</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="javascript:void(0);" onclick="return false;">显示目录</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-font icon">&#xe604;<span>设置</span></i>
+        <div class="font-choose-box">
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <div class="font-choose bg-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-sun font-type-song"><i class="icon">&#xe61a;</i></a>
+            <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-moon font-type-hei"><i class="icon">&#xe619;</i></a>
+          </div>
+          <div class="font-choose">
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-song">黑体</a>
+            <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-hei">宋体</a>
+          </div>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="http://weibo.com/173248656" target="_blank"><i class="func-fb icon">博<span>分享</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator sharecanvas"><a href="javascript: void(0);">截屏分享</a></p>
+          <p><a href="http://weibo.com/173248656" target="_blank">微博关注</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-about icon">&#x263b;<span>关于</span></i>
+        <div>
+          <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p><a href="/about/" class="func-about-link" target="_blank">关于作者</a></p>
+          <div id="followMeOnWeibo"></div>
+        </div>
+    </span>
+	</div>
+	<div class="func-btns">
+    <span class="func-item">
+        <a href="http://demo.barretlee.com" target="_blank"><i class="func-rss icon">&#xe603;<span>实验</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="http://demo.barretlee.com" target="_blank">Demo平台</a></p>
+          <p class="seperator"><a href="http://md.barretlee.com" target="_blank">WX格式</a></p>
+          <p><a href="http://snippets.barretlee.com" target="_blank">Snippet应用</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <i class="func-fb icon">&#x2121;<span>留言</span></i>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <p class="seperator"><a href="/message/" target="_blank">给我留言</a></p>
+          <p><a href="/comments/" target="_blank">近期留言</a></p>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/friends/" target="_blank"><i class="func-rss icon">&#xe601;<span>友链</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+          <a href="/friends/" target="_blank">友情链接</a>
+        </div>
+    </span>
+    <span class="func-item">
+        <a href="/rss2.xml" target="_blank"><i class="func-rss icon">&#x25c8;<span>订阅</span></i></a>
+        <div><i class="left-arrow"></i><i class="left-arrow-clone"></i><a href="/rss2.xml" target="_blank">订阅我吧！</a></div>
+    </span>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="footer-wraper">
+		<div class="footer-content">
+			<div class="footer-nav">
+	<a href="javascript: void(0);" class="ds-thread-count disqus-comment-count"
+	   data-thread-key="tags/链路问题排查/index.html"
+	   data-disqus-identifier="tags/链路问题排查/index.html" 
+		 tabindex="0" aria-hidden="true">评论内容</a>
+	<a href="javascript: void(0);" id="comments">相关文章</a>
+	<a href="/friends/" tabindex="0" aria-hidden="true">友情链接</a>
+</div>
+<div class="nav-detail">
+	<div tabindex="0" aria-hidden="true">
+		
+<div id="SOHUCS" sid="tags/链路问题排查/index.html">
+	<div class="ds-loading">
+		<img src="/blogimgs/loading.gif" alt="loading..."/>
+		<p>这网速真是弱爆了...客官稍等,评论还在加载~</p>
+	</div>
+</div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+  appid: 'cyt0XnPCt',
+  conf: 'prod_5fde9cb8b23a2209a1ad60ab2dd5fe82'
+});
+</script>
+
+	</div>
+	<div style="display:block;">
+		<div class="relative-to-comment" tabindex="0" aria-hidden="true"><span>打开评论</span></div>
+		<div class="relative-wrapper">
+	<div class="relative-article">
+		
+		</ul>
+	</div>
+</div>
+
+		<a href="/entry/" class="relative-to-comment-wrapper" tabindex="0" aria-hidden="true"><div class="relative-to-comment">回到首页</div></a>
+	</div>
+	<div class="friends-box">
+		<ul>
+			
+			<li><a href="http://hustskyking.cnblogs.com" target="_blank">旧博客</a> <font aria-hidden="true">»</font> <span>我的旧博客（博客园荣誉博客）</span></li>
+			
+			<li><a href="http://www.zhangmengxue.com" target="_blank">大额</a> <font aria-hidden="true">»</font> <span>大额大额哼歌等日落</span></li>
+			
+			<li><a href="http://www.zhangxinxu.com" target="_blank">张鑫旭</a> <font aria-hidden="true">»</font> <span>原来大学我俩一个团队的~</span></li>
+			
+			<li><a href="http://web-tinker.com" target="_blank">次碳酸钴</a> <font aria-hidden="true">»</font> <span>深度交流的一个好朋友</span></li>
+			
+			<li><a href="http://imququ.com" target="_blank">屈屈</a> <font aria-hidden="true">»</font> <span>好吧，蛐蛐同学</span></li>
+			
+			<li><a href="http://www.ruanyifeng.com" target="_blank">阮一峰</a> <font aria-hidden="true">»</font> <span>阮老师,哈哈,第一次设计博客就是抄的你的样式</span></li>
+			
+			<li><a href="http://annn.me" target="_blank">安记</a> <font aria-hidden="true">»</font> <span>阿安同学</span></li>
+			
+			<li><a href="http://mouto.org/" target="_blank">卜卜口</a> <font aria-hidden="true">»</font> <span>二次元化身</span></li>
+			
+			<li><a href="/friends/">更多列表 <font aria-hidden="true">»</font></a></li>
+		</ul>
+	</div>
+</div>
+			
+<div class="website-info" aria-hidden="true">
+	<a class="page_editor" href="/admin/#/" target="_blank">🙈</a>
+	<span>&copy;2013-2017 <small><a href="http://www.miitbeian.gov.cn/" about="_blank">湘ICP备14007107号-1</a></small></span>
+	本站由 <a href="/">rain</a> 纯手工打造 | <a href="/about#contact">联系方式</a> | 总热度：<em id="busuanzi_value_site_pv"></em>
+</div>
+
+		</div>
+	</div>
+</div>
+
+</body>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/socket.io.js"></script>
+<script>
+  window.onerror = function(e) {
+    window.console && window.console.log && window.console.log(e);
+    $('#loadLayer').remove();
+    return true;
+  };
+</script>
+<script src="/public/js/aplayer.js"></script>
+<script src="/public/js/main.js?v=20170824"></script>
+</script>
+</html>
