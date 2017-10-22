@@ -8,7 +8,7 @@
     <script xmlns="http://www.w3.org/1999/xhtml" src="/public/js/rss.js"></script>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <description><![CDATA[这是属于星空守候的专属个人空间，这里是web开发工程师的天堂，这里欢迎每一个开发者，希望你们在这里有所提高]]></description>
-    <pubDate>Sun Oct 22 2017 14:40:56 GMT+0800 (中国标准时间)</pubDate>
+    <pubDate>Sun Oct 22 2017 19:00:55 GMT+0800 (中国标准时间)</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -45,10 +45,10 @@
       <guid>https://www.onlystar.site/all/20170616/162400/</guid>
       <pubDate>Fri Jun 16 2017 16:24:00 GMT+0800 (中国标准时间)</pubDate>
       <description>
-      <![CDATA[小胡子哥的个人网站]]>
+      <![CDATA[Rain哥的个人网站]]>
       
       </description>
-      <content:encoded><![CDATA[小胡子哥的个人网站]]>
+      <content:encoded><![CDATA[Rain哥的个人网站]]>
       </content:encoded>
       <comments>https://www.onlystar.site/all/20170616/162400/#comments</comments>
     </item>

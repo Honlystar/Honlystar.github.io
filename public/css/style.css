@@ -5306,11 +5306,6 @@ body.body-bg-moon {
   line-height: 40px;
   margin-bottom: 20px;
 }
-.rightbar-frame {
-  height: 352px;
-  background: #fafafa url("/blogimgs/loading.gif") center center no-repeat;
-  border: 1px solid #ccc;
-}
 .entry-recent-post {
   float: left;
   width: 590px;
@@ -7164,10 +7159,6 @@ span.line {
   .article,
   .cate-wraper {
     padding: 50px 20px 30px;
-  }
-  .rightbar-frame {
-    height: 0;
-    display: none;
   }
   .share_self {
     display: none;

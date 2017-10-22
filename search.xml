@@ -5,7 +5,8 @@
     <entry>
       <title><![CDATA[promise的初步使用]]></title>
       <url>/all/20171022/113042/</url>
-      <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>在前端开发中，经常会遇到这样的困境：一个接口的参数会需要使用另一个接口获取，这时候聪明的做法就是使用回调函数，这样就可以解决问题，但是这种做法增加了函数的嵌套深度，如果需要的是好几个接口的返回数据,这样层层的回调,就比较头疼痛了，这就是所谓的回调地狱。Promise正是在这种情况下应运而生,它完美优雅的解决了回调地狱难题。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">step1(function (value1) &#123;</div><div class="line">  step2(value1, function(value2)&#123;</div><div class="line">    step3(value2,function(value3) &#123;</div><div class="line">      step4(value3,function(value4) &#123;</div><div class="line">        // ...</div><div class="line">      &#125;);</div><div class="line">    &#125;);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+      <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p><img src="http://ww1.sinaimg.cn/large/6c0378f8gy1fj0wyhwtf1j20p00dw775.jpg" alt="overlook via https://unsplash.com/search/photos/overlook?photo=bSmKli4OTIY"></p>
+<p>在前端开发中，经常会遇到这样的困境：一个接口的参数会需要使用另一个接口获取，这时候聪明的做法就是使用回调函数，这样就可以解决问题，但是这种做法增加了函数的嵌套深度，如果需要的是好几个接口的返回数据,这样层层的回调,就比较头疼痛了，这就是所谓的回调地狱。Promise正是在这种情况下应运而生,它完美优雅的解决了回调地狱难题。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">step1(function (value1) &#123;</div><div class="line">  step2(value1, function(value2)&#123;</div><div class="line">    step3(value2,function(value3) &#123;</div><div class="line">      step4(value3,function(value4) &#123;</div><div class="line">        // ...</div><div class="line">      &#125;);</div><div class="line">    &#125;);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>Promise 是异步编程的一种解决方案，Promise 可以认为是一个对象，它可以获取异步操的最终完成（或失败）及其结果值的表示</p>
 </blockquote>
@@ -43,7 +44,7 @@
       <content type="html"><![CDATA[<p>快三个月没写博客了，长草了。最近生活和工作上都发生了不少事情，在这个百感交集的夜晚，突然想说点什么。</p>
 <p><img src="http://ww1.sinaimg.cn/large/6c0378f8gy1fj0wyhwtf1j20p00dw775.jpg" alt="overlook via https://unsplash.com/search/photos/overlook?photo=bSmKli4OTIY"></p>
 <a id="more"></a>
-<p>首先，要给大家公布一个事儿，小胡子哥在昨天已经彻底结束单身生活，迈向了婚姻的殿堂，从此将走向人生巅峰 😛；非常感谢各位朋友的发来的祝福，<span style="letter-spacing:3px;">请收下我的膝盖！</span></p>
+<p>首先，要给大家公布一个事儿，Rain哥在昨天已经彻底结束单身生活，迈向了婚姻的殿堂，从此将走向人生巅峰 😛；非常感谢各位朋友的发来的祝福，<span style="letter-spacing:3px;">请收下我的膝盖！</span></p>
 <p>生活就是如此，总是在不经意间给人数不清的惊喜。</p>
 <p>毕业没多久便在 <a href="http://d2forum.alibaba-inc.com/" target="_blank" rel="external">D2</a> 上认识了 <a href="http://weibo.com/yixuanzmx" target="_blank" rel="external">她</a>，一个东北女孩，懵懵懂懂的，稀里糊涂就被我忽悠到了杭州——这个「只有我」的城市。经过我三番五次的穷追猛打，几个月下来，她已经略显「疲惫」，渐渐地，露出了爱意。那一年，仿佛自己又回到了 18 岁。</p>
 <p>从相识到相知到相恋，我们留下了不少美好的回忆；那一阵子的甜蜜后，两个人也开始了小吵小闹，进入一段爱情磨合期。细细品来，这也算是生活的乐趣吧~</p>
@@ -1286,7 +1287,7 @@
 </ul>
 <hr>
 <p>题图：<a href="https://unsplash.com/search/math?photo=5mZ_M06Fc9g" target="_blank" rel="external">math</a> by Roman Mager</p>
-<p><strong><em>笔耕不辍，欢迎关注微信公众号小胡子哥（barretlee_com），分享生活，分享技术，我在那里等你。</em></strong></p>
+<p><strong><em>笔耕不辍，欢迎关注微信公众号Rain哥（barretlee_com），分享生活，分享技术，我在那里等你。</em></strong></p>
 ]]></content>
       
         <categories>
@@ -1335,7 +1336,7 @@
 <p>题图 by <a href="http://ww2.sinaimg.cn/large/6c0378f8gw1f87ht68ivnj20p00dwjv5.jpg" target="_blank" rel="external">Jesse Gardner</a></p>
 <p>有一个月没写东西了，不是因为太忙，而是有点懒笔了=。 =</p>
 <p>忙永远只是一个借口，它只能说明，没有把「重要不紧急」的事情处理好，一旦到了某个极限点，手里上就都变成「重要并且紧急」 的事情了。</p>
-<p>笔耕不辍，欢迎关注微信公众号小胡子哥（barretlee_com），分享生活，分享技术，我在那里等你。</p>
+<p>笔耕不辍，欢迎关注微信公众号Rain哥（barretlee_com），分享生活，分享技术，我在那里等你。</p>
 ]]></content>
       
         <categories>
@@ -1914,10 +1915,10 @@
     </entry>
     
     <entry>
-      <title><![CDATA[向小胡子哥提问]]></title>
+      <title><![CDATA[向Rain哥提问]]></title>
       <url>/all/20160714/095609/</url>
       <content type="html"><![CDATA[<p><img src="//ww1.sinaimg.cn/large/6c0378f8gw1f5t7g1e2i9j20p00dwac9.jpg" alt="//unsplash.com/photos/i--IN3cvEjg by Evan Dennis"></p>
-<p>欢迎向小胡子哥提问，由于个人精力有限，并不是每一个问题都会去回答。</p>
+<p>欢迎向Rain哥提问，由于个人精力有限，并不是每一个问题都会去回答。</p>
 <a id="more"></a>
 <p>如果你期望看到我的回答，可以把问题整理好，通过邮箱或者留言方式发给我：</p>
 <ul>
@@ -4035,7 +4036,7 @@
 <li><a href="http://www.csdn.net/article/1970-01-01/2815164" target="_blank" rel="external">http://www.csdn.net/article/1970-01-01/2815164</a> By 李晶</li>
 <li><a href="http://cnberg.com/archive/2013-fe/" target="_blank" rel="external">http://cnberg.com/archive/2013-fe/</a> By Berg</li>
 <li><a href="http://www.infoq.com/cn/articles/2014-review-front-end-part" target="_blank" rel="external">http://www.infoq.com/cn/articles/2014-review-front-end-part</a> By 黄丹</li>
-<li><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#104;&#116;&#x74;&#112;&#x3a;&#x2f;&#x2f;&#x6d;&#x65;&#x64;&#105;&#117;&#x6d;&#x2e;&#99;&#111;&#109;&#x2f;&#x40;&#x73;&#104;&#x69;&#106;&#117;&#x76;&#97;&#x72;&#47;&#x77;&#101;&#98;&#x2d;&#x64;&#101;&#x76;&#101;&#108;&#111;&#112;&#x6d;&#x65;&#x6e;&#x74;&#45;&#x74;&#x72;&#x65;&#110;&#x64;&#x73;&#45;&#102;&#111;&#114;&#x2d;&#x32;&#48;&#x31;&#53;&#45;&#x61;&#x6e;&#100;&#45;&#x62;&#101;&#x79;&#111;&#110;&#x64;&#x2d;&#x63;&#50;&#x64;&#51;&#x63;&#x31;&#101;&#x66;&#x35;&#x37;&#x31;&#56;">&#104;&#116;&#x74;&#112;&#x3a;&#x2f;&#x2f;&#x6d;&#x65;&#x64;&#105;&#117;&#x6d;&#x2e;&#99;&#111;&#109;&#x2f;&#x40;&#x73;&#104;&#x69;&#106;&#117;&#x76;&#97;&#x72;&#47;&#x77;&#101;&#98;&#x2d;&#x64;&#101;&#x76;&#101;&#108;&#111;&#112;&#x6d;&#x65;&#x6e;&#x74;&#45;&#x74;&#x72;&#x65;&#110;&#x64;&#x73;&#45;&#102;&#111;&#114;&#x2d;&#x32;&#48;&#x31;&#53;&#45;&#x61;&#x6e;&#100;&#45;&#x62;&#101;&#x79;&#111;&#110;&#x64;&#x2d;&#x63;&#50;&#x64;&#51;&#x63;&#x31;&#101;&#x66;&#x35;&#x37;&#x31;&#56;</a> By Shiju Varghese</li>
+<li><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#104;&#116;&#x74;&#112;&#58;&#x2f;&#x2f;&#x6d;&#101;&#x64;&#x69;&#117;&#109;&#46;&#99;&#x6f;&#x6d;&#47;&#64;&#115;&#104;&#x69;&#106;&#x75;&#x76;&#97;&#114;&#47;&#x77;&#101;&#98;&#45;&#x64;&#101;&#x76;&#x65;&#x6c;&#x6f;&#x70;&#x6d;&#101;&#110;&#x74;&#45;&#x74;&#114;&#x65;&#x6e;&#x64;&#115;&#x2d;&#x66;&#x6f;&#114;&#45;&#50;&#x30;&#49;&#x35;&#45;&#x61;&#x6e;&#100;&#x2d;&#x62;&#101;&#x79;&#x6f;&#x6e;&#100;&#45;&#99;&#x32;&#100;&#x33;&#99;&#x31;&#x65;&#x66;&#x35;&#55;&#x31;&#x38;">&#104;&#116;&#x74;&#112;&#58;&#x2f;&#x2f;&#x6d;&#101;&#x64;&#x69;&#117;&#109;&#46;&#99;&#x6f;&#x6d;&#47;&#64;&#115;&#104;&#x69;&#106;&#x75;&#x76;&#97;&#114;&#47;&#x77;&#101;&#98;&#45;&#x64;&#101;&#x76;&#x65;&#x6c;&#x6f;&#x70;&#x6d;&#101;&#110;&#x74;&#45;&#x74;&#114;&#x65;&#x6e;&#x64;&#115;&#x2d;&#x66;&#x6f;&#114;&#45;&#50;&#x30;&#49;&#x35;&#45;&#x61;&#x6e;&#100;&#x2d;&#x62;&#101;&#x79;&#x6f;&#x6e;&#100;&#45;&#99;&#x32;&#100;&#x33;&#99;&#x31;&#x65;&#x66;&#x35;&#55;&#x31;&#x38;</a> By Shiju Varghese</li>
 <li><a href="http://github.com/kuitos/kuitos.github.io/issues/32" target="_blank" rel="external">http://github.com/kuitos/kuitos.github.io/issues/32</a> By Kuitos</li>
 </ul>
 ]]></content>
@@ -4112,7 +4113,7 @@
 </ul>
 <p>当然，可以直奔官网的说明：<a href="http://github.com/rime/home/wiki" target="_blank" rel="external">http://github.com/rime/home/wiki</a>。</p>
 <p>我用了两天，感觉很棒。我的皮肤设置（<code>squirrel.custom.yaml</code>）为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"># squirrel.custom.yaml</div><div class="line">patch:</div><div class="line">  # us_keyboard_layout: true         # 键盘选项：应用美式键盘布局</div><div class="line">  # show_notifications_when: growl_is_running  # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）</div><div class="line">    style/color_scheme: demo         # 选择配色方案</div><div class="line">    style/horizontal: true           # 候选窗横向显示</div><div class="line">  # style/inline_preedit: false   # 关闭内嵌编码，这样就可以显示首行的拼音（MAC下不建议开启）</div><div class="line">    style/corner_radius: 3           # 窗口圆角半径</div><div class="line">    style/border_height: 4           # 窗口边界高度，大于圆角半径才有效果</div><div class="line">    tyle/border_width: 4             # 窗口边界宽度，大于圆角半径才有效果</div><div class="line">  # style/line_spacing: 1         # 候选词的行间距</div><div class="line">  # style/spacing: 5              # 在非内嵌编码模式下，预编辑和候选词之间的间距</div><div class="line">    style/font_face: &quot;Lantinghei TC Extralight&quot;  # 预选栏文字字体，使用中文字体：兰亭黑-纤黑</div><div class="line">    style/font_point: 17             #预选栏文字字号</div><div class="line">    style/label_font_face: &quot;Myriad Pro Light&quot;  # 预选栏编号字体，使用西文字体：Myriad Pro Light</div><div class="line">    style/label_font_point: 17       #预选栏编号字号</div><div class="line">     #上述是候选栏的基本设置，确定了文字的大小和候选栏的外观样式。</div><div class="line">     #下面是“demo”样式文件的配置，主要确定候选栏颜色配置。</div><div class="line">    preset_color_schemes:</div><div class="line">    demo:        #样式名称，就是上述“style/color_scheme: demo”</div><div class="line">    author: &quot;Barret Lee &lt;barret.china@gmail.com&gt;&quot;        #作者</div><div class="line">    name: &quot;小胡子哥&quot;                      #作者名字</div><div class="line">    label_color: 0xf2a45a                    #预选栏编号颜色</div><div class="line">    back_color: 0x333333                    #背景颜色</div><div class="line">    candidate_text_color: 0xb9b9b9          #非第一后选项文字颜色</div><div class="line">    comment_text_color: 0xa5a5a5            #注解文字颜色</div><div class="line">    hilited_candidate_back_color: 0x333333    #第一后选项背景颜色</div><div class="line">    hilited_candidate_text_color: 0xff7d00    #第一后选项文字颜色</div><div class="line">    hilited_comment_text_color: 0x00a5ea      #注解文字高亮</div><div class="line">    hilited_text_color: 0x7fffff              #拼音串高亮（需要开启内嵌编码）</div><div class="line">    text_color: 0xa5a5a5                      #拼音串颜色（需要开启内嵌编码）</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"># squirrel.custom.yaml</div><div class="line">patch:</div><div class="line">  # us_keyboard_layout: true         # 键盘选项：应用美式键盘布局</div><div class="line">  # show_notifications_when: growl_is_running  # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）</div><div class="line">    style/color_scheme: demo         # 选择配色方案</div><div class="line">    style/horizontal: true           # 候选窗横向显示</div><div class="line">  # style/inline_preedit: false   # 关闭内嵌编码，这样就可以显示首行的拼音（MAC下不建议开启）</div><div class="line">    style/corner_radius: 3           # 窗口圆角半径</div><div class="line">    style/border_height: 4           # 窗口边界高度，大于圆角半径才有效果</div><div class="line">    tyle/border_width: 4             # 窗口边界宽度，大于圆角半径才有效果</div><div class="line">  # style/line_spacing: 1         # 候选词的行间距</div><div class="line">  # style/spacing: 5              # 在非内嵌编码模式下，预编辑和候选词之间的间距</div><div class="line">    style/font_face: &quot;Lantinghei TC Extralight&quot;  # 预选栏文字字体，使用中文字体：兰亭黑-纤黑</div><div class="line">    style/font_point: 17             #预选栏文字字号</div><div class="line">    style/label_font_face: &quot;Myriad Pro Light&quot;  # 预选栏编号字体，使用西文字体：Myriad Pro Light</div><div class="line">    style/label_font_point: 17       #预选栏编号字号</div><div class="line">     #上述是候选栏的基本设置，确定了文字的大小和候选栏的外观样式。</div><div class="line">     #下面是“demo”样式文件的配置，主要确定候选栏颜色配置。</div><div class="line">    preset_color_schemes:</div><div class="line">    demo:        #样式名称，就是上述“style/color_scheme: demo”</div><div class="line">    author: &quot;Barret Lee &lt;barret.china@gmail.com&gt;&quot;        #作者</div><div class="line">    name: &quot;Rain&quot;                      #作者名字</div><div class="line">    label_color: 0xf2a45a                    #预选栏编号颜色</div><div class="line">    back_color: 0x333333                    #背景颜色</div><div class="line">    candidate_text_color: 0xb9b9b9          #非第一后选项文字颜色</div><div class="line">    comment_text_color: 0xa5a5a5            #注解文字颜色</div><div class="line">    hilited_candidate_back_color: 0x333333    #第一后选项背景颜色</div><div class="line">    hilited_candidate_text_color: 0xff7d00    #第一后选项文字颜色</div><div class="line">    hilited_comment_text_color: 0x00a5ea      #注解文字高亮</div><div class="line">    hilited_text_color: 0x7fffff              #拼音串高亮（需要开启内嵌编码）</div><div class="line">    text_color: 0xa5a5a5                      #拼音串颜色（需要开启内嵌编码）</div></pre></td></tr></table></figure>
 <p>效果是这样：</p>
 <p><img src="//www.barretlee.com/blogimgs/2015/11/20151105_a9e4fc48.png" alt="Rime 配置效果"></p>
 <p>好吧，希望你能玩的愉快。</p>
@@ -4197,7 +4198,7 @@
 <li>Email： barret.china(at)gmail.com</li>
 <li>微博私信：<a href="http://weibo.com/173248656" target="_blank" rel="external">http://weibo.com/173248656</a></li>
 </ul>
-<p>关于<a href="/about/">小胡子哥</a>。</p>
+<p>关于<a href="/about/">Rain</a>。</p>
 ]]></content>
       
         <categories>
@@ -4974,13 +4975,13 @@
       <title><![CDATA[好吧，今天是我的生日]]></title>
       <url>/all/20150922/093202/</url>
       <content type="html"><![CDATA[<p>昨天晚上零点整，收到了高中老同桌的一条短信，太累了，没注意看就睡了。早上比往常醒的要早一些，打开手机，看到了昨晚的生日祝福语，掐指算了算，23了。依稀记得进大学的时候我的年龄还是比较小的，也依稀记得离开学校来到淘宝前端团队时被称为小鲜肉。</p>
-<p>而如今，两撇小胡子，方形脸已经变成了正圆。</p>
+<p>而如今，两撇Rain，方形脸已经变成了正圆。</p>
 <a id="more"></a>
-<p><img src="//www.barretlee.com/blogimgs/avatar150.png" alt="小胡子"></p>
+<p><img src="//www.barretlee.com/blogimgs/avatar150.png" alt="Rain"></p>
 <p>好吧，今天是我的生日。又是崭新的一天，也是崭新的一年，虽然需求如往常一样挤满了时间的空隙，可想说的还是要说出来。我很少去回忆过去，毕竟过去的都过去了；也很少去展望未来，因为要来的总会到来。</p>
 <p><strong>关于爱情</strong></p>
 <p>去年10月份，我认识了我的女朋友，从表白到今天已经 277 天。</p>
-<p><img src="//www.barretlee.com/blogimgs/2015/09/20150902_7e82534e.jpg" alt="小胡子和大额" width="500"></p>
+<p><img src="//www.barretlee.com/blogimgs/2015/09/20150902_7e82534e.jpg" alt="Rain和大额" width="500"></p>
 <p>我们都在阿里巴巴，爱情可能就是一场邂逅。去年十月份的 D2 上，我们认识了彼此，虽然牵手的过程有点坎坷，但现在想来也只是一瞬间的事情。相伴相随才是今后最重要的话题。</p>
 <p><strong>关于工作</strong></p>
 <p>大学，在两个小创业公司里头蹦达，认识了很多朋友，也认识了很多靠谱的青年，那个时候我很明确自己的方向——我要工作。</p>
@@ -6873,13 +6874,13 @@
       <content type="html"><![CDATA[<div class="history-article">本文为归档内容,原始地址在 <a href="http://www.cnblogs.com/hustskyking/archive/2014/10/30/life-in-alibaba.html" target="_blank">博客园</a>.</div>
 
 <p></p><h2 id="_1"><a class="headeranchor-link" name="user-content-_1" href="#_1"></a></h2><p></p>
-<p>Alibaba 试用期是三个月，转眼三个月过去了，也到了转正述职的时间。回想这三个月做过的事情，很多很杂，但还是有重点。</p><br><p>本文谈一谈工作中遇到的各种场景，需要用到的一些前端知识，以及我对前端进阶学习的一点思考。</p><br><h3 id="_2"><a class="headeranchor-link" name="user-content-_2" href="#_2"></a>一、漫谈</h3><br><p>刚入职不久阿里巴巴就上市了，这是件振奋人心的事情。实际上在正式入职之前，我就已经在淘宝UED实习了三个月，所以这边的工作环境和开发流程都比较熟悉了。</p><br><p>在工作中，遇到了很多这样的场景：</p><br><h4 id="1-bug"><a class="headeranchor-link" name="user-content-1-bug" href="#1-bug"></a>1. 线上 bug 处理</h4><br><blockquote><br><p>运营：”嘿，小胡子，有客户反馈这个提交表单的页面中，上传图片预览总是失败，麻烦你跟进下这个case~”。<br>小胡子哥：”哦，好的！”</p>
+<p>Alibaba 试用期是三个月，转眼三个月过去了，也到了转正述职的时间。回想这三个月做过的事情，很多很杂，但还是有重点。</p><br><p>本文谈一谈工作中遇到的各种场景，需要用到的一些前端知识，以及我对前端进阶学习的一点思考。</p><br><h3 id="_2"><a class="headeranchor-link" name="user-content-_2" href="#_2"></a>一、漫谈</h3><br><p>刚入职不久阿里巴巴就上市了，这是件振奋人心的事情。实际上在正式入职之前，我就已经在淘宝UED实习了三个月，所以这边的工作环境和开发流程都比较熟悉了。</p><br><p>在工作中，遇到了很多这样的场景：</p><br><h4 id="1-bug"><a class="headeranchor-link" name="user-content-1-bug" href="#1-bug"></a>1. 线上 bug 处理</h4><br><blockquote><br><p>运营：”嘿，Rain，有客户反馈这个提交表单的页面中，上传图片预览总是失败，麻烦你跟进下这个case~”。<br>Rain哥：”哦，好的！”</p>
 
 <p></p></blockquote><p></p>
-<p>这个时候手头可能有很多工作，但记住一个原则，线上问题的优先级是最高的，”客户第一”是阿里也是所有公司必须秉承的一个价值观理念。</p><br><p>打开浏览器，发现我这边并没有图片上传预览失败的问题，我纳闷了良久，期间让用户尝试换浏览器、电脑，未果，最后不得不远程连接客户的电脑，查看问题。（最后定位原因为某个地区的 CDN 出了问题）</p><br><h4 id="2"><a class="headeranchor-link" name="user-content-2" href="#2"></a>2. 网站改版（前端开发流程）</h4><br><blockquote><br><p>老大：”小胡子，以后你就负责这两条业务线了哈~”。<br>小胡子哥：”嗯”。<br>某天，运营：”网站上线几个新增功能，之前的流程需要优化，本次将对 xx网站改版，几哩吧啦几哩吧啦….. 小胡子啊，几哩吧啦几哩吧啦…..”。<br>小胡子哥：”这个需求前端实现成本太高，是不是可以这样；这个地方的修改，几哩吧啦几哩吧啦…..好的！”。</p>
+<p>这个时候手头可能有很多工作，但记住一个原则，线上问题的优先级是最高的，”客户第一”是阿里也是所有公司必须秉承的一个价值观理念。</p><br><p>打开浏览器，发现我这边并没有图片上传预览失败的问题，我纳闷了良久，期间让用户尝试换浏览器、电脑，未果，最后不得不远程连接客户的电脑，查看问题。（最后定位原因为某个地区的 CDN 出了问题）</p><br><h4 id="2"><a class="headeranchor-link" name="user-content-2" href="#2"></a>2. 网站改版（前端开发流程）</h4><br><blockquote><br><p>老大：”Rain，以后你就负责这两条业务线了哈~”。<br>Rain哥：”嗯”。<br>某天，运营：”网站上线几个新增功能，之前的流程需要优化，本次将对 xx网站改版，几哩吧啦几哩吧啦….. Rain啊，几哩吧啦几哩吧啦…..”。<br>Rain哥：”这个需求前端实现成本太高，是不是可以这样；这个地方的修改，几哩吧啦几哩吧啦…..好的！”。</p>
 
 <p></p></blockquote><p></p>
-<p>一个大的需求过来，一般会经过多次评审。刚开始是产品GG和运营MM们互喷口水，喷完了PRM评审也就完了，那么这个时候一般就确定要做什么啦，然后会把前端、视觉、开发等同学都叫过去参加交互评审，交互评审敲定之后，视觉同学就回去画图啦，这个时候后端同学会去准备数据，前端同学会跟视觉MM联系紧密，形影不离。</p><br><p>视觉稿设计完了之后，前端就正式投入开发了。刚开始会面临一个问题，前后端的接口谁来拟订？</p><br><p>后端数据还在准备中，<strong>如果后端拟订接口</strong>，则刚开始后端需要模拟数据，此时接口地址和前端开发环境还不在一个域下，取数据存在跨域问题，如果先改成 jsonp 的接口，开发完毕再改成 json 接口，那么后续程序也需要跟着一起改动。<strong>如果前端拟订接口</strong>，则前端需要在本地 mock 数据，若开发完毕时后端数据依然没有准备好，那么联调又是一个麻烦事儿，可能后端还得模拟一次数据，这样前端后端都实现了依次数据模拟，重复工作，冗余。庆幸的是我们有数据接口拟订的工具，这个工具可以将接口信息以文档形式沉淀，并且提供了可跨域访问的 mock 数据，接口的修改也变得异常方便。</p><br><p>好，既然有工具，那我就辛苦点吧~ 写好数据接口，交给后端同学 review，然后开始切图（做业务嘛，唉…）公司内部使用的前端框架叫做 <a href="http://docs.kissyui.com/5.0/" target="_blank" rel="external">KISSY</a>，目前已经升级到 5.0，而使用比较多的还是 1.4.x 版本。这是个啥玩意儿呢，很多公司没有自己的框架，于是便使用 JQ 开发，这个 KISSY 也是一样的，他就是公司的 JQuery，不过框架对业务更加有亲和力，KISSY 提供了数量庞大的组件和插件，易用性很强，但学习有一定的门槛。</p><br><p>使用 KISSY 完成业务逻辑的开发。我们会将代码发布到 CDN 上，这点我需要得瑟下，阿里的前端发布系统真是好用到了极致！因为 HTML 部分是后端管的，我们开发好 HTML/CSS/JS 之后，会将 HTML 交给后端同学，同时将静态资源 (CSS/JS/IMG) 发布到线上，图片可以直接上传，CSS和JS在本地打包之后，push 到仓库，系统会自动完成 CDN 部署，一般前端的改动在两分钟之内就能在线上见效，一天发布几十个版本毫无压力，不像某度公司，胆战心惊的排着长队发布一个小小的改动，发布的时候还担心别人抢先上线，自己又得 merge 代码（去年在百度实习情况还是这样，不知道如今改善了多少）。</p><br><p>待后端同学也开发完毕后，我们会把测试MM叫到旁边，让她们帮着测试系统bug，这个时候也可以把运营MM叫过来一起测试，修完 bug 就可以正式上线了。</p><br><p>所以在阿里，前端资源是提早上线的，完了后端代码才会上。上面所说皆为 PC 端的开发流程，Mobile 端还是有很大差异，这里就不细说了。</p><br><h4 id="3"><a class="headeranchor-link" name="user-content-3" href="#3"></a>3. 需求的变更</h4><br><blockquote><br><p>小胡子哥正在得瑟顺利的完成了一个项目的开发，可是此时，运营MM跑过来说：”某个功能因为xx原因本期不能上线了，需要等到V2版本再发，需要前端协助删除xx模块。”<br>小胡子寻思着，皱了皱眉头。运营MM含情脉脉的对视着小胡子，小胡子说：”那，好吧，改完之后需求还变么？”<br>运营MM点了点头，然后又摇了摇头。<br>小胡子心想：”妈蛋”。</p>
+<p>一个大的需求过来，一般会经过多次评审。刚开始是产品GG和运营MM们互喷口水，喷完了PRM评审也就完了，那么这个时候一般就确定要做什么啦，然后会把前端、视觉、开发等同学都叫过去参加交互评审，交互评审敲定之后，视觉同学就回去画图啦，这个时候后端同学会去准备数据，前端同学会跟视觉MM联系紧密，形影不离。</p><br><p>视觉稿设计完了之后，前端就正式投入开发了。刚开始会面临一个问题，前后端的接口谁来拟订？</p><br><p>后端数据还在准备中，<strong>如果后端拟订接口</strong>，则刚开始后端需要模拟数据，此时接口地址和前端开发环境还不在一个域下，取数据存在跨域问题，如果先改成 jsonp 的接口，开发完毕再改成 json 接口，那么后续程序也需要跟着一起改动。<strong>如果前端拟订接口</strong>，则前端需要在本地 mock 数据，若开发完毕时后端数据依然没有准备好，那么联调又是一个麻烦事儿，可能后端还得模拟一次数据，这样前端后端都实现了依次数据模拟，重复工作，冗余。庆幸的是我们有数据接口拟订的工具，这个工具可以将接口信息以文档形式沉淀，并且提供了可跨域访问的 mock 数据，接口的修改也变得异常方便。</p><br><p>好，既然有工具，那我就辛苦点吧~ 写好数据接口，交给后端同学 review，然后开始切图（做业务嘛，唉…）公司内部使用的前端框架叫做 <a href="http://docs.kissyui.com/5.0/" target="_blank" rel="external">KISSY</a>，目前已经升级到 5.0，而使用比较多的还是 1.4.x 版本。这是个啥玩意儿呢，很多公司没有自己的框架，于是便使用 JQ 开发，这个 KISSY 也是一样的，他就是公司的 JQuery，不过框架对业务更加有亲和力，KISSY 提供了数量庞大的组件和插件，易用性很强，但学习有一定的门槛。</p><br><p>使用 KISSY 完成业务逻辑的开发。我们会将代码发布到 CDN 上，这点我需要得瑟下，阿里的前端发布系统真是好用到了极致！因为 HTML 部分是后端管的，我们开发好 HTML/CSS/JS 之后，会将 HTML 交给后端同学，同时将静态资源 (CSS/JS/IMG) 发布到线上，图片可以直接上传，CSS和JS在本地打包之后，push 到仓库，系统会自动完成 CDN 部署，一般前端的改动在两分钟之内就能在线上见效，一天发布几十个版本毫无压力，不像某度公司，胆战心惊的排着长队发布一个小小的改动，发布的时候还担心别人抢先上线，自己又得 merge 代码（去年在百度实习情况还是这样，不知道如今改善了多少）。</p><br><p>待后端同学也开发完毕后，我们会把测试MM叫到旁边，让她们帮着测试系统bug，这个时候也可以把运营MM叫过来一起测试，修完 bug 就可以正式上线了。</p><br><p>所以在阿里，前端资源是提早上线的，完了后端代码才会上。上面所说皆为 PC 端的开发流程，Mobile 端还是有很大差异，这里就不细说了。</p><br><h4 id="3"><a class="headeranchor-link" name="user-content-3" href="#3"></a>3. 需求的变更</h4><br><blockquote><br><p>Rain哥正在得瑟顺利的完成了一个项目的开发，可是此时，运营MM跑过来说：”某个功能因为xx原因本期不能上线了，需要等到V2版本再发，需要前端协助删除xx模块。”<br>Rain寻思着，皱了皱眉头。运营MM含情脉脉的对视着Rain，Rain说：”那，好吧，改完之后需求还变么？”<br>运营MM点了点头，然后又摇了摇头。<br>Rain心想：”妈蛋”。</p>
 
 <p></p></blockquote><p></p>
 <p>然后继续上述流程。</p><br><p>那些还没有出过校门的童鞋们，看到这里，你是不是对公司项目的开发有了大概的了解呢？以上的三个场景是十分常见的，但是在公司绝不仅仅只干这些事情。</p><br><p>在这三个月里，我参与了一个前端自动化检测工具的开发，完成了前后端的改造。所用到的技术嘛，稍微列一列：</p><br><ul><br><li>websocket 实时通讯</li><br><li>scss/less css预处理语言</li><br><li>grunt/gulp 打包工具</li><br><li>MVC 分离思想</li><br><li>Promise 异步编程框架</li><br><li>Middleware 中间件的编写</li><br><li>Express Node的框架</li><br><li>…</li><br><br></ul><br><p>涉及到的技术点，很多很多，这些只是一个项目中用到的部分内容。前端，暗藏无数杀机，如果对基础东西掌握不牢靠，你会发现别人三小时搞定的事情，到你这里就得三天，因为你一直在踩坑！</p><br><h3 id="_3"><a class="headeranchor-link" name="user-content-_3" href="#_3"></a>二、前端进阶的思考</h3><br><blockquote><br><p>很多优秀的前端同学，在学到一定水平之后，会感觉学到尽头了，每天愁着怎么去学习新知识，学习什么新知识。也有很多同学，学习的重点跟工作后的从事内容偏差颇大。所以我想着能不能在这方面跟大家交流一下，一起探讨。</p>
@@ -8409,30 +8410,6 @@ document.onclick = function(){
     </entry>
     
     <entry>
-      <title><![CDATA[css选中前一个元素]]></title>
-      <url>/all/20140430/000000/</url>
-      <content type="html"><![CDATA[<p>想了半天没找到 hack 的方式，CSS4 也没有提供类似的方法，不过在以后的草案中可能会出现 </p>
-<pre><code>!previous + next {}
-</code></pre><p>这样选中上一个元素，那么就可以使用</p>
-<p>!* + obj 来选中 obj 的前一个元素了</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 前端杂烩 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> css </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[git切换到远程分支]]></title>
       <url>/all/20140430/000000/</url>
       <content type="html"><![CDATA[<p>远程仓库 git clone 下来，当你执行 git branch，你只会看到</p>
@@ -8472,6 +8449,30 @@ master
         <tags>
             
             <tag> git </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[css选中前一个元素]]></title>
+      <url>/all/20140430/000000/</url>
+      <content type="html"><![CDATA[<p>想了半天没找到 hack 的方式，CSS4 也没有提供类似的方法，不过在以后的草案中可能会出现 </p>
+<pre><code>!previous + next {}
+</code></pre><p>这样选中上一个元素，那么就可以使用</p>
+<p>!* + obj 来选中 obj 的前一个元素了</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 前端杂烩 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> css </tag>
             
         </tags>
         
@@ -8920,6 +8921,37 @@ b // 1
     </entry>
     
     <entry>
+      <title><![CDATA[jekyll中gsub未定义的错误]]></title>
+      <url>/all/20140426/000000/</url>
+      <content type="html"><![CDATA[<p>今天被 jekyll 编译时的一个问题搞疯了。</p>
+<blockquote>
+<p>Liquid Exception: undefined method `gsub’ for nil:NilClass in atom.xml</p>
+</blockquote>
+<p>上面这个错误，开始以为时jekyll的版本问题，后来又以为时 UIT8 编码错误，再继续折腾，看了很多博客还是没有处理好。</p>
+<p>在 <code>atom.xml</code> 中我写了一句 ，以前一直是这样的啊，没报错。不知道 github pages 的后台 jekyll 编译器是不是做了版本或者其他方面的修改，定位到这个位置之后，把内容改成了</p>
+<pre><code>\{\{ post.excerpt }}
+\{\{ post.content }} # 改成这个也可以，只是内容太多，我不喜欢
+</code></pre><p>差不多整了我两个小时，这么点小错误，妹的！</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 前端杂烩 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> error </tag>
+            
+            <tag> jekyll </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[clip的安装和使用]]></title>
       <url>/all/20140426/000000/</url>
       <content type="html"><![CDATA[<p>很多情况下我们需要复制整个文件的内容，然后粘贴到其他地方，像我这种命令行控，文件操作基本都是命令行处理的，平时会用 vim 打开文件，然后</p>
@@ -8950,37 +8982,6 @@ xclip -sel clip &lt; FILE
             <tag> tips </tag>
             
             <tag> clip </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[jekyll中gsub未定义的错误]]></title>
-      <url>/all/20140426/000000/</url>
-      <content type="html"><![CDATA[<p>今天被 jekyll 编译时的一个问题搞疯了。</p>
-<blockquote>
-<p>Liquid Exception: undefined method `gsub’ for nil:NilClass in atom.xml</p>
-</blockquote>
-<p>上面这个错误，开始以为时jekyll的版本问题，后来又以为时 UIT8 编码错误，再继续折腾，看了很多博客还是没有处理好。</p>
-<p>在 <code>atom.xml</code> 中我写了一句 ，以前一直是这样的啊，没报错。不知道 github pages 的后台 jekyll 编译器是不是做了版本或者其他方面的修改，定位到这个位置之后，把内容改成了</p>
-<pre><code>\{\{ post.excerpt }}
-\{\{ post.content }} # 改成这个也可以，只是内容太多，我不喜欢
-</code></pre><p>差不多整了我两个小时，这么点小错误，妹的！</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 前端杂烩 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> error </tag>
-            
-            <tag> jekyll </tag>
             
         </tags>
         
@@ -9394,7 +9395,7 @@ npm config set registry=http://registry.npmjs.org
       <url>/all/20140317/030200/</url>
       <content type="html"><![CDATA[<div class="history-article">本文为归档内容,原始地址在 <a href="http://www.cnblogs.com/hustskyking/archive/2014/03/17/two-yeas.html" target="_blank">博客园</a>.</div>
 
-<p>接触前端快三年了，记得是在大二的时候开始进博客园写博，三年的成长有两年得益于与各位前辈的交流和讨论。首先感谢博客园给我们提供了很好的交流平台，也祝博客园的建设越来越好！同时也感谢技术上擦过火花的小伙伴们，希望以后的日子里可以更多更深入的交流！</p><br><h3>一点学习经验</h3><br><p>以 <strong>Barret</strong> 这个名字混迹于不少 QQ 群中，时间比较久了，跟一些人也建立了比较好的友谊关系。在群里，不管是提问还是回答别人提出的问题，总能在未知领域找到属于自己的东西。现在还会经常在群里碰到学习前端的新人，他们有时提问抓不到关键词或者不知道如何形容自己的问题，这也让我看到了当初的自己，希望有经验的学习者可以包容这些人，耐心的回答他们提出的问题，因为我们也是这么成长起来的~</p><br><p>这几年时间我看过很多<a title="豆瓣读书，部分书籍列表" href="http://book.douban.com/people/hustskyking/collect" target="_blank">书籍</a>，每本书都是作者学习经验的浓缩，我很推荐大家买几本参考书籍，如《JavaScript权威指南》、《JavaScript设计模式》、《JavaScript异步编程》、《JavaScript高级程序设计》、《JavaScript语言精粹》、《CSS权威指南》等，这些书籍我都读过三五遍，有些则看过七八遍，所以对一些 JS 比较基础的东西都有所了解。我们在网上所有资料的时候，也推荐大家上权威一点的网站上去查询，如 <a href="//developer.mozilla.org/en/" target="_blank">MDN</a>、<a href="http://msdn.microsoft.com/en-us/#fbid=OYqXopniVLY" target="_blank"> MSDN&nbsp;</a>&nbsp;、<a href="http://www.whatwg.org/" target="_blank">whatwg</a>、<a href="http://www.w3.org/TR/" target="_blank">w3</a>等，在这里我们可以找到最全面最深入的资料。</p><br><p>对于问题的剖析一定要刨根问底，一直追溯到最底层的原理，比如 垃圾回收机制 追溯到 V8，websocket 追溯到 TCP 层等，把最底层的原理搞明白了，回答别人的问题才会有底气，不然人家几个为什么就会把你问的无话可说了。</p><br><p>去年的六月份在百度实习了三个月，那时候的同事给我取了个外号，叫\<strong>小胡子哥</strong>“，我也比较喜欢这个 nickname，所以在博客顶上也加上了这个外号。现在我在淘宝UED实习，阿里有个传统就是给自己取花名，当时也没多想，天王被人注册了，所以给自己取了个名字，叫 \<strong>阎王</strong>“。所以大家也可以叫我阎王。</p><br><h3>文章罗列</h3><br><p>本来打算在入园两周年发点有技术含量的文章，结果，呵..呵，太忙了，就简单的罗列下自己写过的一点点东西。</p><br><h4>1. web语音通信</h4><br><ul><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-filter.html" target="_blank" rel="external">让音乐响起来</a></li><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-show-audio.html" target="_blank" rel="external">看得到的音频流</a></li><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-volume.html" target="_blank" rel="external">音量的控制</a></li><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-cross-fading.html" target="_blank" rel="external">声道的转换</a></li><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-filter.html" target="_blank" rel="external">声音的过滤</a></li><br></ul><br><p>这一系列的文章还没有写完，后续还有几篇，等有时间了整理下。包括如何使用 JavaScript 录音，还是音频的压缩和船速等等。</p><br><h4>2. 一些原理性的东西</h4><br><ul><br><li><a href="http://www.cnblogs.com/hustskyking/p/javascript-asynchronous-programming.html" target="_blank" rel="external">Javascript异步编程原理</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_17" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/how-to-achieve-loading-module.html" target="_blank" rel="external">浅谈模块化加载的实现原理</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_19" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/websocket-with-node.html" target="_blank" rel="external">细说WebSocket - Node篇</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_19" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/websocket-with-node.html" target="_blank" rel="external"></a><a id="homepage1_PostList1_rptEntries_TitleUrl_18" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/websocket-with-php.html" target="_blank" rel="external">细说websocket - php篇</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_14" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/how-regular-expressions-work.html" target="_blank" rel="external">进阶正则表达式</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_4" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-array.html" target="_blank" rel="external">你所不知道的JavaScript数组</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_0" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/web-communication.html" target="_blank" rel="external">JavaScript之web通信</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_2" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/principle-of-javascript-template.html" target="_blank" rel="external">JavaScript模板引擎原理</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_11" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-closure.html" target="_blank" rel="external">对闭包机制的深入理解</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_11" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-closure.html" target="_blank" rel="external"></a><a id="homepage1_PostList1_rptEntries_TitleUrl_11" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/problem-javascript-event.html" target="_blank" rel="external">[解惑]JavaScript事件机制</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_11" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/problem-javascript-event.html" target="_blank" rel="external"></a><a id="homepage1_PostList1_rptEntries_TitleUrl_17" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/extend-in-jQuery.html" target="_blank" rel="external">解读jQuery中extend函数</a></li><br></ul><br><p>因为喜欢去偏底层的思考，所以对一些经常遇到的东西做了稍微深层的分析。</p><br><h4>3. 介绍性的东西</h4><br><ul><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_1" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/open-source.html" target="_blank" rel="external">软件（代码）开源，协议声明</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_5" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-fullscreen.html" target="_blank" rel="external">让你的页面瞬间全屏</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_12" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/multiple-download-with-javascript.html" target="_blank" rel="external">JavaScript多文件下载</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_13" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/manufacture-font-face-in-web.html" target="_blank" rel="external">再探@font-face及webIcon制作</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_1" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/history-api-in-html5.html" target="_blank" rel="external">PJAX的实现与应用</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_4" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/ES6-introduce.html" target="_blank" rel="external">ECMAScript 6 简介</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_7" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/let-your-page-understood-by-search-engine.html" target="_blank" rel="external">SEO：让搜索引擎对你的网站更有亲和力(译)</a></li><br></ul><br><h4>4. 偏应用的</h4><br><ul><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_3" class="PostTitle" href="http://www.cnblogs.com/hustskyking/archive/2013/06/03/3D-Tank-War.html" target="_blank" rel="external">【屌丝之作】3D遥控坦克大战</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_7" class="PostTitle" href="http://www.cnblogs.com/hustskyking/archive/2013/05/04/getkeywords.html" target="_blank" rel="external">Javascript综合应用小案例</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_18" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/change-fontSize-with-pure-css.html" target="_blank" rel="external">字体大小自适应纯css解决方案</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_14" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/responsive-web-desigin.html" target="_blank" rel="external">那些年，我们一起玩过的响应式布局</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_13" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-spec.html" target="_blank" rel="external">前端编码规范之JavaScript</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_15" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/css-spec.html" target="_blank" rel="external">前端编码规范之CSS</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_9" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-regexp.html" target="_blank" rel="external">玩转正则之highlight高亮</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_0" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/semicolon-retalk.html" target="_blank" rel="external">Javascript分号，加还是不加？</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_3" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/problems-in-git-when-ssh.html" target="_blank" rel="external">git/ssh捋不清的几个问题</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_15" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/user-exprience-in-login-box.html" target="_blank" rel="external">从登录框看前端</a></li><br></ul><br><h3>结语</h3><br><p>在学校，很多时间都是自己支配的，相当自由，工作之后一些事情就身不由己了，我希望自己记录的一点东西可以对新人有帮助，也希望可以通过这些文字记录自己学习的历程。谢谢大家的支持！&nbsp;</p>
+<p>接触前端快三年了，记得是在大二的时候开始进博客园写博，三年的成长有两年得益于与各位前辈的交流和讨论。首先感谢博客园给我们提供了很好的交流平台，也祝博客园的建设越来越好！同时也感谢技术上擦过火花的小伙伴们，希望以后的日子里可以更多更深入的交流！</p><br><h3>一点学习经验</h3><br><p>以 <strong>Barret</strong> 这个名字混迹于不少 QQ 群中，时间比较久了，跟一些人也建立了比较好的友谊关系。在群里，不管是提问还是回答别人提出的问题，总能在未知领域找到属于自己的东西。现在还会经常在群里碰到学习前端的新人，他们有时提问抓不到关键词或者不知道如何形容自己的问题，这也让我看到了当初的自己，希望有经验的学习者可以包容这些人，耐心的回答他们提出的问题，因为我们也是这么成长起来的~</p><br><p>这几年时间我看过很多<a title="豆瓣读书，部分书籍列表" href="http://book.douban.com/people/hustskyking/collect" target="_blank">书籍</a>，每本书都是作者学习经验的浓缩，我很推荐大家买几本参考书籍，如《JavaScript权威指南》、《JavaScript设计模式》、《JavaScript异步编程》、《JavaScript高级程序设计》、《JavaScript语言精粹》、《CSS权威指南》等，这些书籍我都读过三五遍，有些则看过七八遍，所以对一些 JS 比较基础的东西都有所了解。我们在网上所有资料的时候，也推荐大家上权威一点的网站上去查询，如 <a href="//developer.mozilla.org/en/" target="_blank">MDN</a>、<a href="http://msdn.microsoft.com/en-us/#fbid=OYqXopniVLY" target="_blank"> MSDN&nbsp;</a>&nbsp;、<a href="http://www.whatwg.org/" target="_blank">whatwg</a>、<a href="http://www.w3.org/TR/" target="_blank">w3</a>等，在这里我们可以找到最全面最深入的资料。</p><br><p>对于问题的剖析一定要刨根问底，一直追溯到最底层的原理，比如 垃圾回收机制 追溯到 V8，websocket 追溯到 TCP 层等，把最底层的原理搞明白了，回答别人的问题才会有底气，不然人家几个为什么就会把你问的无话可说了。</p><br><p>去年的六月份在百度实习了三个月，那时候的同事给我取了个外号，叫\<strong>Rain</strong>“，我也比较喜欢这个 nickname，所以在博客顶上也加上了这个外号。现在我在淘宝UED实习，阿里有个传统就是给自己取花名，当时也没多想，天王被人注册了，所以给自己取了个名字，叫 \<strong>阎王</strong>“。所以大家也可以叫我阎王。</p><br><h3>文章罗列</h3><br><p>本来打算在入园两周年发点有技术含量的文章，结果，呵..呵，太忙了，就简单的罗列下自己写过的一点点东西。</p><br><h4>1. web语音通信</h4><br><ul><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-filter.html" target="_blank" rel="external">让音乐响起来</a></li><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-show-audio.html" target="_blank" rel="external">看得到的音频流</a></li><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-volume.html" target="_blank" rel="external">音量的控制</a></li><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-cross-fading.html" target="_blank" rel="external">声道的转换</a></li><br><li><a href="http://www.cnblogs.com/hustskyking/p/webAudio-filter.html" target="_blank" rel="external">声音的过滤</a></li><br></ul><br><p>这一系列的文章还没有写完，后续还有几篇，等有时间了整理下。包括如何使用 JavaScript 录音，还是音频的压缩和船速等等。</p><br><h4>2. 一些原理性的东西</h4><br><ul><br><li><a href="http://www.cnblogs.com/hustskyking/p/javascript-asynchronous-programming.html" target="_blank" rel="external">Javascript异步编程原理</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_17" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/how-to-achieve-loading-module.html" target="_blank" rel="external">浅谈模块化加载的实现原理</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_19" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/websocket-with-node.html" target="_blank" rel="external">细说WebSocket - Node篇</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_19" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/websocket-with-node.html" target="_blank" rel="external"></a><a id="homepage1_PostList1_rptEntries_TitleUrl_18" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/websocket-with-php.html" target="_blank" rel="external">细说websocket - php篇</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_14" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/how-regular-expressions-work.html" target="_blank" rel="external">进阶正则表达式</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_4" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-array.html" target="_blank" rel="external">你所不知道的JavaScript数组</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_0" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/web-communication.html" target="_blank" rel="external">JavaScript之web通信</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_2" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/principle-of-javascript-template.html" target="_blank" rel="external">JavaScript模板引擎原理</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_11" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-closure.html" target="_blank" rel="external">对闭包机制的深入理解</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_11" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-closure.html" target="_blank" rel="external"></a><a id="homepage1_PostList1_rptEntries_TitleUrl_11" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/problem-javascript-event.html" target="_blank" rel="external">[解惑]JavaScript事件机制</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_11" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/problem-javascript-event.html" target="_blank" rel="external"></a><a id="homepage1_PostList1_rptEntries_TitleUrl_17" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/extend-in-jQuery.html" target="_blank" rel="external">解读jQuery中extend函数</a></li><br></ul><br><p>因为喜欢去偏底层的思考，所以对一些经常遇到的东西做了稍微深层的分析。</p><br><h4>3. 介绍性的东西</h4><br><ul><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_1" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/open-source.html" target="_blank" rel="external">软件（代码）开源，协议声明</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_5" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-fullscreen.html" target="_blank" rel="external">让你的页面瞬间全屏</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_12" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/multiple-download-with-javascript.html" target="_blank" rel="external">JavaScript多文件下载</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_13" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/manufacture-font-face-in-web.html" target="_blank" rel="external">再探@font-face及webIcon制作</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_1" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/history-api-in-html5.html" target="_blank" rel="external">PJAX的实现与应用</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_4" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/ES6-introduce.html" target="_blank" rel="external">ECMAScript 6 简介</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_7" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/let-your-page-understood-by-search-engine.html" target="_blank" rel="external">SEO：让搜索引擎对你的网站更有亲和力(译)</a></li><br></ul><br><h4>4. 偏应用的</h4><br><ul><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_3" class="PostTitle" href="http://www.cnblogs.com/hustskyking/archive/2013/06/03/3D-Tank-War.html" target="_blank" rel="external">【屌丝之作】3D遥控坦克大战</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_7" class="PostTitle" href="http://www.cnblogs.com/hustskyking/archive/2013/05/04/getkeywords.html" target="_blank" rel="external">Javascript综合应用小案例</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_18" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/change-fontSize-with-pure-css.html" target="_blank" rel="external">字体大小自适应纯css解决方案</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_14" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/responsive-web-desigin.html" target="_blank" rel="external">那些年，我们一起玩过的响应式布局</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_13" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-spec.html" target="_blank" rel="external">前端编码规范之JavaScript</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_15" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/css-spec.html" target="_blank" rel="external">前端编码规范之CSS</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_9" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/javascript-regexp.html" target="_blank" rel="external">玩转正则之highlight高亮</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_0" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/semicolon-retalk.html" target="_blank" rel="external">Javascript分号，加还是不加？</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_3" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/problems-in-git-when-ssh.html" target="_blank" rel="external">git/ssh捋不清的几个问题</a></li><br><li><a id="homepage1_PostList1_rptEntries_TitleUrl_15" class="PostTitle" href="http://www.cnblogs.com/hustskyking/p/user-exprience-in-login-box.html" target="_blank" rel="external">从登录框看前端</a></li><br></ul><br><h3>结语</h3><br><p>在学校，很多时间都是自己支配的，相当自由，工作之后一些事情就身不由己了，我希望自己记录的一点东西可以对新人有帮助，也希望可以通过这些文字记录自己学习的历程。谢谢大家的支持！&nbsp;</p>
 
 ]]></content>
       

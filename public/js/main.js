@@ -16,7 +16,7 @@ var params = {};
 
 if (params['share']) {
   $('html').addClass('shareMode');
-  $('<p style="color:#555;text-align:right; font-size:14px;" id="authorAppend">文 / 小胡子哥</p>').prependTo('.post-content');
+  $('<p style="color:#555;text-align:right; font-size:14px;" id="authorAppend">文 / onlystar</p>').prependTo('.post-content');
 } else {
   $('html').removeClass('shareMode');
   $('#authorAppend').remove();
@@ -227,7 +227,6 @@ var operation = {
     this.footerNav();
     this.bind();
     this.tips();
-    this.insertWeibo();
     this.loadChangyanCount();
     this.initSearch();
   },
@@ -416,20 +415,6 @@ var operation = {
         });
       } catch (e) {}
     });
-  },
-  insertWeibo: function () {
-    var htmlStr = '<iframe width="330" height="350" class="share_self"  frameborder="0" scrolling="no" src="//widget.weibo.com/weiboshow/index.php?language=&width=330&height=350&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1812166904&verifier=73dc4ca5&dpc=1"></iframe>';
-    if (/\/entry\//.test(window.location.href) && !isMobile.any() && ($(window).width() > 992) && !$(".share_self").size()) {
-      // $(window).on("load", function() {
-      var $ifr = $(".rightbar-frame");
-      if (!$ifr.find('iframe').size()) {
-        $ifr.css("background", "none").append(htmlStr);
-      }
-      // });
-    }
-    if (isMobile.any()) {
-      $(".rightbar-frame").remove()
-    }
   },
   alertMsg: function (msg, tag) {
     if (!msg) return;
@@ -624,9 +609,6 @@ var operation = {
         }
       });
     }
-    $(window).on("resize", function () {
-      self.insertWeibo();
-    });
     $(window).on("keydown", function (evt) {
       if (evt.shiftKey && evt.altKey) {
         if (evt.keyCode == 39) { // right
@@ -687,7 +669,7 @@ var operation = {
       var code = $(this).parents(".highlight").find("code").text();
 
       code = $(this).parents(".highlight").hasClass('jscode') ? ("该 blob 流源自: <a href='" + window.location.href +
-        "'>小胡子哥的个人网站</a><br /><span style='color:red;font-size:12px;line-height:50px;'>" +
+        "'>onlystar的个人网站</a><br /><span style='color:red;font-size:12px;line-height:50px;'>" +
         "有些数据可能在 console 中显示~</span><script>" + code + "</script>") : code;
 
       if (!operation.isIE()) {
@@ -1600,9 +1582,6 @@ typeof history.pushState === 'function' && (function () {
     }
     $('#loadLayer').remove();
     $('.func-fb').find('span').text('关注').closest('a').next().remove();
-    if (/entry\/?$/.test(window.location.href) && $(".rightbar-frame iframe").size() == 0) {
-      operation.insertWeibo();
-    }
     operation.reloadChangyan();
     operation.wechat();
     $(window).trigger('load');
